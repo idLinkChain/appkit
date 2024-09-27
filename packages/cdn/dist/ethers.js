@@ -17782,7 +17782,7 @@ class Y1 {
     }
   }
 }
-const X1 = "@web3inno/appkit-ethers", eA = "1.0.4-alpha.3", tA = "module", nA = "./dist/esm/exports/index.js", rA = "./dist/types/exports/index.d.ts", sA = [
+const X1 = "@web3inno/appkit-ethers", eA = "1.0.4-alpha.4", tA = "module", nA = "./dist/esm/exports/index.js", rA = "./dist/types/exports/index.d.ts", sA = [
   "dist",
   "!tsconfig.tsbuildinfo"
 ], iA = {

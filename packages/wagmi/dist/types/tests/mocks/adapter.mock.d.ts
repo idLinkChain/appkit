@@ -24,10 +24,10 @@ export declare const mockAccount: {
         [x: `bytes[${string}]`]: undefined;
         [x: `bytes1[${string}]`]: undefined;
         [x: `bytes18[${string}]`]: undefined;
+        [x: `bytes5[${string}]`]: undefined;
         [x: `bytes2[${string}]`]: undefined;
         [x: `bytes3[${string}]`]: undefined;
         [x: `bytes4[${string}]`]: undefined;
-        [x: `bytes5[${string}]`]: undefined;
         [x: `bytes6[${string}]`]: undefined;
         [x: `bytes7[${string}]`]: undefined;
         [x: `bytes8[${string}]`]: undefined;
@@ -126,10 +126,10 @@ export declare const mockAccount: {
         bytes?: undefined;
         bytes1?: undefined;
         bytes18?: undefined;
+        bytes5?: undefined;
         bytes2?: undefined;
         bytes3?: undefined;
         bytes4?: undefined;
-        bytes5?: undefined;
         bytes6?: undefined;
         bytes7?: undefined;
         bytes8?: undefined;
