@@ -1,5 +1,5 @@
-import { DateUtil } from '@reown/appkit-common'
-import type { Transaction, TransactionImage } from '@reown/appkit-common'
+import { DateUtil } from '@web3inno/appkit-common'
+import type { Transaction, TransactionImage } from '@web3inno/appkit-common'
 import {
   AccountController,
   ChainController,
@@ -8,12 +8,12 @@ import {
   OptionsController,
   RouterController,
   TransactionsController
-} from '@reown/appkit-core'
-import { TransactionUtil, customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { TransactionUtil, customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { property, state } from 'lit/decorators.js'
-import type { TransactionType } from '@reown/appkit-ui'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
+import type { TransactionType } from '@web3inno/appkit-ui'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
 
 import styles from './styles.js'
 

@@ -1,4 +1,4 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import styles from './styles.js'
@@ -13,9 +13,9 @@ import {
   AccountController,
   ChainController,
   NetworkController
-} from '@reown/appkit-core'
-import { NumberUtil } from '@reown/appkit-common'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
+} from '@web3inno/appkit-core'
+import { NumberUtil } from '@web3inno/appkit-common'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
 
 @customElement('w3m-swap-view')
 export class W3mSwapView extends LitElement {

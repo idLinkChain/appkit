@@ -7,7 +7,7 @@ import { customElement } from '../../utils/WebComponentsUtil.js'
 import '../wui-input-text/index.js'
 import styles from './styles.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
-import { ConstantsUtil } from '@reown/appkit-common'
+import { ConstantsUtil } from '@web3inno/appkit-common'
 
 @customElement('wui-ens-input')
 export class WuiEnsInput extends LitElement {

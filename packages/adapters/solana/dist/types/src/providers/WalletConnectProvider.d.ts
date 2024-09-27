@@ -1,9 +1,9 @@
 import UniversalProvider from '@walletconnect/universal-provider';
-import type { AnyTransaction, Provider } from '@reown/appkit-utils/solana';
+import type { AnyTransaction, Provider } from '@web3inno/appkit-utils/solana';
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js';
 import type { SessionTypes } from '@walletconnect/types';
 import { Connection, PublicKey, type SendOptions } from '@solana/web3.js';
-import type { CaipNetwork } from '@reown/appkit-common';
+import type { CaipNetwork } from '@web3inno/appkit-common';
 export type WalletConnectProviderConfig = {
     provider: UniversalProvider;
     chains: CaipNetwork[];

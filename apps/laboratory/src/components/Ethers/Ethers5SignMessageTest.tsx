@@ -5,7 +5,7 @@ import {
   useAppKitNetwork,
   useAppKitProvider,
   type Provider
-} from '@reown/appkit/react'
+} from '@web3inno/appkit/react'
 import { ethers } from 'ethers5'
 import { ConstantsUtil } from '../../utils/ConstantsUtil'
 import { useChakraToast } from '../Toast'

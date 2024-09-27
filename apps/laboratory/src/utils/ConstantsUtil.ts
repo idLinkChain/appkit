@@ -10,9 +10,9 @@ import {
   solanaDevnet,
   base,
   gnosis
-} from '@reown/appkit/networks'
+} from '@web3inno/appkit/networks'
 import { getLocalStorageItem } from './LocalStorage'
-import type { CaipNetwork } from '@reown/appkit'
+import type { CaipNetwork } from '@web3inno/appkit'
 
 const projectId = process.env['NEXT_PUBLIC_PROJECT_ID']
 if (!projectId) {

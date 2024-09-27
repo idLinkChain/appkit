@@ -4,12 +4,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { customElement } from '@reown/appkit-ui';
+import { customElement } from '@web3inno/appkit-ui';
 import { LitElement, html } from 'lit';
-import { RouterController, SnackController, ConnectorController, CoreHelperUtil } from '@reown/appkit-core';
+import { RouterController, SnackController, ConnectorController, CoreHelperUtil } from '@web3inno/appkit-core';
 import { state } from 'lit/decorators.js';
 import styles from './styles.js';
-import { W3mFrameHelpers } from '@reown/appkit-wallet';
+import { W3mFrameHelpers } from '@web3inno/appkit-wallet';
 const OTP_LENGTH = 6;
 let W3mEmailOtpWidget = class W3mEmailOtpWidget extends LitElement {
     firstUpdated() {

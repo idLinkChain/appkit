@@ -11,7 +11,7 @@ import {
   Stack,
   Text
 } from '@chakra-ui/react'
-import { useAppKitState } from '@reown/appkit/react'
+import { useAppKitState } from '@web3inno/appkit/react'
 import { useEffect, useState } from 'react'
 
 export function MultiChainInfo() {

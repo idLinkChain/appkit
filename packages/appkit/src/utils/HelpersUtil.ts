@@ -1,5 +1,5 @@
 import type { NamespaceConfig, Namespace } from '@walletconnect/universal-provider'
-import type { CaipNetwork, CaipNetworkId, ChainNamespace } from '@reown/appkit-common'
+import type { CaipNetwork, CaipNetworkId, ChainNamespace } from '@web3inno/appkit-common'
 import type { SessionTypes } from '@walletconnect/types'
 
 export const WcHelpersUtil = {

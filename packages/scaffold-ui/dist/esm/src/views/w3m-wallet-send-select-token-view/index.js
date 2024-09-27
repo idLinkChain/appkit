@@ -4,10 +4,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { customElement } from '@reown/appkit-ui';
+import { customElement } from '@web3inno/appkit-ui';
 import { LitElement, html } from 'lit';
 import styles from './styles.js';
-import { AccountController, ChainController, CoreHelperUtil, RouterController, SendController } from '@reown/appkit-core';
+import { AccountController, ChainController, CoreHelperUtil, RouterController, SendController } from '@web3inno/appkit-core';
 import { state } from 'lit/decorators.js';
 let W3mSendSelectTokenView = class W3mSendSelectTokenView extends LitElement {
     constructor() {

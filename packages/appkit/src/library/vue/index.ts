@@ -1,16 +1,16 @@
 import { onUnmounted, reactive, ref } from 'vue'
-import { AccountController, ChainController, CoreHelperUtil, type Event } from '@reown/appkit-core'
+import { AccountController, ChainController, CoreHelperUtil, type Event } from '@web3inno/appkit-core'
 import type {
   W3mAccountButton,
   W3mButton,
   W3mConnectButton,
   W3mNetworkButton,
   W3mOnrampWidget
-} from '@reown/appkit-scaffold-ui'
+} from '@web3inno/appkit-scaffold-ui'
 import type { AppKit } from '../../../src/client.js'
 import type { AppKitOptions } from '../../utils/TypesUtil.js'
 import { ProviderUtil } from '../../store/ProviderUtil.js'
-import type { ChainNamespace } from '@reown/appkit-common'
+import type { ChainNamespace } from '@web3inno/appkit-common'
 
 type OpenOptions = {
   view: 'Account' | 'Connect' | 'Networks' | 'ApproveTransaction' | 'OnRampProviders'

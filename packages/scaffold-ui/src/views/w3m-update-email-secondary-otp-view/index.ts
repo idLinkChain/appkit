@@ -1,7 +1,7 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { W3mEmailOtpWidget } from '../../utils/w3m-email-otp-widget/index.js'
 import type { OnOtpSubmitFn } from '../../utils/w3m-email-otp-widget/index.js'
-import { EventsController, RouterController } from '@reown/appkit-core'
+import { EventsController, RouterController } from '@web3inno/appkit-core'
 
 @customElement('w3m-update-email-secondary-otp-view')
 export class W3mUpdateEmailSecondaryOtpView extends W3mEmailOtpWidget {

@@ -1,4 +1,4 @@
-import { B as D, be as tn, bc as Zt } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
+import { B as D, be as tn, bc as Zt } from "./W3MFrameProviderSingleton--2RuNpyE.js";
 const { Transform: xn } = tn;
 var $n = (t) => class en extends xn {
   constructor(n, _, o, i, c) {

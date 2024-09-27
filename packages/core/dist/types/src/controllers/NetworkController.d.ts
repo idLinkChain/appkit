@@ -1,4 +1,4 @@
-import { type CaipNetwork, type CaipNetworkId, type ChainNamespace } from '@reown/appkit-common';
+import { type CaipNetwork, type CaipNetworkId, type ChainNamespace } from '@web3inno/appkit-common';
 export interface NetworkControllerClient {
     switchCaipNetwork: (network: NetworkControllerState['caipNetwork']) => Promise<void>;
     getApprovedCaipNetworksData: () => Promise<{

@@ -1,6 +1,6 @@
 {
   "name": "@examples/next-wagmi",
-  "version": "1.0.4",
+  "version": "1.0.4-alpha.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@tanstack/react-query": "5.24.8",
-    "@reown/appkit-adapter-wagmi": "workspace:*",
-    "@reown/appkit": "workspace:*",
+    "@web3inno/appkit-adapter-wagmi": "workspace:*",
+    "@web3inno/appkit": "workspace:*",
     "@wagmi/connectors": "5.1.9",
     "@wagmi/core": "2.13.4",
     "next": "14.2.3",

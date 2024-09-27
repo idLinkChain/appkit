@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { SafeLocalStorage, SafeLocalStorageKeys } from '@reown/appkit-common';
+import { SafeLocalStorage, SafeLocalStorageKeys } from '@web3inno/appkit-common';
 import { ChainController } from '../controllers/ChainController.js';
 // -- Utility -----------------------------------------------------------------
 export const StorageUtil = {

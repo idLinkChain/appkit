@@ -1,4 +1,4 @@
-import { type CaipNetwork } from '@reown/appkit-common';
+import { type CaipNetwork } from '@web3inno/appkit-common';
 import { LitElement } from 'lit';
 export declare class W3mNetworksView extends LitElement {
     static styles: import("lit").CSSResult;

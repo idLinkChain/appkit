@@ -1,17 +1,17 @@
-import { NetworkUtil, SafeLocalStorage, SafeLocalStorageKeys } from '@reown/appkit-common';
-import { AccountController, ChainController, CoreHelperUtil } from '@reown/appkit-core';
-import { EthersHelpersUtil } from '@reown/appkit-utils/ethers';
-import { W3mFrameHelpers, W3mFrameProvider, W3mFrameRpcConstants } from '@reown/appkit-wallet';
-import { ConstantsUtil as CoreConstantsUtil } from '@reown/appkit-core';
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common';
-import { ConstantsUtil, HelpersUtil, PresetsUtil } from '@reown/appkit-utils';
+import { NetworkUtil, SafeLocalStorage, SafeLocalStorageKeys } from '@web3inno/appkit-common';
+import { AccountController, ChainController, CoreHelperUtil } from '@web3inno/appkit-core';
+import { EthersHelpersUtil } from '@web3inno/appkit-utils/ethers';
+import { W3mFrameHelpers, W3mFrameProvider, W3mFrameRpcConstants } from '@web3inno/appkit-wallet';
+import { ConstantsUtil as CoreConstantsUtil } from '@web3inno/appkit-core';
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common';
+import { ConstantsUtil, HelpersUtil, PresetsUtil } from '@web3inno/appkit-utils';
 import UniversalProvider from '@walletconnect/universal-provider';
-import { WcConstantsUtil } from '@reown/appkit';
+import { WcConstantsUtil } from '@web3inno/appkit';
 import { Ethers5Methods } from './utils/Ethers5Methods.js';
 import { ethers } from 'ethers5';
-import { ProviderUtil } from '@reown/appkit/store';
+import { ProviderUtil } from '@web3inno/appkit/store';
 import { CoinbaseWalletSDK } from '@coinbase/wallet-sdk';
-import { W3mFrameProviderSingleton } from '@reown/appkit/auth-provider';
+import { W3mFrameProviderSingleton } from '@web3inno/appkit/auth-provider';
 export class Ethers5Adapter {
     createEthersConfig(options) {
         if (!options.metadata) {
@@ -185,7 +185,7 @@ export class Ethers5Adapter {
                 const providerId = ProviderUtil.state.providerIds['eip155'];
                 this.appKit?.setClientId(null);
                 if (this.options?.siweConfig?.options?.signOutOnDisconnect) {
-                    const { SIWEController } = await import('@reown/appkit-siwe');
+                    const { SIWEController } = await import('@web3inno/appkit-siwe');
                     await SIWEController.signOut();
                 }
                 const disconnectConfig = {

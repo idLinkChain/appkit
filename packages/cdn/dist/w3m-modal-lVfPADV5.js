@@ -1,4 +1,4 @@
-import { v, x as y, M as n, h, O as f, b7 as k, p as m, D as C, y as S, R as c, V as x, Q as A, F as E, a as b, b as O, z as w, w as N, b8 as L } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
+import { v, x as y, M as n, h, O as f, b7 as k, p as m, D as C, y as S, R as c, V as x, Q as A, F as E, a as b, b as O, z as w, w as N, b8 as L } from "./W3MFrameProviderSingleton--2RuNpyE.js";
 const K = v`
   :host {
     z-index: var(--w3m-z-index);
@@ -165,7 +165,7 @@ let l = class extends y {
   async handleClose() {
     const e = c.state.view === "ConnectingSiwe", i = c.state.view === "ApproveTransaction";
     if (this.isSiweEnabled) {
-      const { SIWEController: t } = await import("./index-DAWldXKo.js");
+      const { SIWEController: t } = await import("./index-zKOXWC9Y.js");
       t.state.status !== "success" && (e || i) ? n.shake() : n.close();
     } else
       n.close();
@@ -221,7 +221,7 @@ let l = class extends y {
     var s;
     const i = this.caipAddress ? b.getPlainAddress(this.caipAddress) : void 0, t = e ? b.getPlainAddress(e) : void 0;
     if (t && !(i === t) && this.isSiweEnabled) {
-      const { SIWEController: a } = await import("./index-DAWldXKo.js"), r = m.state.siweStatus === "success";
+      const { SIWEController: a } = await import("./index-zKOXWC9Y.js"), r = m.state.siweStatus === "success";
       !i && t ? this.onSiweNavigation() : r && i && t && i !== t && (s = a.state._client) != null && s.options.signOutOnAccountChange && (await a.signOut(), this.onSiweNavigation());
     }
     t || n.close(), this.caipAddress = e;
@@ -235,7 +235,7 @@ let l = class extends y {
     const i = (s = (o = this.caipNetwork) == null ? void 0 : o.id) == null ? void 0 : s.toString(), t = (a = e == null ? void 0 : e.id) == null ? void 0 : a.toString();
     if (i && t && i !== t)
       if (this.isSiweEnabled) {
-        const { SIWEController: p } = await import("./index-DAWldXKo.js");
+        const { SIWEController: p } = await import("./index-zKOXWC9Y.js");
         (r = p.state._client) != null && r.options.signOutOnNetworkChange ? (await p.signOut(), this.onSiweNavigation()) : c.goBack();
       } else
         c.goBack();

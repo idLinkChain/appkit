@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-import { type SwapInputTarget } from '@reown/appkit-core';
+import { type SwapInputTarget } from '@web3inno/appkit-core';
 export declare class W3mSwapInputSkeleton extends LitElement {
     static styles: import("lit").CSSResult[];
     target: SwapInputTarget;

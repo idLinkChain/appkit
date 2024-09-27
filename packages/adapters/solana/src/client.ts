@@ -5,16 +5,16 @@ import {
   ChainController,
   CoreHelperUtil,
   EventsController
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 import {
   ConstantsUtil as CommonConstantsUtil,
   SafeLocalStorage,
   SafeLocalStorageKeys
-} from '@reown/appkit-common'
+} from '@web3inno/appkit-common'
 
-import { SolConstantsUtil, SolHelpersUtil } from '@reown/appkit-utils/solana'
+import { SolConstantsUtil, SolHelpersUtil } from '@web3inno/appkit-utils/solana'
 import { SolStoreUtil } from './utils/SolanaStoreUtil.js'
-import type { Provider } from '@reown/appkit-utils/solana'
+import type { Provider } from '@web3inno/appkit-utils/solana'
 
 import type { BaseWalletAdapter } from '@solana/wallet-adapter-base'
 import { PublicKey, type Commitment, type ConnectionConfig } from '@solana/web3.js'
@@ -24,9 +24,9 @@ import type {
   ConnectionControllerClient,
   NetworkControllerClient,
   Connector
-} from '@reown/appkit-core'
-import type { AdapterType, CaipAddress, CaipNetwork } from '@reown/appkit-common'
-import type { ChainNamespace } from '@reown/appkit-common'
+} from '@web3inno/appkit-core'
+import type { AdapterType, CaipAddress, CaipNetwork } from '@web3inno/appkit-common'
+import type { ChainNamespace } from '@web3inno/appkit-common'
 
 import { watchStandard } from './utils/watchStandard.js'
 import { WalletConnectProvider } from './providers/WalletConnectProvider.js'
@@ -36,14 +36,14 @@ import {
   W3mFrameProvider,
   W3mFrameRpcConstants,
   type W3mFrameTypes
-} from '@reown/appkit-wallet'
-import { ConstantsUtil as CoreConstantsUtil } from '@reown/appkit-core'
+} from '@web3inno/appkit-wallet'
+import { ConstantsUtil as CoreConstantsUtil } from '@web3inno/appkit-core'
 import { withSolanaNamespace } from './utils/withSolanaNamespace.js'
-import type { AppKit } from '@reown/appkit'
-import type { AppKitOptions as CoreOptions } from '@reown/appkit'
-import { ProviderUtil } from '@reown/appkit/store'
-import { W3mFrameProviderSingleton } from '@reown/appkit/auth-provider'
-import { ConstantsUtil } from '@reown/appkit-utils'
+import type { AppKit } from '@web3inno/appkit'
+import type { AppKitOptions as CoreOptions } from '@web3inno/appkit'
+import { ProviderUtil } from '@web3inno/appkit/store'
+import { W3mFrameProviderSingleton } from '@web3inno/appkit/auth-provider'
+import { ConstantsUtil } from '@web3inno/appkit-utils'
 import { createSendTransaction } from './utils/createSendTransaction.js'
 import { CoinbaseWalletProvider } from './providers/CoinbaseWalletProvider.js'
 

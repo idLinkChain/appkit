@@ -6,7 +6,7 @@ import { EIP_5792_RPC_METHODS } from '../../utils/EIP5792Utils'
 import { bigIntReplacer } from '../../utils/CommonUtils'
 import { useCallsStatus } from 'wagmi/experimental'
 import { useWagmiAvailableCapabilities } from '../../hooks/useWagmiActiveCapabilities'
-import { useAppKitAccount } from '@reown/appkit/react'
+import { useAppKitAccount } from '@web3inno/appkit/react'
 
 export function WagmiGetCallsStatusTest() {
   const { supported } = useWagmiAvailableCapabilities({

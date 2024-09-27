@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-network-image'
-import type { WuiNetworkImage } from '@reown/appkit-ui/src/composites/wui-network-image'
+import '@web3inno/appkit-ui/src/composites/wui-network-image'
+import type { WuiNetworkImage } from '@web3inno/appkit-ui/src/composites/wui-network-image'
 import { html } from 'lit'
 import { networkImageSrc } from '../../utils/PresetUtils'
 

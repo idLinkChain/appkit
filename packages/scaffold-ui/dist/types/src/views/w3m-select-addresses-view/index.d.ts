@@ -1,4 +1,4 @@
-import { type AccountType } from '@reown/appkit-core';
+import { type AccountType } from '@web3inno/appkit-core';
 import { LitElement } from 'lit';
 export declare class W3mSelectAddressesView extends LitElement {
     static styles: import("lit").CSSResult;

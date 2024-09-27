@@ -70,8 +70,8 @@ async function checkUiPackage() {
       fail(`${f} is using @state decorator, which is not allowed in ui package`)
     }
 
-    if (diff?.added.includes('import @reown/appkit-core')) {
-      fail(`${f} is importing @reown/appkit-core, which is not allowed in ui package`)
+    if (diff?.added.includes('import @web3inno/appkit-core')) {
+      fail(`${f} is importing @web3inno/appkit-core, which is not allowed in ui package`)
     }
 
     if (!diff?.added.includes(RENDER_COMMENT) && diff?.added.includes('render()')) {
@@ -94,7 +94,7 @@ async function checkUiPackage() {
       fail(`${f} is a ui element, but does not define wui- prefix`)
     }
 
-    if (diff?.added.includes('@reown/appkit-ui/')) {
+    if (diff?.added.includes('@web3inno/appkit-ui/')) {
       fail(`${f} should use relative imports instead of direct package access`)
     }
   }
@@ -189,8 +189,8 @@ async function checkCorePackage() {
   for (const f of created_core_controllers) {
     const diff = await diffForFile(f)
 
-    if (diff?.added.includes('import @reown/appkit-ui')) {
-      fail(`${f} is importing @reown/appkit-ui, which is not allowed in core package`)
+    if (diff?.added.includes('import @web3inno/appkit-ui')) {
+      fail(`${f} is importing @web3inno/appkit-ui, which is not allowed in core package`)
     }
 
     if (!diff?.added.includes(TYPE_COMMENT)) {
@@ -209,7 +209,7 @@ async function checkCorePackage() {
       fail(`${f} is using this.state, use just state`)
     }
 
-    if (diff?.added.includes('@reown/appkit-core/')) {
+    if (diff?.added.includes('@web3inno/appkit-core/')) {
       fail(`${f} should use relative imports instead of direct package access`)
     }
 
@@ -270,9 +270,9 @@ async function checkScaffoldHtmlPackage() {
     }
 
     if (
-      diff?.added.includes('@reown/appkit-core/') ||
-      diff?.added.includes('@reown/appkit-ui/') ||
-      diff?.added.includes('@reown/scaffold/')
+      diff?.added.includes('@web3inno/appkit-core/') ||
+      diff?.added.includes('@web3inno/appkit-ui/') ||
+      diff?.added.includes('@web3inno/scaffold/')
     ) {
       fail(`${f} should use relative imports instead of direct package access`)
     }
@@ -304,12 +304,12 @@ async function checkClientPackages() {
   for (const f of client_files) {
     const diff = await diffForFile(f)
 
-    if (diff?.added.includes("from '@reown/appkit-core")) {
-      fail(`${f} is not allowed to import from @reown/appkit-core`)
+    if (diff?.added.includes("from '@web3inno/appkit-core")) {
+      fail(`${f} is not allowed to import from @web3inno/appkit-core`)
     }
 
-    if (diff?.added.includes("from '@reown/appkit-ui")) {
-      fail(`${f} is not allowed to import from @reown/appkit-ui`)
+    if (diff?.added.includes("from '@web3inno/appkit-ui")) {
+      fail(`${f} is not allowed to import from @web3inno/appkit-ui`)
     }
 
     if (containsRelativeImportWithoutJSExtension(diff?.added)) {

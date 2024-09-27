@@ -1,4 +1,4 @@
-import {} from '@reown/appkit-utils/solana';
+import {} from '@web3inno/appkit-utils/solana';
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js';
 import { solana } from '../utils/chains.js';
 export class CoinbaseWalletProvider extends ProviderEventEmitter {

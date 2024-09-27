@@ -1,7 +1,7 @@
-import { AppKit } from '@reown/appkit'
-import { SolanaAdapter } from '@reown/appkit-adapter-solana'
+import { AppKit } from '@web3inno/appkit'
+import { SolanaAdapter } from '@web3inno/appkit-adapter-solana'
 import type { SolanaAppKitOptions } from './options'
-import type { Provider } from '@reown/appkit-adapter-solana'
+import type { Provider } from '@web3inno/appkit-adapter-solana'
 import packageJson from '../package.json' assert { type: 'json' }
 
 // -- Types -------------------------------------------------------------

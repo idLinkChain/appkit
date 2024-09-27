@@ -1,4 +1,4 @@
-import { type WcWallet } from '@reown/appkit-core';
+import { type WcWallet } from '@web3inno/appkit-core';
 export declare const WalletUtil: {
     filterOutDuplicatesByRDNS(wallets: WcWallet[]): WcWallet[];
     filterOutDuplicatesByIds(wallets: WcWallet[]): WcWallet[];

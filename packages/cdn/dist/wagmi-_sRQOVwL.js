@@ -1,4 +1,4 @@
-import { E as zl, W as _l, P as Ct, C as me, a as _f, S as Hl, b as ta, c as Hf, N as je, H as yc, d as $f, e as wc, f as Dn, g as Rn, i as jf, h as gc, j as xc, k as Io, l as Cc, A as qf } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
+import { E as zl, W as _l, P as Ct, C as me, a as _f, S as Hl, b as ta, c as Hf, N as je, H as yc, d as $f, e as wc, f as Dn, g as Rn, i as jf, h as gc, j as xc, k as Io, l as Cc, A as qf } from "./W3MFrameProviderSingleton--2RuNpyE.js";
 const $l = "2.21.4";
 let Jt = {
   getDocsUrl: ({ docsBaseUrl: e, docsPath: t = "", docsSlug: n }) => t ? `${e ?? "https://viem.sh"}${t}${n ? `#${n}` : ""}` : void 0,
@@ -7889,7 +7889,7 @@ async function as(e, t = {}) {
   const { keepAlive: n, reconnect: r } = t;
   return Ny({
     async getSocket({ onClose: s, onError: o, onOpen: a, onResponse: i }) {
-      const c = await import("./native-t-svWl2o.js").then((f) => f.WebSocket), l = new c(e);
+      const c = await import("./native-Bv--6g6_.js").then((f) => f.WebSocket), l = new c(e);
       function u() {
         s(), l.removeEventListener("close", u), l.removeEventListener("message", d), l.removeEventListener("error", o), l.removeEventListener("open", a);
       }
@@ -22982,7 +22982,7 @@ function lk(e) {
     async getProvider() {
       if (!n) {
         const i = await (async () => {
-          const { default: c } = await import("./index-je6Gyuxx.js").then((l) => l.i);
+          const { default: c } = await import("./index-h5sKnVos.js").then((l) => l.i);
           return typeof c != "function" && typeof c.default == "function" ? c.default : c;
         })();
         t = new i({
@@ -23100,7 +23100,7 @@ function uk(e) {
       var c;
       if (!r) {
         const l = await (async () => {
-          const { default: m } = await import("./index-D0Wm78mg.js").then((h) => h.i);
+          const { default: m } = await import("./index-Db36pG6H.js").then((h) => h.i);
           return typeof m != "function" && typeof m.default == "function" ? m.default : m;
         })();
         n = new l({ ...e, reloadOnDisconnect: !1 });
@@ -23333,7 +23333,7 @@ class pk {
         const i = await a.getProvider(), c = await ((b = (h = (m = this.options) == null ? void 0 : m.siweConfig) == null ? void 0 : h.getMessageParams) == null ? void 0 : b.call(h)), l = (v = (w = (y = this.options) == null ? void 0 : y.siweConfig) == null ? void 0 : w.options) == null ? void 0 : v.enabled, u = typeof (i == null ? void 0 : i.authenticate) == "function", d = c && Object.keys(c || {}).length > 0, p = (E = this.options) == null ? void 0 : E.siweConfig;
         if (l && u && d && p) {
           await a.setRequestedChainsIds(c.chains);
-          const { SIWEController: P, getDidChainId: N, getDidAddress: q } = await import("./index-DAWldXKo.js"), F = (g = this.caipNetworks) == null ? void 0 : g.filter((B) => B.chainNamespace === "eip155").map((B) => B.id);
+          const { SIWEController: P, getDidChainId: N, getDidAddress: q } = await import("./index-zKOXWC9Y.js"), F = (g = this.caipNetworks) == null ? void 0 : g.filter((B) => B.chainNamespace === "eip155").map((B) => B.id);
           c.chains = (C = this.caipNetworks) == null ? void 0 : C.filter((B) => B.chainNamespace === "eip155").map((B) => B.chainId);
           const K = await i.authenticate({
             nonce: await p.getNonce(),
@@ -23387,7 +23387,7 @@ class pk {
       disconnect: async () => {
         var a, i, c, l, u;
         if (await ng(this.wagmiConfig), (c = (i = (a = this.options) == null ? void 0 : a.siweConfig) == null ? void 0 : i.options) != null && c.signOutOnDisconnect) {
-          const { SIWEController: d } = await import("./index-DAWldXKo.js");
+          const { SIWEController: d } = await import("./index-zKOXWC9Y.js");
           await d.signOut();
         }
         Dn.removeItem(Rn.WALLET_ID), Dn.removeItem(Rn.CONNECTED_CONNECTOR), Dn.removeItem(Rn.WALLET_NAME), (l = this.appKit) == null || l.setClientId(null), this.syncAccount({
@@ -23738,7 +23738,7 @@ class pk {
     });
   }
 }
-const fk = "@reown/appkit-wagmi", hk = "1.0.4", mk = "module", bk = "./dist/esm/exports/index.js", yk = "./dist/types/exports/index.d.ts", wk = [
+const fk = "@web3inno/appkit-wagmi", hk = "1.0.4-alpha.3", mk = "module", bk = "./dist/esm/exports/index.js", yk = "./dist/types/exports/index.d.ts", wk = [
   "dist",
   "!tsconfig.tsbuildinfo"
 ], gk = {
@@ -23782,13 +23782,13 @@ const fk = "@reown/appkit-wagmi", hk = "1.0.4", mk = "module", bk = "./dist/esm/
   lint: "eslint . --ext .js,.jsx,.ts,.tsx"
 }, Ak = {
   "@walletconnect/utils": "2.16.1",
-  "@reown/appkit-polyfills": "workspace:*",
-  "@reown/appkit-adapter-wagmi": "workspace:*",
-  "@reown/appkit": "workspace:*",
-  "@reown/appkit-wallet": "workspace:*",
-  "@reown/appkit-common": "workspace:*",
-  "@reown/appkit-utils": "workspace:*",
-  "@reown/appkit-siwe": "workspace:*"
+  "@web3inno/appkit-polyfills": "workspace:*",
+  "@web3inno/appkit-adapter-wagmi": "workspace:*",
+  "@web3inno/appkit": "workspace:*",
+  "@web3inno/appkit-wallet": "workspace:*",
+  "@web3inno/appkit-common": "workspace:*",
+  "@web3inno/appkit-utils": "workspace:*",
+  "@web3inno/appkit-siwe": "workspace:*"
 }, vk = {
   "@wagmi/connectors": "5.1.9",
   "@wagmi/core": "2.13.4",
@@ -26178,7 +26178,7 @@ function G8(e) {
     async getProvider() {
       if (!n) {
         const i = await (async () => {
-          const { default: c } = await import("./index-je6Gyuxx.js").then((l) => l.i);
+          const { default: c } = await import("./index-h5sKnVos.js").then((l) => l.i);
           return typeof c != "function" && typeof c.default == "function" ? c.default : c;
         })();
         t = new i({
@@ -26296,7 +26296,7 @@ function K8(e) {
       var c;
       if (!r) {
         const l = await (async () => {
-          const { default: m } = await import("./index-D0Wm78mg.js").then((h) => h.i);
+          const { default: m } = await import("./index-Db36pG6H.js").then((h) => h.i);
           return typeof m != "function" && typeof m.default == "function" ? m.default : m;
         })();
         n = new l({ ...e, reloadOnDisconnect: !1 });
@@ -26413,7 +26413,7 @@ function dc(e = {}) {
     async getProvider() {
       async function u() {
         const d = await (async () => {
-          const { default: p } = await import("./metamask-sdk-DWxEeu6-.js").then((f) => f.m);
+          const { default: p } = await import("./metamask-sdk-C_0ve7DY.js").then((f) => f.m);
           return typeof p != "function" && typeof p.default == "function" ? p.default : p;
         })();
         return t = new d({
@@ -26559,12 +26559,12 @@ function pc(e = {}) {
     async getProvider() {
       if (typeof window < "u" && (window == null ? void 0 : window.parent) !== window) {
         if (!n) {
-          const { default: a } = await import("./index-C7hpwChh.js"), i = new a(e), c = await wt(() => i.safe.getInfo(), {
+          const { default: a } = await import("./index-B-_nkCJp.js"), i = new a(e), c = await wt(() => i.safe.getInfo(), {
             timeout: e.unstable_getInfoTimeout ?? 10
           });
           if (!c)
             throw new Error("Could not load Safe information");
-          const { SafeAppProvider: l } = await import("./index-CgRt0nTT.js").then((u) => u.i);
+          const { SafeAppProvider: l } = await import("./index-BnkFGeG1.js").then((u) => u.i);
           n = new l(c, i);
         }
         return n;
@@ -26656,7 +26656,7 @@ function fc(e) {
         const h = d.chains.map((y) => y.id);
         if (!h.length)
           return;
-        const { EthereumProvider: b } = await import("./index.es-BrSuifod.js");
+        const { EthereumProvider: b } = await import("./index.es-CZWqZbM4.js");
         return await b.init({
           ...e,
           disableProviderPing: !0,

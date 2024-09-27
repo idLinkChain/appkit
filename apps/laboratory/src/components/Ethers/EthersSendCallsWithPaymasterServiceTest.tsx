@@ -1,6 +1,6 @@
 import { Button, Stack, Text, Input, Tooltip } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
-import { useAppKitAccount, useAppKitNetwork, useAppKitProvider } from '@reown/appkit/react'
+import { useAppKitAccount, useAppKitNetwork, useAppKitProvider } from '@web3inno/appkit/react'
 import { UniversalProvider } from '@walletconnect/universal-provider'
 import { useChakraToast } from '../Toast'
 import { parseGwei } from 'viem'
@@ -11,7 +11,7 @@ import {
   WALLET_CAPABILITIES,
   getCapabilitySupportedChainInfo
 } from '../../utils/EIP5792Utils'
-import { W3mFrameProvider } from '@reown/appkit-wallet'
+import { W3mFrameProvider } from '@web3inno/appkit-wallet'
 
 export function EthersSendCallsWithPaymasterServiceTest() {
   const [paymasterServiceUrl, setPaymasterServiceUrl] = useState<string>('')

@@ -1,7 +1,7 @@
-import { type AnyTransaction, type Provider } from '@reown/appkit-utils/solana';
+import { type AnyTransaction, type Provider } from '@web3inno/appkit-utils/solana';
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js';
 import type { Connection, PublicKey, SendOptions } from '@solana/web3.js';
-import type { CaipNetwork } from '@reown/appkit-common';
+import type { CaipNetwork } from '@web3inno/appkit-common';
 export type SolanaCoinbaseWallet = {
     publicKey?: PublicKey;
     signTransaction<T extends AnyTransaction>(transaction: T): Promise<T>;

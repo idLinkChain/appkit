@@ -1,4 +1,4 @@
-import type { Connection } from '@reown/appkit-utils/solana';
+import type { Connection } from '@web3inno/appkit-utils/solana';
 export interface SolStoreUtilState {
     connection: Connection | null;
 }

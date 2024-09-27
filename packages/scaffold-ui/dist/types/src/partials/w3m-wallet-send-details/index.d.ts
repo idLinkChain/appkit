@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-import { type CaipNetwork } from '@reown/appkit-common';
+import { type CaipNetwork } from '@web3inno/appkit-common';
 export declare class W3mWalletSendDetails extends LitElement {
     static styles: import("lit").CSSResult;
     receiverAddress?: string;

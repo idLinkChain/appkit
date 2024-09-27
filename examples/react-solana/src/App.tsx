@@ -4,14 +4,14 @@ import {
   useAppKitEvents,
   useAppKitState,
   useAppKitTheme
-} from '@reown/appkit-solana/react'
+} from '@web3inno/appkit-solana/react'
 import {
   PhantomWalletAdapter,
   HuobiWalletAdapter,
   SolflareWalletAdapter,
   TrustWalletAdapter
 } from '@solana/wallet-adapter-wallets'
-import { solana, solanaTestnet, solanaDevnet } from '@reown/appkit/networks'
+import { solana, solanaTestnet, solanaDevnet } from '@web3inno/appkit/networks'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

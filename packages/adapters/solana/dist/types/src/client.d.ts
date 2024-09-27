@@ -1,11 +1,11 @@
 import { Connection } from '@solana/web3.js';
 import type { BaseWalletAdapter } from '@solana/wallet-adapter-base';
 import { type Commitment, type ConnectionConfig } from '@solana/web3.js';
-import type { ChainAdapter, ConnectionControllerClient, NetworkControllerClient } from '@reown/appkit-core';
-import type { AdapterType, CaipNetwork } from '@reown/appkit-common';
-import type { ChainNamespace } from '@reown/appkit-common';
-import type { AppKit } from '@reown/appkit';
-import type { AppKitOptions as CoreOptions } from '@reown/appkit';
+import type { ChainAdapter, ConnectionControllerClient, NetworkControllerClient } from '@web3inno/appkit-core';
+import type { AdapterType, CaipNetwork } from '@web3inno/appkit-common';
+import type { ChainNamespace } from '@web3inno/appkit-common';
+import type { AppKit } from '@web3inno/appkit';
+import type { AppKitOptions as CoreOptions } from '@web3inno/appkit';
 export interface AdapterOptions {
     connectionSettings?: Commitment | ConnectionConfig;
     wallets?: BaseWalletAdapter[];

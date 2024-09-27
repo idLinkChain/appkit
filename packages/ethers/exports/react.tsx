@@ -1,15 +1,15 @@
 'use client'
 
-import { AppKit, AccountController, CoreHelperUtil } from '@reown/appkit'
-import type { AppKitOptions } from '@reown/appkit'
-import { EthersAdapter, type AdapterOptions } from '@reown/appkit-adapter-ethers'
-import { getAppKit } from '@reown/appkit/library/react'
+import { AppKit, AccountController, CoreHelperUtil } from '@web3inno/appkit'
+import type { AppKitOptions } from '@web3inno/appkit'
+import { EthersAdapter, type AdapterOptions } from '@web3inno/appkit-adapter-ethers'
+import { getAppKit } from '@web3inno/appkit/library/react'
 import { useSnapshot } from 'valtio'
-import type { CaipNetwork } from '@reown/appkit-common'
+import type { CaipNetwork } from '@web3inno/appkit-common'
 import packageJson from '../package.json' assert { type: 'json' }
 
 // -- Types -------------------------------------------------------------
-export type { AdapterOptions } from '@reown/appkit-adapter-ethers'
+export type { AdapterOptions } from '@web3inno/appkit-adapter-ethers'
 
 // -- Setup -------------------------------------------------------------------
 let appkit: AppKit | undefined = undefined
@@ -68,4 +68,4 @@ export {
   useAppKitState,
   useAppKitEvents,
   useWalletInfo
-} from '@reown/appkit/library/react'
+} from '@web3inno/appkit/library/react'

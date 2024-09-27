@@ -1,6 +1,6 @@
-import type { Tokens } from '@reown/appkit-core'
+import type { Tokens } from '@web3inno/appkit-core'
 import { ConstantsUtil } from './ConstantsUtil.js'
-import type { CaipNetworkId } from '@reown/appkit-common'
+import type { CaipNetworkId } from '@web3inno/appkit-common'
 
 export const HelpersUtil = {
   getCaipTokens(tokens?: Tokens) {

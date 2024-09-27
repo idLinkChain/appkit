@@ -1,4 +1,4 @@
-import type { W3mFrameProvider, W3mFrameTypes } from '@reown/appkit-wallet'
+import type { W3mFrameProvider, W3mFrameTypes } from '@web3inno/appkit-wallet'
 import type {
   Balance,
   Transaction,
@@ -9,7 +9,7 @@ import type {
   AdapterType,
   SdkFramework,
   AppKitSdkVersion
-} from '@reown/appkit-common'
+} from '@web3inno/appkit-common'
 import type {
   NetworkControllerClient,
   NetworkControllerState

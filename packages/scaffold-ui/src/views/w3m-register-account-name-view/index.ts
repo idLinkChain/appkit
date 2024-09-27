@@ -1,4 +1,4 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { property, state } from 'lit/decorators.js'
 import styles from './styles.js'
@@ -9,9 +9,9 @@ import {
   EnsController,
   EventsController,
   AccountController
-} from '@reown/appkit-core'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
-import { ConstantsUtil } from '@reown/appkit-common'
+} from '@web3inno/appkit-core'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
+import { ConstantsUtil } from '@web3inno/appkit-common'
 
 @customElement('w3m-register-account-name-view')
 export class W3mRegisterAccountNameView extends LitElement {

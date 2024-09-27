@@ -1,4 +1,4 @@
-"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const l=require("./index-CjCB6lhU.cjs"),O=require("./W3MFrameProviderSingleton-IamToXe3.cjs");/**
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const l=require("./index-BjUuUkfo.cjs"),O=require("./W3MFrameProviderSingleton-Czx55ewz.cjs");/**
  * @license
  * Copyright 2019 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause

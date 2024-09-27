@@ -1,7 +1,7 @@
-import { ConstantsUtil } from '@reown/appkit-utils';
+import { ConstantsUtil } from '@web3inno/appkit-utils';
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js';
 import { PublicKey, Transaction, VersionedTransaction } from '@solana/web3.js';
-import { W3mFrameProvider } from '@reown/appkit-wallet';
+import { W3mFrameProvider } from '@web3inno/appkit-wallet';
 import { withSolanaNamespace } from '../utils/withSolanaNamespace.js';
 import base58 from 'bs58';
 import { isVersionedTransaction } from '@solana/wallet-adapter-base';

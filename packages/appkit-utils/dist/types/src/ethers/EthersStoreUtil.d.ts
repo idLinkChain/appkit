@@ -1,5 +1,5 @@
 import type { Address, CombinedProvider, Provider } from './EthersTypesUtil.js';
-import type { W3mFrameTypes } from '@reown/appkit-wallet';
+import type { W3mFrameTypes } from '@web3inno/appkit-wallet';
 export type Status = 'reconnecting' | 'connected' | 'disconnected';
 export interface EthersStoreUtilState {
     provider?: Provider | CombinedProvider;

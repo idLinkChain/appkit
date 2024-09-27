@@ -13,7 +13,11 @@ export type TokenInfo = {
 };
 export declare const SwapApiUtil: {
     getTokenList(): Promise<SwapTokenWithBalance[]>;
-    fetchGasPrice(): Promise<import("./TypeUtil.js").BlockchainApiGasPriceResponse | null>;
+    fetchGasPrice(): Promise<{
+        standard: string;
+        fast: string;
+        instant: string;
+    } | null>;
     fetchSwapAllowance({ tokenAddress, userAddress, sourceTokenAmount, sourceTokenDecimals }: Pick<BlockchainApiSwapAllowanceRequest, "userAddress" | "tokenAddress"> & {
         sourceTokenAmount: string;
         sourceTokenDecimals: number;

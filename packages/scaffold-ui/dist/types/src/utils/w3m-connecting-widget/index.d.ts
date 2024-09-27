@@ -1,9 +1,9 @@
-import type { IconType } from '@reown/appkit-ui';
+import type { IconType } from '@web3inno/appkit-ui';
 import { LitElement } from 'lit';
 export declare class W3mConnectingWidget extends LitElement {
     static styles: import("lit").CSSResult;
-    protected readonly wallet: import("@reown/appkit-core").WcWallet | undefined;
-    protected readonly connector: import("@reown/appkit-core").Connector | undefined;
+    protected readonly wallet: import("@web3inno/appkit-core").WcWallet | undefined;
+    protected readonly connector: import("@web3inno/appkit-core").Connector | undefined;
     protected timeout?: ReturnType<typeof setTimeout>;
     protected secondaryBtnLabel: string;
     protected secondaryBtnIcon: IconType;

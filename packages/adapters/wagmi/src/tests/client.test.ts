@@ -7,9 +7,9 @@ import {
   mockOptions,
   mockWagmiClient
 } from './mocks/adapter.mock'
-import { arbitrum, mainnet } from '@reown/appkit/networks'
+import { arbitrum, mainnet } from '@web3inno/appkit/networks'
 import { connect, disconnect, getAccount, getChainId, getEnsName, getBalance } from '@wagmi/core'
-import { ConstantsUtil } from '@reown/appkit-utils'
+import { ConstantsUtil } from '@web3inno/appkit-utils'
 
 vi.mock('@wagmi/core', async () => {
   const actual = await vi.importActual('@wagmi/core')

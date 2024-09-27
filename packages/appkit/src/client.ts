@@ -7,7 +7,7 @@ import type {
   RouterControllerState,
   ChainAdapter,
   SdkVersion
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 import {
   AccountController,
   BlockchainApiController,
@@ -26,8 +26,8 @@ import {
   NetworkController,
   AssetUtil,
   ApiController
-} from '@reown/appkit-core'
-import { setColorTheme, setThemeVariables } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { setColorTheme, setThemeVariables } from '@web3inno/appkit-ui'
 import {
   ConstantsUtil,
   type CaipNetwork,
@@ -35,11 +35,11 @@ import {
   CaipNetworksUtil,
   SafeLocalStorage,
   SafeLocalStorageKeys
-} from '@reown/appkit-common'
+} from '@web3inno/appkit-common'
 import type { AppKitOptions } from './utils/TypesUtil.js'
 import { UniversalAdapterClient } from './universal-adapter/client.js'
-import { PresetsUtil } from '@reown/appkit-utils'
-import type { W3mFrameTypes } from '@reown/appkit-wallet'
+import { PresetsUtil } from '@web3inno/appkit-utils'
+import type { W3mFrameTypes } from '@web3inno/appkit-wallet'
 import { ProviderUtil } from './store/ProviderUtil.js'
 
 // -- Export Controllers -------------------------------------------------------
@@ -441,6 +441,7 @@ export class AppKit {
     OptionsController.setFeatures(options.features)
     OptionsController.setEnableWalletConnect(options.enableWalletConnect !== false)
     OptionsController.setEnableWallets(options.enableWallets !== false)
+    OptionsController.setAllEthWallets(options.allEthWallets !== false)
 
     if (options.metadata) {
       OptionsController.setMetadata(options.metadata)
@@ -465,7 +466,7 @@ export class AppKit {
     // Set the SIWE client for EVM chains
     if (evmAdapter) {
       if (options.siweConfig) {
-        const { SIWEController } = await import('@reown/appkit-siwe')
+        const { SIWEController } = await import('@web3inno/appkit-siwe')
         SIWEController.setSIWEClient(options.siweConfig)
       }
     }
@@ -530,8 +531,8 @@ export class AppKit {
       isInitialized = true
       this.initPromise = new Promise<void>(async resolve => {
         await Promise.all([
-          import('@reown/appkit-ui'),
-          import('@reown/appkit-scaffold-ui/w3m-modal')
+          import('@web3inno/appkit-ui'),
+          import('@web3inno/appkit-scaffold-ui/w3m-modal')
         ])
         const modal = document.createElement('w3m-modal')
         if (!OptionsController.state.disableAppend) {

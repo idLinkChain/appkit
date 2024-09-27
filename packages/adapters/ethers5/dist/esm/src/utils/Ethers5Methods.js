@@ -1,6 +1,6 @@
 import { ethers, Contract } from 'ethers5';
-import {} from '@reown/appkit-utils/ethers';
-import { isReownName } from '@reown/appkit-common';
+import {} from '@web3inno/appkit-utils/ethers';
+import { isReownName } from '@web3inno/appkit-common';
 export const Ethers5Methods = {
     signMessage: async (message, provider, address) => {
         if (!provider) {

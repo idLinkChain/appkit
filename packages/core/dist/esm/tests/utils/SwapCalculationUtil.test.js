@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { SwapCalculationUtil } from '../../src/utils/SwapCalculationUtil.js';
 import { INITIAL_GAS_LIMIT } from '../../src/controllers/SwapController.js';
 import { balanceResponse, networkTokenPriceResponse } from '../mocks/SwapController.js';
-import { NumberUtil } from '@reown/appkit-common';
+import { NumberUtil } from '@web3inno/appkit-common';
 import { SwapApiUtil } from '../../src/utils/SwapApiUtil.js';
 // - Mocks ---------------------------------------------------------------------
 const gasLimit = BigInt(INITIAL_GAS_LIMIT);

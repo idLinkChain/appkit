@@ -5,11 +5,11 @@ import {
   useAppKitNetwork,
   useAppKitProvider,
   type Provider
-} from '@reown/appkit/react'
+} from '@web3inno/appkit/react'
 import { UniversalProvider } from '@walletconnect/universal-provider'
 import { useChakraToast } from '../Toast'
 import { ethers } from 'ethers5'
-import { W3mFrameProvider } from '@reown/appkit-wallet'
+import { W3mFrameProvider } from '@web3inno/appkit-wallet'
 import { type GetCallsStatusParams } from '../../types/EIP5792'
 import { EIP_5792_RPC_METHODS } from '../../utils/EIP5792Utils'
 

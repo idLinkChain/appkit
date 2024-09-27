@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-import { type SwapToken, type SwapInputTarget } from '@reown/appkit-core';
+import { type SwapToken, type SwapInputTarget } from '@web3inno/appkit-core';
 export declare class W3mSwapInput extends LitElement {
     static styles: import("lit").CSSResult[];
     focused: boolean;

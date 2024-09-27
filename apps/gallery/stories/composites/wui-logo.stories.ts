@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-logo'
-import type { WuiLogo } from '@reown/appkit-ui/src/composites/wui-logo'
+import '@web3inno/appkit-ui/src/composites/wui-logo'
+import type { WuiLogo } from '@web3inno/appkit-ui/src/composites/wui-logo'
 import { html } from 'lit'
 import { logoOptions } from '../../utils/PresetUtils'
 

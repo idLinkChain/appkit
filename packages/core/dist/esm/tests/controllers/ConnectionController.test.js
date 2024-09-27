@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 import { ChainController, ConnectionController, ConstantsUtil, StorageUtil } from '../../exports/index.js';
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common';
 // -- Setup --------------------------------------------------------------------
 const chain = CommonConstantsUtil.CHAIN.EVM;
 const walletConnectUri = 'wc://uri?=123';

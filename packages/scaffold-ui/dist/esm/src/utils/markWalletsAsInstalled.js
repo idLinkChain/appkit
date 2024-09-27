@@ -1,4 +1,4 @@
-import { ConnectorController } from '@reown/appkit-core';
+import { ConnectorController } from '@web3inno/appkit-core';
 export function markWalletsAsInstalled(wallets) {
     const { connectors } = ConnectorController.state;
     const installedConnectors = connectors

@@ -7,7 +7,7 @@ export declare class W3mConnectingSocialView extends LitElement {
     protected error: boolean;
     protected connecting: boolean;
     protected message: string;
-    authConnector: import("@reown/appkit-core").AuthConnector | undefined;
+    authConnector: import("@web3inno/appkit-core").AuthConnector | undefined;
     constructor();
     disconnectedCallback(): void;
     render(): import("lit").TemplateResult<1>;

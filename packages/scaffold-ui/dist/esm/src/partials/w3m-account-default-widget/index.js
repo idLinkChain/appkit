@@ -4,13 +4,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { AccountController, CoreHelperUtil, ModalController, RouterController, StorageUtil, ConnectorController, EventsController, ConnectionController, SnackController, ConstantsUtil as CommonConstantsUtil, OptionsController, ChainController } from '@reown/appkit-core';
-import { customElement, UiHelperUtil } from '@reown/appkit-ui';
+import { AccountController, CoreHelperUtil, ModalController, RouterController, StorageUtil, ConnectorController, EventsController, ConnectionController, SnackController, ConstantsUtil as CommonConstantsUtil, OptionsController, ChainController } from '@web3inno/appkit-core';
+import { customElement, UiHelperUtil } from '@web3inno/appkit-ui';
 import { LitElement, html } from 'lit';
 import { state } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
-import { ConstantsUtil } from '@reown/appkit-common';
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet';
+import { ConstantsUtil } from '@web3inno/appkit-common';
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet';
 import styles from './styles.js';
 let W3mAccountDefaultWidget = class W3mAccountDefaultWidget extends LitElement {
     constructor() {

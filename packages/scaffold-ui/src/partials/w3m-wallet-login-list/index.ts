@@ -1,4 +1,4 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 
 @customElement('w3m-wallet-login-list')

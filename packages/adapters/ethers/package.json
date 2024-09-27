@@ -1,6 +1,6 @@
 {
-  "name": "@reown/appkit-adapter-ethers",
-  "version": "1.0.4",
+  "name": "@web3inno/appkit-adapter-ethers",
+  "version": "1.0.4-alpha.3",
   "type": "module",
   "main": "./dist/esm/src/index.js",
   "types": "./dist/types/src/index.d.ts",
@@ -18,15 +18,15 @@
   },
   "dependencies": {
     "@walletconnect/utils": "2.16.1",
-    "@reown/appkit": "workspace:*",
-    "@reown/appkit-common": "workspace:*",
-    "@reown/appkit-core": "workspace:*",
-    "@reown/appkit-polyfills": "workspace:*",
-    "@reown/appkit-scaffold-ui": "workspace:*",
-    "@reown/appkit-utils": "workspace:*",
-    "@reown/appkit-siwe": "workspace:*",
-    "@reown/appkit-ui": "workspace:*",
-    "@reown/appkit-wallet": "workspace:*",
+    "@web3inno/appkit": "workspace:*",
+    "@web3inno/appkit-common": "workspace:*",
+    "@web3inno/appkit-core": "workspace:*",
+    "@web3inno/appkit-polyfills": "workspace:*",
+    "@web3inno/appkit-scaffold-ui": "workspace:*",
+    "@web3inno/appkit-utils": "workspace:*",
+    "@web3inno/appkit-siwe": "workspace:*",
+    "@web3inno/appkit-ui": "workspace:*",
+    "@web3inno/appkit-wallet": "workspace:*",
     "valtio": "1.11.2"
   },
   "devDependencies": {

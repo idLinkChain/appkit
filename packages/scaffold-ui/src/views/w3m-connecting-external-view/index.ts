@@ -1,12 +1,12 @@
-import type { BaseError } from '@reown/appkit-core'
+import type { BaseError } from '@web3inno/appkit-core'
 import {
   ChainController,
   ConnectionController,
   EventsController,
   ModalController
-} from '@reown/appkit-core'
-import { ConstantsUtil } from '@reown/appkit-utils'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { ConstantsUtil } from '@web3inno/appkit-utils'
+import { customElement } from '@web3inno/appkit-ui'
 import { W3mConnectingWidget } from '../../utils/w3m-connecting-widget/index.js'
 
 @customElement('w3m-connecting-external-view')

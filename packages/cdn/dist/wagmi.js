@@ -1,5 +1,5 @@
-import "./W3MFrameProviderSingleton-C9zzHw2W.js";
-import { i as o, c as r, d as e, b as m, f as p } from "./wagmi-DIqhhgbV.js";
+import "./W3MFrameProviderSingleton--2RuNpyE.js";
+import { i as o, c as r, d as e, b as m, f as p } from "./wagmi-_sRQOVwL.js";
 export {
   o as AppKit,
   r as Chains,

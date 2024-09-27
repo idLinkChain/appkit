@@ -1,4 +1,4 @@
-import { ConnectorController, CoreHelperUtil, OptionsController, StorageUtil } from '@reown/appkit-core';
+import { ConnectorController, CoreHelperUtil, OptionsController, StorageUtil } from '@web3inno/appkit-core';
 export const WalletUtil = {
     filterOutDuplicatesByRDNS(wallets) {
         const connectors = OptionsController.state.enableEIP6963

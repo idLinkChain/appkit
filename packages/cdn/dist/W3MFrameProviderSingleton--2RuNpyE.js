@@ -9357,20 +9357,20 @@ const state$h = proxy$1({
     }
   },
   async fetchRecommendedWallets() {
-    var Me;
+    var Me, H;
     try {
-      const { includeWalletIds: H, excludeWalletIds: J, featuredWalletIds: Ne } = OptionsController.state, je = [...J ?? [], ...Ne ?? []].filter(Boolean), { data: Ue, count: Fe } = await api$1.get({
+      const { includeWalletIds: J, excludeWalletIds: Ne, featuredWalletIds: je, allEthWallets: Ue } = OptionsController.state, Fe = [...Ne ?? [], ...je ?? []].filter(Boolean), { data: qe, count: Ke } = await api$1.get({
         path: "/getWallets",
         headers: ApiController._getApiHeaders(),
         params: {
           page: "1",
-          chains: (Me = ChainController.state.activeCaipNetwork) == null ? void 0 : Me.id,
+          chains: (Me = ChainController.state.activeCaipNetwork) != null && Me.id.includes("eip155") && Ue ? "eip155:1" : (H = ChainController.state.activeCaipNetwork) == null ? void 0 : H.id,
           entries: recommendedEntries,
-          include: H == null ? void 0 : H.join(","),
-          exclude: je == null ? void 0 : je.join(",")
+          include: J == null ? void 0 : J.join(","),
+          exclude: Fe == null ? void 0 : Fe.join(",")
         }
-      }), qe = StorageUtil.getRecentWallets(), Ke = Ue.map((He) => He.image_id).filter(Boolean), Ge = qe.map((He) => He.image_id).filter(Boolean);
-      await Promise.allSettled([...Ke, ...Ge].map((He) => ApiController._fetchWalletImage(He))), state$7.recommended = Ue, state$7.count = Fe ?? 0;
+      }), Ge = StorageUtil.getRecentWallets(), He = qe.map((Ai) => Ai.image_id).filter(Boolean), wi = Ge.map((Ai) => Ai.image_id).filter(Boolean);
+      await Promise.allSettled([...He, ...wi].map((Ai) => ApiController._fetchWalletImage(Ai))), state$7.recommended = qe, state$7.count = Ke ?? 0;
     } catch {
     }
   },
@@ -52974,7 +52974,7 @@ class UniversalAdapterClient {
         } else {
           const Ko = await ((wi = J == null ? void 0 : J.getMessageParams) == null ? void 0 : wi.call(J)), qo = (Ai = J == null ? void 0 : J.options) == null ? void 0 : Ai.enabled, tc = typeof (Ue == null ? void 0 : Ue.authenticate) == "function", os = Ko && Object.keys(Ko || {}).length > 0;
           if (J && qo && Ko && tc && os && ChainController.state.activeChain === "eip155") {
-            const { SIWEController: nc, getDidChainId: cc, getDidAddress: Yo } = await import("./index-DAWldXKo.js"), Zo = (vi = this.caipNetworks) == null ? void 0 : vi.filter((rs) => rs.chainNamespace === "eip155").map((rs) => rs.id);
+            const { SIWEController: nc, getDidChainId: cc, getDidAddress: Yo } = await import("./index-zKOXWC9Y.js"), Zo = (vi = this.caipNetworks) == null ? void 0 : vi.filter((rs) => rs.chainNamespace === "eip155").map((rs) => rs.id);
             Ko.chains = (lo = this.caipNetworks) == null ? void 0 : lo.filter((rs) => rs.chainNamespace === "eip155").map((rs) => rs.chainId);
             const ic = await Ue.authenticate({
               nonce: await ((jo = J == null ? void 0 : J.getNonce) == null ? void 0 : jo.call(J)),
@@ -53012,7 +53012,7 @@ class UniversalAdapterClient {
       disconnect: async () => {
         var je, Ue, Fe, qe;
         if (SafeLocalStorage.removeItem(SafeLocalStorageKeys.WALLET_ID), (je = J == null ? void 0 : J.options) != null && je.signOutOnDisconnect) {
-          const { SIWEController: Ke } = await import("./index-DAWldXKo.js");
+          const { SIWEController: Ke } = await import("./index-zKOXWC9Y.js");
           await Ke.signOut();
         }
         await ((Ue = this.walletConnectProvider) == null ? void 0 : Ue.disconnect()), (Fe = this.appKit) == null || Fe.resetAccount("eip155"), (qe = this.appKit) == null || qe.resetAccount("solana");
@@ -53380,8 +53380,8 @@ class AppKit {
   // -- Private ------------------------------------------------------------------
   async initControllers(H) {
     var Ne;
-    if (OptionsController.setProjectId(H.projectId), OptionsController.setSdkVersion(H.sdkVersion), this.adapters = H.adapters, this.setMetadata(H), this.extendCaipNetworks(H), this.initializeUniversalAdapter(H), this.initializeAdapters(H), this.setDefaultNetwork(H), OptionsController.setAllWallets(H.allWallets), OptionsController.setIncludeWalletIds(H.includeWalletIds), OptionsController.setExcludeWalletIds(H.excludeWalletIds), H.excludeWalletIds && ApiController.searchWalletByIds({ ids: H.excludeWalletIds }), OptionsController.setFeaturedWalletIds(H.featuredWalletIds), OptionsController.setTokens(H.tokens), OptionsController.setTermsConditionsUrl(H.termsConditionsUrl), OptionsController.setPrivacyPolicyUrl(H.privacyPolicyUrl), OptionsController.setCustomWallets(H.customWallets), OptionsController.setFeatures(H.features), OptionsController.setEnableWalletConnect(H.enableWalletConnect !== !1), OptionsController.setEnableWallets(H.enableWallets !== !1), H.metadata && OptionsController.setMetadata(H.metadata), H.themeMode && ThemeController.setThemeMode(H.themeMode), H.themeVariables && ThemeController.setThemeVariables(H.themeVariables), H.disableAppend && OptionsController.setDisableAppend(!!H.disableAppend), ((Ne = H.adapters) == null ? void 0 : Ne.find((je) => je.chainNamespace === ConstantsUtil$3.CHAIN.EVM)) && H.siweConfig) {
-      const { SIWEController: je } = await import("./index-DAWldXKo.js");
+    if (OptionsController.setProjectId(H.projectId), OptionsController.setSdkVersion(H.sdkVersion), this.adapters = H.adapters, this.setMetadata(H), this.extendCaipNetworks(H), this.initializeUniversalAdapter(H), this.initializeAdapters(H), this.setDefaultNetwork(H), OptionsController.setAllWallets(H.allWallets), OptionsController.setIncludeWalletIds(H.includeWalletIds), OptionsController.setExcludeWalletIds(H.excludeWalletIds), H.excludeWalletIds && ApiController.searchWalletByIds({ ids: H.excludeWalletIds }), OptionsController.setFeaturedWalletIds(H.featuredWalletIds), OptionsController.setTokens(H.tokens), OptionsController.setTermsConditionsUrl(H.termsConditionsUrl), OptionsController.setPrivacyPolicyUrl(H.privacyPolicyUrl), OptionsController.setCustomWallets(H.customWallets), OptionsController.setFeatures(H.features), OptionsController.setEnableWalletConnect(H.enableWalletConnect !== !1), OptionsController.setEnableWallets(H.enableWallets !== !1), OptionsController.setAllEthWallets(H.allEthWallets !== !1), H.metadata && OptionsController.setMetadata(H.metadata), H.themeMode && ThemeController.setThemeMode(H.themeMode), H.themeVariables && ThemeController.setThemeVariables(H.themeVariables), H.disableAppend && OptionsController.setDisableAppend(!!H.disableAppend), ((Ne = H.adapters) == null ? void 0 : Ne.find((je) => je.chainNamespace === ConstantsUtil$3.CHAIN.EVM)) && H.siweConfig) {
+      const { SIWEController: je } = await import("./index-zKOXWC9Y.js");
       je.setSIWEClient(H.siweConfig);
     }
   }
@@ -53426,8 +53426,8 @@ class AppKit {
   async initOrContinue() {
     return !this.initPromise && !isInitialized && CoreHelperUtil.isClient() && (isInitialized = !0, this.initPromise = new Promise(async (H) => {
       await Promise.all([
-        import("./index-BpnvPDD8.js"),
-        import("./w3m-modal-CnQNpzc6.js")
+        import("./index-DsK5z5zy.js"),
+        import("./w3m-modal-lVfPADV5.js")
       ]);
       const J = document.createElement("w3m-modal");
       OptionsController.state.disableAppend || document.body.insertAdjacentElement("beforeend", J), H();
@@ -61134,7 +61134,7 @@ let W3mHeader = class extends h$3 {
   }
   async onClose() {
     if (this.isSiweEnabled) {
-      const { SIWEController: H } = await import("./index-DAWldXKo.js"), J = RouterController.state.view === "ApproveTransaction";
+      const { SIWEController: H } = await import("./index-zKOXWC9Y.js"), J = RouterController.state.view === "ApproveTransaction";
       H.state.status !== "success" && J ? RouterController.popTransactionStack(!0) : ModalController.close();
     } else
       ModalController.close();

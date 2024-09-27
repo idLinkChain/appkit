@@ -1,9 +1,9 @@
 /* eslint-disable max-depth */
-import { AccountController, ChainController, ConnectionController, CoreHelperUtil, NetworkController, StorageUtil } from '@reown/appkit-core';
-import { ConstantsUtil, PresetsUtil } from '@reown/appkit-utils';
+import { AccountController, ChainController, ConnectionController, CoreHelperUtil, NetworkController, StorageUtil } from '@web3inno/appkit-core';
+import { ConstantsUtil, PresetsUtil } from '@web3inno/appkit-utils';
 import UniversalProvider from '@walletconnect/universal-provider';
 import { WcHelpersUtil } from '../utils/HelpersUtil.js';
-import { SafeLocalStorage, SafeLocalStorageKeys } from '@reown/appkit-common';
+import { SafeLocalStorage, SafeLocalStorageKeys } from '@web3inno/appkit-common';
 import { ProviderUtil } from '../store/index.js';
 const OPTIONAL_METHODS = [
     'eth_accounts',
@@ -91,7 +91,7 @@ export class UniversalAdapterClient {
                         isProviderSupported &&
                         isSiweParamsValid &&
                         ChainController.state.activeChain === 'eip155') {
-                        const { SIWEController, getDidChainId, getDidAddress } = await import('@reown/appkit-siwe');
+                        const { SIWEController, getDidChainId, getDidAddress } = await import('@web3inno/appkit-siwe');
                         const chains = this.caipNetworks
                             ?.filter(network => network.chainNamespace === 'eip155')
                             .map(chain => chain.id);
@@ -149,7 +149,7 @@ export class UniversalAdapterClient {
             disconnect: async () => {
                 SafeLocalStorage.removeItem(SafeLocalStorageKeys.WALLET_ID);
                 if (siweConfig?.options?.signOutOnDisconnect) {
-                    const { SIWEController } = await import('@reown/appkit-siwe');
+                    const { SIWEController } = await import('@web3inno/appkit-siwe');
                     await SIWEController.signOut();
                 }
                 await this.walletConnectProvider?.disconnect();

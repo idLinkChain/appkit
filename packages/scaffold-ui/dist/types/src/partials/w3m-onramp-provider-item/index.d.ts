@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
-import { type ColorType } from '@reown/appkit-ui';
-import { type OnRampProvider } from '@reown/appkit-core';
+import { type ColorType } from '@web3inno/appkit-ui';
+import { type OnRampProvider } from '@web3inno/appkit-core';
 export declare class W3mOnRampProviderItem extends LitElement {
     static styles: import("lit").CSSResult[];
     disabled: boolean;

@@ -5,8 +5,8 @@ import {
   EventsController,
   OptionsController,
   RouterController
-} from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 

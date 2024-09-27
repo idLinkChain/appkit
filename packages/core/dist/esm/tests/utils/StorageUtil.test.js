@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, afterEach, beforeEach, beforeAll, afterAll } from 'vitest';
 import { StorageUtil } from '../../src/utils/StorageUtil';
-import { SafeLocalStorage } from '@reown/appkit-common';
-import { SafeLocalStorageKeys } from '@reown/appkit-common';
+import { SafeLocalStorage } from '@web3inno/appkit-common';
+import { SafeLocalStorageKeys } from '@web3inno/appkit-common';
 const previousLocalStorage = globalThis.localStorage;
 const previousWindow = globalThis.window;
 let store = {};

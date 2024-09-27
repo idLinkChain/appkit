@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-import type { Balance } from '@reown/appkit-common';
+import type { Balance } from '@web3inno/appkit-common';
 export declare class W3mInputToken extends LitElement {
     static styles: import("lit").CSSResult;
     token?: Balance;

@@ -1,4 +1,4 @@
-import type { ChainNamespace, CaipNetwork } from '@reown/appkit-common'
+import type { ChainNamespace, CaipNetwork } from '@web3inno/appkit-common'
 import { ApiController } from '../controllers/ApiController.js'
 import { AssetController } from '../controllers/AssetController.js'
 import type { Connector, WcWallet } from './TypeUtil.js'

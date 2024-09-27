@@ -4,7 +4,7 @@ import { CoreHelperUtil } from '../utils/CoreHelperUtil.js';
 import { StorageUtil } from '../utils/StorageUtil.js';
 import { TransactionsController } from './TransactionsController.js';
 import { ChainController } from './ChainController.js';
-import {} from '@reown/appkit-wallet';
+import {} from '@web3inno/appkit-wallet';
 import { ModalController } from './ModalController.js';
 import { ConnectorController } from './ConnectorController.js';
 import { EventsController } from './EventsController.js';

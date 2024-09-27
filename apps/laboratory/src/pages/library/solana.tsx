@@ -1,5 +1,5 @@
-import { createAppKit } from '@reown/appkit/react'
-import { SolanaAdapter } from '@reown/appkit-adapter-solana/react'
+import { createAppKit } from '@web3inno/appkit/react'
+import { SolanaAdapter } from '@web3inno/appkit-adapter-solana/react'
 import { ThemeStore } from '../../utils/StoreUtil'
 import { ConstantsUtil } from '../../utils/ConstantsUtil'
 

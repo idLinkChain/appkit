@@ -1,7 +1,7 @@
 import type { ChainAdapter, Connector } from '../utils/TypeUtil.js';
 import { type NetworkControllerState } from './NetworkController.js';
 import { type AccountControllerState } from './AccountController.js';
-import { type CaipAddress, type CaipNetwork, type ChainNamespace } from '@reown/appkit-common';
+import { type CaipAddress, type CaipNetwork, type ChainNamespace } from '@web3inno/appkit-common';
 export interface ChainControllerState {
     activeChain: ChainNamespace | undefined;
     activeCaipAddress: CaipAddress | undefined;

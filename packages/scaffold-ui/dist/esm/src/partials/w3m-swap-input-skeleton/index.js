@@ -6,8 +6,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
-import {} from '@reown/appkit-core';
-import { customElement } from '@reown/appkit-ui';
+import {} from '@web3inno/appkit-core';
+import { customElement } from '@web3inno/appkit-ui';
 import styles from './styles.js';
 let W3mSwapInputSkeleton = class W3mSwapInputSkeleton extends LitElement {
     constructor() {

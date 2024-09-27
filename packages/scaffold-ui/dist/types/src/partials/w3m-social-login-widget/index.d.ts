@@ -1,4 +1,4 @@
-import { type SocialProvider } from '@reown/appkit-core';
+import { type SocialProvider } from '@web3inno/appkit-core';
 import { LitElement } from 'lit';
 export declare class W3mSocialLoginWidget extends LitElement {
     static styles: import("lit").CSSResult;

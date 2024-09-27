@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import { arbitrum, mainnet } from '@reown/appkit/networks'
+import { arbitrum, mainnet } from '@web3inno/appkit/networks'
 import {
   createAppKit,
   useAppKit,
   useAppKitEvents,
   useAppKitState,
   useAppKitTheme
-} from '@reown/appkit/vue'
+} from '@web3inno/appkit/vue'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

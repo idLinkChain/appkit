@@ -1,6 +1,6 @@
-import { AppKit } from '@reown/appkit';
-import { EthersAdapter } from '@reown/appkit-adapter-ethers';
-import { getAppKit } from '@reown/appkit/library/vue';
+import { AppKit } from '@web3inno/appkit';
+import { EthersAdapter } from '@web3inno/appkit-adapter-ethers';
+import { getAppKit } from '@web3inno/appkit/library/vue';
 import packageJson from '../package.json' assert { type: 'json' };
 let appkit = undefined;
 let ethersAdapter = undefined;
@@ -28,5 +28,5 @@ export function useAppKitAccount() {
 }
 export function useAppKitError() {
 }
-export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents, useWalletInfo } from '@reown/appkit/library/vue';
+export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents, useWalletInfo } from '@web3inno/appkit/library/vue';
 //# sourceMappingURL=vue.js.map

@@ -1,6 +1,6 @@
 import { css, unsafeCSS } from 'lit'
-import { getW3mThemeVariables } from '@reown/appkit-common'
-import type { ThemeVariables, ThemeType } from '@reown/appkit-common'
+import { getW3mThemeVariables } from '@web3inno/appkit-common'
+import type { ThemeVariables, ThemeType } from '@web3inno/appkit-common'
 
 // -- Utilities ---------------------------------------------------------------
 let themeTag: HTMLStyleElement | undefined = undefined

@@ -4,10 +4,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { customElement } from '@reown/appkit-ui';
+import { customElement } from '@web3inno/appkit-ui';
 import { LitElement, html } from 'lit';
 import styles from './styles.js';
-import { ConnectorController, OptionsController, RouterController } from '@reown/appkit-core';
+import { ConnectorController, OptionsController, RouterController } from '@web3inno/appkit-core';
 import { state } from 'lit/decorators/state.js';
 let W3mConnectView = class W3mConnectView extends LitElement {
     constructor() {

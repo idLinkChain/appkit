@@ -3,7 +3,7 @@ export declare class W3mOnRampActivityView extends LitElement {
     static styles: import("lit").CSSResult;
     private unsubscribe;
     private refetchTimeout?;
-    protected selectedOnRampProvider: import("@reown/appkit-core").OnRampProvider | null;
+    protected selectedOnRampProvider: import("@web3inno/appkit-core").OnRampProvider | null;
     protected loading: boolean;
     private coinbaseTransactions;
     private tokenImages;

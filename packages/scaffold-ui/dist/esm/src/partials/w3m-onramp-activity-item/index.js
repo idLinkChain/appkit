@@ -6,8 +6,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
-import { customElement } from '@reown/appkit-ui';
-import { ApiController } from '@reown/appkit-core';
+import { customElement } from '@web3inno/appkit-ui';
+import { ApiController } from '@web3inno/appkit-core';
 import styles from './styles.js';
 let W3mOnRampActivityItem = class W3mOnRampActivityItem extends LitElement {
     constructor() {

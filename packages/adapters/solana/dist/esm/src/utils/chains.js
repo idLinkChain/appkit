@@ -1,4 +1,4 @@
-import { ConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 export const solana = {
     id: 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp',
     chainId: '5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp',

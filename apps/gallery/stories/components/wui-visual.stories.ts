@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/components/wui-visual'
-import type { WuiVisual } from '@reown/appkit-ui/src/components/wui-visual'
+import '@web3inno/appkit-ui/src/components/wui-visual'
+import type { WuiVisual } from '@web3inno/appkit-ui/src/components/wui-visual'
 import { html } from 'lit'
 import { visualOptions } from '../../utils/PresetUtils'
 

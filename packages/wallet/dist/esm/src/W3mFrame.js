@@ -1,7 +1,7 @@
 import { SECURE_SITE_SDK, W3mFrameConstants } from './W3mFrameConstants.js';
 import { W3mFrameSchema } from './W3mFrameSchema.js';
 import { W3mFrameHelpers } from './W3mFrameHelpers.js';
-import { ConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 export class W3mFrame {
     constructor(projectId, isAppClient = false, chainId = 'eip155:1') {
         this.iframe = null;

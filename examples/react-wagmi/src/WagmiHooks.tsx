@@ -1,4 +1,4 @@
-import { useAppKitAccount } from '@reown/appkit/react'
+import { useAppKitAccount } from '@web3inno/appkit/react'
 import { useAccount } from 'wagmi'
 
 export function WagmiHooks() {

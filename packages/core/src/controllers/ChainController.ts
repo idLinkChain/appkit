@@ -11,7 +11,7 @@ import {
   type CaipAddress,
   type CaipNetwork,
   type ChainNamespace
-} from '@reown/appkit-common'
+} from '@web3inno/appkit-common'
 import { StorageUtil } from '../utils/StorageUtil.js'
 
 // -- Types --------------------------------------------- //

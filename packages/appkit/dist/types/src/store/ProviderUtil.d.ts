@@ -1,5 +1,5 @@
 import type UniversalProvider from '@walletconnect/universal-provider';
-import type { ChainNamespace } from '@reown/appkit-common';
+import type { ChainNamespace } from '@web3inno/appkit-common';
 export interface ProviderStoreUtilState {
     providers: Record<ChainNamespace, UniversalProvider | unknown | undefined>;
     providerIds: Record<ChainNamespace, ProviderIdType | undefined>;

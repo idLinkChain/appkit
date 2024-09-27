@@ -1,4 +1,4 @@
-import type { CaipNetwork, ChainNamespace } from '@reown/appkit-common';
+import type { CaipNetwork, ChainNamespace } from '@web3inno/appkit-common';
 export declare function getBlockchainApiRpcUrl(chainId: number | string, namespace: ChainNamespace): string;
 export declare const mainnet: CaipNetwork;
 export declare const arbitrum: CaipNetwork;

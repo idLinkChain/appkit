@@ -13,5 +13,5 @@ export declare const StorageUtil: {
     setConnectedSocialProvider(socialProvider: SocialProvider): void;
     getConnectedSocialProvider(): string | undefined;
     getConnectedSocialUsername(): string | undefined;
-    getStoredActiveCaipNetwork(): import("@reown/appkit-common").CaipNetwork | undefined;
+    getStoredActiveCaipNetwork(): import("@web3inno/appkit-common").CaipNetwork | undefined;
 };

@@ -4,7 +4,7 @@ import {
   OptionsController,
   StorageUtil,
   type WcWallet
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 
 export const WalletUtil = {
   filterOutDuplicatesByRDNS(wallets: WcWallet[]) {

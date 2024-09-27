@@ -4,12 +4,12 @@ import {
   ChainController,
   CoreHelperUtil,
   NetworkController
-} from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { ifDefined } from 'lit/directives/if-defined.js'
 import styles from './styles.js'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
 import { state } from 'lit/decorators.js'
 
 @customElement('w3m-wallet-compatible-networks-view')

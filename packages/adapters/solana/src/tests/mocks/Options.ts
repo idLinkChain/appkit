@@ -1,5 +1,5 @@
-import type { AppKitOptions, ChainAdapter } from '@reown/appkit'
-import { solana } from '@reown/appkit/networks'
+import type { AppKitOptions, ChainAdapter } from '@web3inno/appkit'
+import { solana } from '@web3inno/appkit/networks'
 
 export const mockOptions: AppKitOptions = {
   projectId: 'test-project-id',

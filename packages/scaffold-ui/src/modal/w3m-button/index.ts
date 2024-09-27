@@ -1,5 +1,5 @@
-import { ChainController, ModalController } from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+import { ChainController, ModalController } from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { property, state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'

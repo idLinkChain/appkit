@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, it } from 'vitest';
-import { ConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 import { ChainController } from '../../src/controllers/ChainController.js';
 import {} from '../../src/controllers/ConnectionController.js';
 import {} from '../../src/controllers/NetworkController.js';

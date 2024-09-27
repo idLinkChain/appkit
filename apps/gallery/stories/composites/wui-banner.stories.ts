@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-banner'
-import type { WuiBanner } from '@reown/appkit-ui/src/composites/wui-banner'
+import '@web3inno/appkit-ui/src/composites/wui-banner'
+import type { WuiBanner } from '@web3inno/appkit-ui/src/composites/wui-banner'
 import { html } from 'lit'
 import { iconOptions } from '../../utils/PresetUtils'
 import '../../components/gallery-container'

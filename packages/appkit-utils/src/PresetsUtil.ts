@@ -1,4 +1,4 @@
-import type { ConnectorType } from '@reown/appkit-core'
+import type { ConnectorType } from '@web3inno/appkit-core'
 import { ConstantsUtil } from './ConstantsUtil.js'
 
 export const PresetsUtil = {

@@ -10,14 +10,14 @@ import {
   parseUnits,
   formatUnits
 } from 'ethers'
-import { type Provider } from '@reown/appkit-utils/ethers'
+import { type Provider } from '@web3inno/appkit-utils/ethers'
 import type {
   EstimateGasTransactionArgs,
   SendTransactionArgs,
   WriteContractArgs
-} from '@reown/appkit-core'
-import { isReownName } from '@reown/appkit-common'
-import type { AppKit } from '@reown/appkit'
+} from '@web3inno/appkit-core'
+import { isReownName } from '@web3inno/appkit-common'
+import type { AppKit } from '@web3inno/appkit'
 
 export const EthersMethods = {
   signMessage: async (message: string, provider: Provider, address: string) => {

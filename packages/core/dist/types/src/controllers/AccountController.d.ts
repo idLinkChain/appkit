@@ -1,7 +1,7 @@
 import type { AccountType, CombinedProvider, ConnectedWalletInfo, Provider, SocialProvider } from '../utils/TypeUtil.js';
-import type { CaipAddress, ChainNamespace } from '@reown/appkit-common';
-import type { Balance } from '@reown/appkit-common';
-import type { W3mFrameTypes } from '@reown/appkit-wallet';
+import type { CaipAddress, ChainNamespace } from '@web3inno/appkit-common';
+import type { Balance } from '@web3inno/appkit-common';
+import type { W3mFrameTypes } from '@web3inno/appkit-wallet';
 import type UniversalProvider from '@walletconnect/universal-provider';
 export interface AccountControllerState {
     currentTab: number;

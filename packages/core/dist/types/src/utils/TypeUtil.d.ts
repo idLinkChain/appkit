@@ -1,5 +1,5 @@
-import type { W3mFrameProvider, W3mFrameTypes } from '@reown/appkit-wallet';
-import type { Balance, Transaction, CaipNetworkId, CaipNetwork, ChainNamespace, CaipAddress, AdapterType, SdkFramework, AppKitSdkVersion } from '@reown/appkit-common';
+import type { W3mFrameProvider, W3mFrameTypes } from '@web3inno/appkit-wallet';
+import type { Balance, Transaction, CaipNetworkId, CaipNetwork, ChainNamespace, CaipAddress, AdapterType, SdkFramework, AppKitSdkVersion } from '@web3inno/appkit-common';
 import type { NetworkControllerClient, NetworkControllerState } from '../controllers/NetworkController.js';
 import type { ConnectionControllerClient } from '../controllers/ConnectionController.js';
 import type { AccountControllerState } from '../controllers/AccountController.js';

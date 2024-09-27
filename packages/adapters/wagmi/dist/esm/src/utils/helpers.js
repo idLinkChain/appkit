@@ -1,9 +1,9 @@
-import {} from '@reown/appkit-common';
-import { ConstantsUtil, PresetsUtil } from '@reown/appkit-utils';
+import {} from '@web3inno/appkit-common';
+import { ConstantsUtil, PresetsUtil } from '@web3inno/appkit-utils';
 import { UniversalProvider } from '@walletconnect/universal-provider';
 import { fallback, http } from 'viem';
-import { CoreHelperUtil } from '@reown/appkit-core';
-import { WcHelpersUtil } from '@reown/appkit';
+import { CoreHelperUtil } from '@web3inno/appkit-core';
+import { WcHelpersUtil } from '@web3inno/appkit';
 export async function getWalletConnectCaipNetworks(connector) {
     if (!connector) {
         throw new Error('networkControllerClient:getApprovedCaipNetworks - connector is undefined');

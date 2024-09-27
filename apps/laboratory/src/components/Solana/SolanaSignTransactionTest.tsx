@@ -8,8 +8,8 @@ import {
   SystemProgram
 } from '@solana/web3.js'
 
-import { useAppKitProvider } from '@reown/appkit/react'
-import { useAppKitConnection, type Provider } from '@reown/appkit-adapter-solana/react'
+import { useAppKitProvider } from '@web3inno/appkit/react'
+import { useAppKitConnection, type Provider } from '@web3inno/appkit-adapter-solana/react'
 import { useChakraToast } from '../Toast'
 import bs58 from 'bs58'
 

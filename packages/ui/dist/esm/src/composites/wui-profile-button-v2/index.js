@@ -16,7 +16,7 @@ import { elementStyles, resetStyles } from '../../utils/ThemeUtil.js';
 import { customElement } from '../../utils/WebComponentsUtil.js';
 import styles from './styles.js';
 import { UiHelperUtil } from '../../utils/UiHelperUtil.js';
-import { StorageUtil } from '@reown/appkit-core';
+import { StorageUtil } from '@web3inno/appkit-core';
 let WuiProfileButtonV2 = class WuiProfileButtonV2 extends LitElement {
     constructor() {
         super(...arguments);

@@ -1,8 +1,8 @@
-import { AccountController, BlockchainApiController, ConnectionController, ConnectorController, CoreHelperUtil, EventsController, ModalController, ChainController, PublicStateController, ThemeController, SnackController, RouterController, EnsController, OptionsController, NetworkController, AssetUtil, ApiController } from '@reown/appkit-core';
-import { setColorTheme, setThemeVariables } from '@reown/appkit-ui';
-import { ConstantsUtil, CaipNetworksUtil, SafeLocalStorage, SafeLocalStorageKeys } from '@reown/appkit-common';
+import { AccountController, BlockchainApiController, ConnectionController, ConnectorController, CoreHelperUtil, EventsController, ModalController, ChainController, PublicStateController, ThemeController, SnackController, RouterController, EnsController, OptionsController, NetworkController, AssetUtil, ApiController } from '@web3inno/appkit-core';
+import { setColorTheme, setThemeVariables } from '@web3inno/appkit-ui';
+import { ConstantsUtil, CaipNetworksUtil, SafeLocalStorage, SafeLocalStorageKeys } from '@web3inno/appkit-common';
 import { UniversalAdapterClient } from './universal-adapter/client.js';
-import { PresetsUtil } from '@reown/appkit-utils';
+import { PresetsUtil } from '@web3inno/appkit-utils';
 import { ProviderUtil } from './store/ProviderUtil.js';
 // -- Export Controllers -------------------------------------------------------
 export { AccountController, NetworkController };
@@ -263,6 +263,7 @@ export class AppKit {
         OptionsController.setFeatures(options.features);
         OptionsController.setEnableWalletConnect(options.enableWalletConnect !== false);
         OptionsController.setEnableWallets(options.enableWallets !== false);
+        OptionsController.setAllEthWallets(options.allEthWallets !== false);
         if (options.metadata) {
             OptionsController.setMetadata(options.metadata);
         }
@@ -279,7 +280,7 @@ export class AppKit {
         // Set the SIWE client for EVM chains
         if (evmAdapter) {
             if (options.siweConfig) {
-                const { SIWEController } = await import('@reown/appkit-siwe');
+                const { SIWEController } = await import('@web3inno/appkit-siwe');
                 SIWEController.setSIWEClient(options.siweConfig);
             }
         }
@@ -335,8 +336,8 @@ export class AppKit {
             isInitialized = true;
             this.initPromise = new Promise(async (resolve) => {
                 await Promise.all([
-                    import('@reown/appkit-ui'),
-                    import('@reown/appkit-scaffold-ui/w3m-modal')
+                    import('@web3inno/appkit-ui'),
+                    import('@web3inno/appkit-scaffold-ui/w3m-modal')
                 ]);
                 const modal = document.createElement('w3m-modal');
                 if (!OptionsController.state.disableAppend) {

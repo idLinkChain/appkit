@@ -1,6 +1,6 @@
 import { proxy, subscribe as sub, snapshot } from 'valtio/vanilla';
 import { ConnectorController } from './ConnectorController.js';
-import { getW3mThemeVariables } from '@reown/appkit-common';
+import { getW3mThemeVariables } from '@web3inno/appkit-common';
 // -- State --------------------------------------------- //
 const state = proxy({
     themeMode: 'dark',

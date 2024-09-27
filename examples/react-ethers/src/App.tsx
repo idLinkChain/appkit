@@ -4,9 +4,9 @@ import {
   useAppKitEvents,
   useAppKitState,
   useAppKitTheme
-} from '@reown/appkit/react'
-import { EthersAdapter } from '@reown/appkit-adapter-ethers'
-import { mainnet, arbitrum } from '@reown/appkit/networks'
+} from '@web3inno/appkit/react'
+import { EthersAdapter } from '@web3inno/appkit-adapter-ethers'
+import { mainnet, arbitrum } from '@web3inno/appkit/networks'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

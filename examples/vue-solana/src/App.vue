@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import { solana, solanaTestnet, solanaDevnet } from '@reown/appkit/networks'
+import { solana, solanaTestnet, solanaDevnet } from '@web3inno/appkit/networks'
 import {
   createAppKit,
   useAppKit,
   useAppKitEvents,
   useAppKitState,
   useAppKitTheme
-} from '@reown/appkit/vue'
+} from '@web3inno/appkit/vue'
 import { BackpackWalletAdapter } from '@solana/wallet-adapter-backpack'
 import {
   PhantomWalletAdapter,

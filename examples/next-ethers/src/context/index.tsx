@@ -1,8 +1,8 @@
 'use client'
 
-import { createAppKit } from '@reown/appkit/react'
-import { EthersAdapter } from '@reown/appkit-adapter-ethers'
-import { mainnet, arbitrum, avalanche, base, optimism, polygon } from '@reown/appkit/networks'
+import { createAppKit } from '@web3inno/appkit/react'
+import { EthersAdapter } from '@web3inno/appkit-adapter-ethers'
+import { mainnet, arbitrum, avalanche, base, optimism, polygon } from '@web3inno/appkit/networks'
 import { type ReactNode } from 'react'
 
 const projectId = 'Your project ID'

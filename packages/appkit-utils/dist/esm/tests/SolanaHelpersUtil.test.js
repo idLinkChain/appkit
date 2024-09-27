@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
 import { SolHelpersUtil } from '../src/solana/SolanaHelpersUtils.js';
 import { SolConstantsUtil } from '../src/solana/SolanaConstantsUtil.js';
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common';
 describe('SolHelpersUtil', () => {
     const mockChains = [
         {

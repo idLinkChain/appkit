@@ -4,9 +4,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { customElement } from '@reown/appkit-ui';
+import { customElement } from '@web3inno/appkit-ui';
 import { W3mEmailOtpWidget } from '../../utils/w3m-email-otp-widget/index.js';
-import { EventsController, RouterController } from '@reown/appkit-core';
+import { EventsController, RouterController } from '@web3inno/appkit-core';
 let W3mUpdateEmailPrimaryOtpView = class W3mUpdateEmailPrimaryOtpView extends W3mEmailOtpWidget {
     constructor() {
         super();

@@ -1,4 +1,4 @@
-import type { VisualType } from '@reown/appkit-ui';
+import type { VisualType } from '@web3inno/appkit-ui';
 import { LitElement } from 'lit';
 type Data = {
     images: VisualType[];

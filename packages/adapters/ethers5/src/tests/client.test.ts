@@ -5,17 +5,17 @@ import { mockOptions } from './mocks/Options'
 import { mockCreateEthersConfig } from './mocks/EthersConfig'
 import mockAppKit from './mocks/AppKit'
 import { mockAuthConnector } from './mocks/AuthConnector'
-import { EthersHelpersUtil, type ProviderId, type ProviderType } from '@reown/appkit-utils/ethers'
-import { ConstantsUtil } from '@reown/appkit-utils'
-import { arbitrum, mainnet, polygon } from '@reown/appkit/networks'
-import { ProviderUtil } from '@reown/appkit/store'
-import { SafeLocalStorage, SafeLocalStorageKeys } from '@reown/appkit-common'
-import { type BlockchainApiLookupEnsName } from '@reown/appkit'
+import { EthersHelpersUtil, type ProviderId, type ProviderType } from '@web3inno/appkit-utils/ethers'
+import { ConstantsUtil } from '@web3inno/appkit-utils'
+import { arbitrum, mainnet, polygon } from '@web3inno/appkit/networks'
+import { ProviderUtil } from '@web3inno/appkit/store'
+import { SafeLocalStorage, SafeLocalStorageKeys } from '@web3inno/appkit-common'
+import { type BlockchainApiLookupEnsName } from '@web3inno/appkit'
 import { ethers } from 'ethers5'
 
-import type { CaipNetwork, ChainNamespace } from '@reown/appkit-common'
+import type { CaipNetwork, ChainNamespace } from '@web3inno/appkit-common'
 
-vi.mock('@reown/appkit-wallet', () => ({
+vi.mock('@web3inno/appkit-wallet', () => ({
   W3mFrameProvider: vi.fn().mockImplementation(() => mockAuthConnector),
   W3mFrameHelpers: {
     checkIfRequestExists: vi.fn(),
@@ -26,7 +26,7 @@ vi.mock('@reown/appkit-wallet', () => ({
   }
 }))
 
-vi.mock('@reown/appkit-utils', () => {
+vi.mock('@web3inno/appkit-utils', () => {
   const INJECTED_CONNECTOR_ID = 'injected'
   const COINBASE_SDK_CONNECTOR_ID = 'coinbaseWallet'
   const EIP6963_CONNECTOR_ID = 'eip6963'
@@ -70,7 +70,7 @@ vi.mock('@reown/appkit-utils', () => {
   }
 })
 
-vi.mock('@reown/appkit/store', () => ({
+vi.mock('@web3inno/appkit/store', () => ({
   ProviderUtil: {
     setProvider: vi.fn(),
     setProviderId: vi.fn(),

@@ -1,3 +1,3 @@
 export * from '../src/index.js';
-export * from '@reown/appkit-utils/solana';
+export * from '@web3inno/appkit-utils/solana';
 //# sourceMappingURL=index.js.map

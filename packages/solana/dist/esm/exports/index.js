@@ -1,5 +1,5 @@
-import { AppKit } from '@reown/appkit';
-import { SolanaAdapter } from '@reown/appkit-adapter-solana';
+import { AppKit } from '@web3inno/appkit';
+import { SolanaAdapter } from '@web3inno/appkit-adapter-solana';
 import packageJson from '../package.json' assert { type: 'json' };
 export function createAppKit(options) {
     const solanaAdapter = new SolanaAdapter({

@@ -14,7 +14,7 @@ import { bigIntReplacer } from '../../utils/CommonUtils'
 import { useERC7715Permissions } from '../../hooks/useERC7715Permissions'
 import { getPurchaseDonutPermissions } from '../../utils/ERC7715Utils'
 import { KeyTypes } from '../../utils/EncodingUtils'
-import { useAppKitAccount } from '@reown/appkit/react'
+import { useAppKitAccount } from '@web3inno/appkit/react'
 
 export function WagmiRequestPermissionsAsyncTest() {
   const { provider, supported } = useWagmiAvailableCapabilities({

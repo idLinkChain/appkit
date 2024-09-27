@@ -1,4 +1,4 @@
-import { DateUtil } from '@reown/appkit-common';
+import { DateUtil } from '@web3inno/appkit-common';
 import { UiHelperUtil } from './UiHelperUtil.js';
 const FLOAT_FIXED_VALUE = 3;
 const plusTypes = ['receive', 'deposit', 'borrow', 'claim'];

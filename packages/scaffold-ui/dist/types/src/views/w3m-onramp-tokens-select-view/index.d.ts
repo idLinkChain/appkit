@@ -1,4 +1,4 @@
-import type { PurchaseCurrency } from '@reown/appkit-core';
+import type { PurchaseCurrency } from '@web3inno/appkit-core';
 import { LitElement } from 'lit';
 export declare class W3mOnrampTokensView extends LitElement {
     static styles: import("lit").CSSResult;

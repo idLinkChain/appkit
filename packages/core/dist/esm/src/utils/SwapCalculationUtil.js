@@ -1,5 +1,5 @@
 // -- Types --------------------------------------------- //
-import { NumberUtil } from '@reown/appkit-common';
+import { NumberUtil } from '@web3inno/appkit-common';
 // -- Util ---------------------------------------- //
 export const SwapCalculationUtil = {
     getGasPriceInEther(gas, gasPrice) {

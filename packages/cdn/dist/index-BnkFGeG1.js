@@ -1,4 +1,4 @@
-import { bb as p } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
+import { bb as p } from "./W3MFrameProviderSingleton--2RuNpyE.js";
 function _(n, r) {
   for (var i = 0; i < r.length; i++) {
     const e = r[i];

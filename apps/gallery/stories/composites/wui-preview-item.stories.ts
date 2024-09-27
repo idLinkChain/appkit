@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-preview-item'
-import type { WuiPreviewItem } from '@reown/appkit-ui/src/composites/wui-preview-item'
+import '@web3inno/appkit-ui/src/composites/wui-preview-item'
+import type { WuiPreviewItem } from '@web3inno/appkit-ui/src/composites/wui-preview-item'
 import { html } from 'lit'
 import { address, networkImageSrc } from '../../utils/PresetUtils'
 

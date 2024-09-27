@@ -1,5 +1,5 @@
-import type { WcWallet } from '@reown/appkit-core'
-import { ConnectorController } from '@reown/appkit-core'
+import type { WcWallet } from '@web3inno/appkit-core'
+import { ConnectorController } from '@web3inno/appkit-core'
 
 export function markWalletsAsInstalled(wallets: WcWallet[]) {
   const { connectors } = ConnectorController.state

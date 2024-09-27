@@ -1,11 +1,11 @@
 import UniversalProvider from '@walletconnect/universal-provider';
-import { SolConstantsUtil } from '@reown/appkit-utils/solana';
+import { SolConstantsUtil } from '@web3inno/appkit-utils/solana';
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js';
 import base58 from 'bs58';
 import { Connection, PublicKey, Transaction, VersionedTransaction } from '@solana/web3.js';
 import { isVersionedTransaction } from '@solana/wallet-adapter-base';
 import { withSolanaNamespace } from '../utils/withSolanaNamespace.js';
-import { WcHelpersUtil } from '@reown/appkit';
+import { WcHelpersUtil } from '@web3inno/appkit';
 import { WalletConnectMethodNotSupportedError } from './shared/Errors.js';
 export class WalletConnectProvider extends ProviderEventEmitter {
     constructor({ provider, chains, getActiveChain }) {

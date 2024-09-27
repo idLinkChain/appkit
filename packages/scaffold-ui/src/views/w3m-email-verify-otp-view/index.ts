@@ -1,4 +1,4 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { W3mEmailOtpWidget } from '../../utils/w3m-email-otp-widget/index.js'
 import type { OnOtpSubmitFn, OnOtpResendFn } from '../../utils/w3m-email-otp-widget/index.js'
 import {
@@ -10,7 +10,7 @@ import {
   AccountController,
   ChainController,
   OptionsController
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 import { state } from 'lit/decorators.js'
 
 @customElement('w3m-email-verify-otp-view')

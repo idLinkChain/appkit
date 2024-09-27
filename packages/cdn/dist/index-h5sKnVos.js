@@ -1,5 +1,5 @@
-import { B as f, s as rn, n as L, o as sn, b9 as an } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
-import { j as on, r as _t, a as Et, b as cn } from "./hooks.module-DI69_OTV.js";
+import { B as f, s as rn, n as L, o as sn, b9 as an } from "./W3MFrameProviderSingleton--2RuNpyE.js";
+import { j as on, r as _t, a as Et, b as cn } from "./hooks.module-CyH0IJQ5.js";
 var St = {}, ne = {}, be = {};
 Object.defineProperty(be, "__esModule", { value: !0 });
 be.walletLogo = void 0;

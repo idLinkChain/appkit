@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { EthersHelpersUtil } from '../src/ethers/EthersHelpersUtil.js';
 import { ConstantsUtil } from '../src/ConstantsUtil.js';
 import { PresetsUtil } from '../src/PresetsUtil.js';
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common';
 describe('EthersHelpersUtil', () => {
     describe('getCaipDefaultChain', () => {
         it('should return undefined for undefined input', () => {

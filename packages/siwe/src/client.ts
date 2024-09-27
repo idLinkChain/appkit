@@ -15,8 +15,8 @@ import {
   StorageUtil,
   ModalController,
   CoreHelperUtil
-} from '@reown/appkit-core'
-import { NetworkUtil, type CaipAddress } from '@reown/appkit-common'
+} from '@web3inno/appkit-core'
+import { NetworkUtil, type CaipAddress } from '@web3inno/appkit-common'
 import { ConstantsUtil } from '../core/utils/ConstantsUtil.js'
 
 // -- Client -------------------------------------------------------------------- //

@@ -9,12 +9,12 @@ import {
   VersionedTransaction,
   TransactionMessage
 } from '@solana/web3.js'
-import { useAppKitNetwork, useAppKitProvider } from '@reown/appkit/react'
+import { useAppKitNetwork, useAppKitProvider } from '@web3inno/appkit/react'
 
 import { COUNTER_ACCOUNT_SIZE } from '../../utils/SolanaConstants'
 import { deserializeCounterAccount, detectProgramId } from '../../utils/SolanaUtil'
 import { useChakraToast } from '../Toast'
-import { useAppKitConnection, type Provider } from '@reown/appkit-adapter-solana/react'
+import { useAppKitConnection, type Provider } from '@web3inno/appkit-adapter-solana/react'
 
 export function SolanaWriteContractTest() {
   const toast = useChakraToast()

@@ -1,7 +1,7 @@
-import { type ConnectionControllerClient, type NetworkControllerClient } from '@reown/appkit-core';
+import { type ConnectionControllerClient, type NetworkControllerClient } from '@web3inno/appkit-core';
 import UniversalProvider from '@walletconnect/universal-provider';
 import type { AppKit } from '../client.js';
-import type { CaipNetwork, ChainNamespace, AdapterType } from '@reown/appkit-common';
+import type { CaipNetwork, ChainNamespace, AdapterType } from '@web3inno/appkit-common';
 import type { AppKitOptions } from '../utils/TypesUtil.js';
 type Metadata = {
     name: string;

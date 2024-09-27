@@ -1,6 +1,6 @@
 import { SIWEController } from '../core/controller/SIWEController.js';
-import { ChainController, ConnectionController, RouterController, StorageUtil, ModalController, CoreHelperUtil } from '@reown/appkit-core';
-import { NetworkUtil } from '@reown/appkit-common';
+import { ChainController, ConnectionController, RouterController, StorageUtil, ModalController, CoreHelperUtil } from '@web3inno/appkit-core';
+import { NetworkUtil } from '@web3inno/appkit-common';
 import { ConstantsUtil } from '../core/utils/ConstantsUtil.js';
 export class AppKitSIWEClient {
     constructor(siweConfig) {

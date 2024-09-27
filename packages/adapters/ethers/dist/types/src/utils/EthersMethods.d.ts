@@ -1,7 +1,7 @@
 import { parseUnits, formatUnits } from 'ethers';
-import { type Provider } from '@reown/appkit-utils/ethers';
-import type { EstimateGasTransactionArgs, SendTransactionArgs, WriteContractArgs } from '@reown/appkit-core';
-import type { AppKit } from '@reown/appkit';
+import { type Provider } from '@web3inno/appkit-utils/ethers';
+import type { EstimateGasTransactionArgs, SendTransactionArgs, WriteContractArgs } from '@web3inno/appkit-core';
+import type { AppKit } from '@web3inno/appkit';
 export declare const EthersMethods: {
     signMessage: (message: string, provider: Provider, address: string) => Promise<`0x${string}`>;
     estimateGas: (data: EstimateGasTransactionArgs, provider: Provider, address: string, networkId: number) => Promise<bigint>;

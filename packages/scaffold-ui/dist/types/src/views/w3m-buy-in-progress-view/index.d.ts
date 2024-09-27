@@ -3,7 +3,7 @@ export declare class W3mBuyInProgressView extends LitElement {
     static styles: import("lit").CSSResult;
     private unsubscribe;
     private intervalId?;
-    protected selectedOnRampProvider: import("@reown/appkit-core").OnRampProvider | null;
+    protected selectedOnRampProvider: import("@web3inno/appkit-core").OnRampProvider | null;
     protected uri: string | undefined;
     protected ready: boolean;
     private showRetry;

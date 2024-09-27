@@ -13,7 +13,7 @@ export declare class W3mEmailOtpWidget extends LitElement {
     onOtpSubmit: OnOtpSubmitFn | undefined;
     onOtpResend: OnOtpResendFn | undefined;
     onStartOver: OnStartOverFn | undefined;
-    authConnector: import("@reown/appkit-core").AuthConnector | undefined;
+    authConnector: import("@web3inno/appkit-core").AuthConnector | undefined;
     firstUpdated(): void;
     disconnectedCallback(): void;
     constructor();

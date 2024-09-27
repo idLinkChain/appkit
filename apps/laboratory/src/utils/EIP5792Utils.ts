@@ -2,7 +2,7 @@ import { UniversalProvider } from '@walletconnect/universal-provider'
 import { getChain } from './NetworksUtil'
 import { parseJSON } from './CommonUtils'
 import { fromHex, type WalletCapabilities } from 'viem'
-import { W3mFrameProvider } from '@reown/appkit-wallet'
+import { W3mFrameProvider } from '@web3inno/appkit-wallet'
 
 export const EIP_5792_RPC_METHODS = {
   WALLET_GET_CAPABILITIES: 'wallet_getCapabilities',

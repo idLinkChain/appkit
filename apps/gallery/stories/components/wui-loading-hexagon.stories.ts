@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/components/wui-loading-hexagon'
-import type { WuiLoadingHexagon } from '@reown/appkit-ui/src/components/wui-loading-hexagon'
+import '@web3inno/appkit-ui/src/components/wui-loading-hexagon'
+import type { WuiLoadingHexagon } from '@web3inno/appkit-ui/src/components/wui-loading-hexagon'
 import { html } from 'lit'
 
 type Component = Meta<WuiLoadingHexagon>

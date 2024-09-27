@@ -1,4 +1,4 @@
-import type { CaipNetworkId } from '@reown/appkit-common';
+import type { CaipNetworkId } from '@web3inno/appkit-common';
 export interface PublicStateControllerState {
     loading: boolean;
     open: boolean;

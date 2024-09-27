@@ -1,6 +1,6 @@
 {
-  "name": "@reown/appkit-core",
-  "version": "1.0.4",
+  "name": "@web3inno/appkit-core",
+  "version": "1.0.4-alpha.3",
   "type": "module",
   "main": "./dist/esm/exports/index.js",
   "types": "./dist/types/exports/index.d.ts",
@@ -29,8 +29,8 @@
     }
   },
   "dependencies": {
-    "@reown/appkit-common": "workspace:*",
-    "@reown/appkit-wallet": "workspace:*",
+    "@web3inno/appkit-common": "workspace:*",
+    "@web3inno/appkit-wallet": "workspace:*",
     "@walletconnect/universal-provider": "2.16.1",
     "valtio": "1.11.2"
   },

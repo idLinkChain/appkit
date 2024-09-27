@@ -1,6 +1,6 @@
-import { getAppKit } from '@reown/appkit/library/vue';
-import { AppKit } from '@reown/appkit';
-import { SolanaAdapter, useAppKitConnection } from '@reown/appkit-adapter-solana/vue';
+import { getAppKit } from '@web3inno/appkit/library/vue';
+import { AppKit } from '@web3inno/appkit';
+import { SolanaAdapter, useAppKitConnection } from '@web3inno/appkit-adapter-solana/vue';
 import packageJson from '../package.json' assert { type: 'json' };
 let appkit = undefined;
 let solanaAdapter = undefined;
@@ -34,6 +34,6 @@ export function useSwitchNetwork() {
 }
 export function useAppKitError() {
 }
-export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents } from '@reown/appkit/library/vue';
+export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents } from '@web3inno/appkit/library/vue';
 export { useAppKitConnection };
 //# sourceMappingURL=vue.js.map

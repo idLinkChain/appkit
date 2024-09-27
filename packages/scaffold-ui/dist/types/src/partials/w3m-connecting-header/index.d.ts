@@ -1,4 +1,4 @@
-import type { Platform } from '@reown/appkit-core';
+import type { Platform } from '@web3inno/appkit-core';
 import { LitElement } from 'lit';
 export declare class W3mConnectingHeader extends LitElement {
     private platformTabs;

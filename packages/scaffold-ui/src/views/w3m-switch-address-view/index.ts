@@ -6,13 +6,13 @@ import {
   OptionsController,
   StorageUtil,
   type AccountType
-} from '@reown/appkit-core'
-import { UiHelperUtil, customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { UiHelperUtil, customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import styles from './styles.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
-import type { CaipAddress } from '@reown/appkit-common'
+import type { CaipAddress } from '@web3inno/appkit-common'
 
 @customElement('w3m-switch-address-view')
 export class W3mSwitchAddressView extends LitElement {

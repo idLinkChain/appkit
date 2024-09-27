@@ -3,15 +3,15 @@ import {
   ConnectorController,
   CoreHelperUtil,
   OptionsController
-} from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import { ref, createRef } from 'lit/directives/ref.js'
 import type { Ref } from 'lit/directives/ref.js'
 import styles from './styles.js'
-import { SnackController, RouterController, EventsController } from '@reown/appkit-core'
-import { ConstantsUtil } from '@reown/appkit-common'
+import { SnackController, RouterController, EventsController } from '@web3inno/appkit-core'
+import { ConstantsUtil } from '@web3inno/appkit-common'
 
 @customElement('w3m-email-login-widget')
 export class W3mEmailLoginWidget extends LitElement {

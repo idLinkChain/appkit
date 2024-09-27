@@ -13,8 +13,8 @@ import { elementStyles, resetStyles } from '../../utils/ThemeUtil.js';
 import { customElement } from '../../utils/WebComponentsUtil.js';
 import styles from './styles.js';
 import { UiHelperUtil } from '../../utils/UiHelperUtil.js';
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet';
-import { AccountController, BlockchainApiController, ChainController, StorageUtil } from '@reown/appkit-core';
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet';
+import { AccountController, BlockchainApiController, ChainController, StorageUtil } from '@web3inno/appkit-core';
 let WuiListAccount = class WuiListAccount extends LitElement {
     constructor() {
         super(...arguments);

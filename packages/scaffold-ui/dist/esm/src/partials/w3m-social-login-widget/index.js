@@ -4,13 +4,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { AccountController, ChainController, ConnectorController, CoreHelperUtil, EventsController, OptionsController, RouterController, SnackController } from '@reown/appkit-core';
-import { customElement } from '@reown/appkit-ui';
+import { AccountController, ChainController, ConnectorController, CoreHelperUtil, EventsController, OptionsController, RouterController, SnackController } from '@web3inno/appkit-core';
+import { customElement } from '@web3inno/appkit-ui';
 import { LitElement, html } from 'lit';
 import { state } from 'lit/decorators.js';
 import styles from './styles.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
-import { SocialProviderEnum } from '@reown/appkit-utils';
+import { SocialProviderEnum } from '@web3inno/appkit-utils';
 const MAX_TOP_VIEW = 2;
 const MAXIMUM_LENGTH = 6;
 let W3mSocialLoginWidget = class W3mSocialLoginWidget extends LitElement {

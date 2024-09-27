@@ -1,16 +1,16 @@
 import { AppKit } from '../src/client.js'
 import type { AppKitOptions } from '../src/utils/TypesUtil.js'
 import packageJson from '../package.json' assert { type: 'json' }
-import { CoreHelperUtil } from '@reown/appkit-core'
+import { CoreHelperUtil } from '@web3inno/appkit-core'
 
 // -- Views ------------------------------------------------------------
-export * from '@reown/appkit-scaffold-ui'
+export * from '@web3inno/appkit-scaffold-ui'
 
 // -- Utils & Other -----------------------------------------------------
 export * from '../src/utils/index.js'
-export type * from '@reown/appkit-core'
-export type { CaipNetwork, CaipAddress, CaipNetworkId } from '@reown/appkit-common'
-export { CoreHelperUtil, AccountController, NetworkController } from '@reown/appkit-core'
+export type * from '@web3inno/appkit-core'
+export type { CaipNetwork, CaipAddress, CaipNetworkId } from '@web3inno/appkit-common'
+export { CoreHelperUtil, AccountController, NetworkController } from '@web3inno/appkit-core'
 
 type CreateAppKit = Omit<AppKitOptions, 'sdkType' | 'sdkVersion'>
 

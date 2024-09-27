@@ -1,15 +1,15 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import {
   ConnectionController,
   ConnectorController,
   RouterController,
   CoreHelperUtil,
   SnackController
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
-import { NavigationUtil } from '@reown/appkit-common'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
+import { NavigationUtil } from '@web3inno/appkit-common'
 
 @customElement('w3m-upgrade-to-smart-account-view')
 export class W3mUpgradeToSmartAccountView extends LitElement {

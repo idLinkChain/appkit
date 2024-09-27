@@ -1,5 +1,5 @@
-import { SnackController } from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+import { SnackController } from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import styles from './styles.js'

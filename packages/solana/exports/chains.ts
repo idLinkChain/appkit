@@ -1,1 +1,1 @@
-export { solana, solanaDevnet, solanaTestnet } from '@reown/appkit-adapter-solana'
+export { solana, solanaDevnet, solanaTestnet } from '@web3inno/appkit-adapter-solana'

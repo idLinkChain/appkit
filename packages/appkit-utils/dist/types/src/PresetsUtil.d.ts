@@ -1,4 +1,4 @@
-import type { ConnectorType } from '@reown/appkit-core';
+import type { ConnectorType } from '@web3inno/appkit-core';
 export declare const PresetsUtil: {
     ConnectorExplorerIds: Record<string, string>;
     NetworkImageIds: Record<string, string>;

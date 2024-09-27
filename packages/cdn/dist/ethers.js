@@ -17,8 +17,8 @@ var Fi = (r, e, t, n) => ({
     return u(r, e, n);
   }
 }), I = (r, e, t) => (kc(r, e, "access private method"), t);
-import { C as F, P as gt, b as ca, m as Aa, i as Bp, B as ne, s as Lp, n as dt, o as Mp, H as bu, h as On, a as Tn, p as Dp, j as He, f as Tt, g as _t, e as Au, N as Eu, k as xc, l as Up, c as Fp, A as Hp } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
-import { j as Gp, r as rd, a as sd, b as Kp } from "./hooks.module-DI69_OTV.js";
+import { C as F, P as gt, b as ca, m as Aa, i as Bp, B as ne, s as Lp, n as dt, o as Mp, H as bu, h as On, a as Tn, p as Dp, j as He, f as Tt, g as _t, e as Au, N as Eu, k as xc, l as Up, c as Fp, A as Hp } from "./W3MFrameProviderSingleton--2RuNpyE.js";
+import { j as Gp, r as rd, a as sd, b as Kp } from "./hooks.module-CyH0IJQ5.js";
 const Pc = {
   ERROR_CODE_UNRECOGNIZED_CHAIN_ID: 4902,
   ERROR_CODE_DEFAULT: 5e3
@@ -17354,7 +17354,7 @@ class Y1 {
         var E, C, S, N, _;
         const f = He.getProvider("eip155"), g = He.state.providerIds.eip155;
         if ((E = this.appKit) == null || E.setClientId(null), (N = (S = (C = this.options) == null ? void 0 : C.siweConfig) == null ? void 0 : S.options) != null && N.signOutOnDisconnect) {
-          const { SIWEController: x } = await import("./index-DAWldXKo.js");
+          const { SIWEController: x } = await import("./index-zKOXWC9Y.js");
           await x.signOut();
         }
         const m = {
@@ -17782,7 +17782,7 @@ class Y1 {
     }
   }
 }
-const X1 = "@reown/appkit-ethers", eA = "1.0.4", tA = "module", nA = "./dist/esm/exports/index.js", rA = "./dist/types/exports/index.d.ts", sA = [
+const X1 = "@web3inno/appkit-ethers", eA = "1.0.4-alpha.3", tA = "module", nA = "./dist/esm/exports/index.js", rA = "./dist/types/exports/index.d.ts", sA = [
   "dist",
   "!tsconfig.tsbuildinfo"
 ], iA = {
@@ -17819,13 +17819,13 @@ const X1 = "@reown/appkit-ethers", eA = "1.0.4", tA = "module", nA = "./dist/esm
 }, cA = {
   "@coinbase/wallet-sdk": "4.0.3",
   "@walletconnect/utils": "2.16.1",
-  "@reown/appkit": "workspace:*",
-  "@reown/appkit-adapter-ethers": "workspace:*",
-  "@reown/appkit-common": "workspace:*",
-  "@reown/appkit-wallet": "workspace:*",
-  "@reown/appkit-polyfills": "workspace:*",
-  "@reown/appkit-utils": "workspace:*",
-  "@reown/appkit-siwe": "workspace:*",
+  "@web3inno/appkit": "workspace:*",
+  "@web3inno/appkit-adapter-ethers": "workspace:*",
+  "@web3inno/appkit-common": "workspace:*",
+  "@web3inno/appkit-wallet": "workspace:*",
+  "@web3inno/appkit-polyfills": "workspace:*",
+  "@web3inno/appkit-utils": "workspace:*",
+  "@web3inno/appkit-siwe": "workspace:*",
   valtio: "1.11.2"
 }, lA = {
   ethers: ">=6.0.0",

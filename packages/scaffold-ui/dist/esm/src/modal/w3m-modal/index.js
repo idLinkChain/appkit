@@ -4,12 +4,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { AccountController, ApiController, ChainController, CoreHelperUtil, EventsController, ModalController, OptionsController, RouterController, SnackController, ThemeController } from '@reown/appkit-core';
-import { UiHelperUtil, customElement, initializeTheming } from '@reown/appkit-ui';
+import { AccountController, ApiController, ChainController, CoreHelperUtil, EventsController, ModalController, OptionsController, RouterController, SnackController, ThemeController } from '@web3inno/appkit-core';
+import { UiHelperUtil, customElement, initializeTheming } from '@web3inno/appkit-ui';
 import { LitElement, html } from 'lit';
 import { state } from 'lit/decorators.js';
 import styles from './styles.js';
-import { ConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 const SCROLL_LOCK = 'scroll-lock';
 let W3mModal = class W3mModal extends LitElement {
     constructor() {
@@ -66,7 +66,7 @@ let W3mModal = class W3mModal extends LitElement {
         const isSiweSignScreen = RouterController.state.view === 'ConnectingSiwe';
         const isApproveSignScreen = RouterController.state.view === 'ApproveTransaction';
         if (this.isSiweEnabled) {
-            const { SIWEController } = await import('@reown/appkit-siwe');
+            const { SIWEController } = await import('@web3inno/appkit-siwe');
             const isUnauthenticated = SIWEController.state.status !== 'success';
             if (isUnauthenticated && (isSiweSignScreen || isApproveSignScreen)) {
                 ModalController.shake();
@@ -150,7 +150,7 @@ let W3mModal = class W3mModal extends LitElement {
         const nextConnected = caipAddress ? CoreHelperUtil.getPlainAddress(caipAddress) : undefined;
         const isSameAddress = prevConnected === nextConnected;
         if (nextConnected && !isSameAddress && this.isSiweEnabled) {
-            const { SIWEController } = await import('@reown/appkit-siwe');
+            const { SIWEController } = await import('@web3inno/appkit-siwe');
             const signed = AccountController.state.siweStatus === 'success';
             if (!prevConnected && nextConnected) {
                 this.onSiweNavigation();
@@ -177,7 +177,7 @@ let W3mModal = class W3mModal extends LitElement {
         const nextNetworkId = nextCaipNetwork?.id?.toString();
         if (prevCaipNetworkId && nextNetworkId && prevCaipNetworkId !== nextNetworkId) {
             if (this.isSiweEnabled) {
-                const { SIWEController } = await import('@reown/appkit-siwe');
+                const { SIWEController } = await import('@web3inno/appkit-siwe');
                 if (SIWEController.state._client?.options.signOutOnNetworkChange) {
                     await SIWEController.signOut();
                     this.onSiweNavigation();

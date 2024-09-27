@@ -1,4 +1,4 @@
-import type { WcWallet } from '@reown/appkit-core';
+import type { WcWallet } from '@web3inno/appkit-core';
 import { LitElement } from 'lit';
 export declare class W3mMobileDownloadLinks extends LitElement {
     static styles: import("lit").CSSResult[];

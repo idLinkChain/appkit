@@ -1,8 +1,8 @@
 'use client';
-import { AppKit } from '@reown/appkit';
-import { ProviderUtil } from '@reown/appkit/store';
-import { Ethers5Adapter } from '@reown/appkit-adapter-ethers5';
-import { getAppKit } from '@reown/appkit/library/react';
+import { AppKit } from '@web3inno/appkit';
+import { ProviderUtil } from '@web3inno/appkit/store';
+import { Ethers5Adapter } from '@web3inno/appkit-adapter-ethers5';
+import { getAppKit } from '@web3inno/appkit/library/react';
 import { useSnapshot } from 'valtio';
 import { ethers } from 'ethers';
 import packageJson from '../package.json' assert { type: 'json' };
@@ -43,5 +43,5 @@ export function useSwitchNetwork() {
         switchNetwork
     };
 }
-export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents, useWalletInfo } from '@reown/appkit/library/react';
+export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents, useWalletInfo } from '@web3inno/appkit/library/react';
 //# sourceMappingURL=react.js.map

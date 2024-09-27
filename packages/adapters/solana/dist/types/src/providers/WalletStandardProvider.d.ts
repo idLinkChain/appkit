@@ -1,9 +1,9 @@
 import type { Connection, SendOptions } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
 import type { Wallet } from '@wallet-standard/base';
-import type { AnyTransaction, GetActiveChain, Provider } from '@reown/appkit-utils/solana';
+import type { AnyTransaction, GetActiveChain, Provider } from '@web3inno/appkit-utils/solana';
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js';
-import type { CaipNetwork } from '@reown/appkit-common';
+import type { CaipNetwork } from '@web3inno/appkit-common';
 export interface WalletStandardProviderConfig {
     wallet: Wallet;
     getActiveChain: GetActiveChain;

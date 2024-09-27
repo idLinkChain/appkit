@@ -7,13 +7,13 @@ import {
   OptionsController,
   RouterController,
   SnackController
-} from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import styles from './styles.js'
-import type { SocialProvider } from '@reown/appkit-utils'
-import { SocialProviderEnum } from '@reown/appkit-utils'
+import type { SocialProvider } from '@web3inno/appkit-utils'
+import { SocialProviderEnum } from '@web3inno/appkit-utils'
 
 @customElement('w3m-social-login-list')
 export class W3mSocialLoginList extends LitElement {

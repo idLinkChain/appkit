@@ -1,4 +1,4 @@
-import type { PaymentCurrency } from '@reown/appkit-core';
+import type { PaymentCurrency } from '@web3inno/appkit-core';
 import { LitElement } from 'lit';
 export declare class W3mOnrampFiatSelectView extends LitElement {
     static styles: import("lit").CSSResult;

@@ -18,10 +18,10 @@ import {
   getAddress,
   numberToHex
 } from 'viem'
-import { WcHelpersUtil } from '@reown/appkit'
-import { StorageUtil } from '@reown/appkit-core'
-import type { AppKitOptions } from '@reown/appkit'
-import type { AppKit } from '@reown/appkit'
+import { WcHelpersUtil } from '@web3inno/appkit'
+import { StorageUtil } from '@web3inno/appkit-core'
+import type { AppKitOptions } from '@web3inno/appkit'
+import type { AppKit } from '@web3inno/appkit'
 import { convertToAppKitChains } from '../utils/helpers.js'
 
 type UniversalConnector = Connector & {

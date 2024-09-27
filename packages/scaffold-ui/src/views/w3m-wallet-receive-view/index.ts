@@ -7,12 +7,12 @@ import {
   SnackController,
   ThemeController,
   NetworkController
-} from '@reown/appkit-core'
-import { UiHelperUtil, customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { UiHelperUtil, customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
 import { state } from 'lit/decorators.js'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
 
 @customElement('w3m-wallet-receive-view')
 export class W3mWalletReceiveView extends LitElement {

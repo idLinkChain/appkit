@@ -9,8 +9,8 @@ import {
   RouterController,
   SnackController,
   ThemeController
-} from '@reown/appkit-core'
-import { UiHelperUtil, customElement, initializeTheming } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { UiHelperUtil, customElement, initializeTheming } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import styles from './styles.js'
@@ -19,7 +19,7 @@ import {
   type CaipAddress,
   type CaipNetwork,
   type SIWEStatus
-} from '@reown/appkit-common'
+} from '@web3inno/appkit-common'
 
 // -- Helpers --------------------------------------------- //
 const SCROLL_LOCK = 'scroll-lock'
@@ -100,7 +100,7 @@ export class W3mModal extends LitElement {
     const isApproveSignScreen = RouterController.state.view === 'ApproveTransaction'
 
     if (this.isSiweEnabled) {
-      const { SIWEController } = await import('@reown/appkit-siwe')
+      const { SIWEController } = await import('@web3inno/appkit-siwe')
       const isUnauthenticated = SIWEController.state.status !== 'success'
       if (isUnauthenticated && (isSiweSignScreen || isApproveSignScreen)) {
         ModalController.shake()
@@ -195,7 +195,7 @@ export class W3mModal extends LitElement {
     const isSameAddress = prevConnected === nextConnected
 
     if (nextConnected && !isSameAddress && this.isSiweEnabled) {
-      const { SIWEController } = await import('@reown/appkit-siwe')
+      const { SIWEController } = await import('@web3inno/appkit-siwe')
       const signed = AccountController.state.siweStatus === 'success'
 
       if (!prevConnected && nextConnected) {
@@ -228,7 +228,7 @@ export class W3mModal extends LitElement {
 
     if (prevCaipNetworkId && nextNetworkId && prevCaipNetworkId !== nextNetworkId) {
       if (this.isSiweEnabled) {
-        const { SIWEController } = await import('@reown/appkit-siwe')
+        const { SIWEController } = await import('@web3inno/appkit-siwe')
 
         if (SIWEController.state._client?.options.signOutOnNetworkChange) {
           await SIWEController.signOut()

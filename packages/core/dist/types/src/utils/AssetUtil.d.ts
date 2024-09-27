@@ -1,4 +1,4 @@
-import type { ChainNamespace, CaipNetwork } from '@reown/appkit-common';
+import type { ChainNamespace, CaipNetwork } from '@web3inno/appkit-common';
 import type { Connector, WcWallet } from './TypeUtil.js';
 export declare const AssetUtil: {
     fetchWalletImage(imageId?: string): Promise<string | undefined>;

@@ -1,9 +1,9 @@
-import type { EventsControllerState, PublicStateControllerState, ThemeControllerState, ModalControllerState, ConnectedWalletInfo, RouterControllerState, ChainAdapter, SdkVersion } from '@reown/appkit-core';
-import { AccountController, BlockchainApiController, ConnectionController, ConnectorController, EnsController, OptionsController, NetworkController, AssetUtil } from '@reown/appkit-core';
-import { type CaipNetwork, type ChainNamespace } from '@reown/appkit-common';
+import type { EventsControllerState, PublicStateControllerState, ThemeControllerState, ModalControllerState, ConnectedWalletInfo, RouterControllerState, ChainAdapter, SdkVersion } from '@web3inno/appkit-core';
+import { AccountController, BlockchainApiController, ConnectionController, ConnectorController, EnsController, OptionsController, NetworkController, AssetUtil } from '@web3inno/appkit-core';
+import { type CaipNetwork, type ChainNamespace } from '@web3inno/appkit-common';
 import type { AppKitOptions } from './utils/TypesUtil.js';
 import { UniversalAdapterClient } from './universal-adapter/client.js';
-import type { W3mFrameTypes } from '@reown/appkit-wallet';
+import type { W3mFrameTypes } from '@web3inno/appkit-wallet';
 export { AccountController, NetworkController };
 export interface OpenOptions {
     view: 'Account' | 'Connect' | 'Networks' | 'ApproveTransaction' | 'OnRampProviders';
@@ -24,13 +24,13 @@ export declare class AppKit {
     close(): Promise<void>;
     setLoading(loading: ModalControllerState['loading']): void;
     getError(): string;
-    getChainId(): import("@reown/appkit-common").ChainId | undefined;
+    getChainId(): import("@web3inno/appkit-common").ChainId | undefined;
     switchNetwork(caipNetwork: CaipNetwork): Promise<void>;
     getWalletProvider(): unknown;
     getWalletProviderType(): ("walletConnect" | "injected" | "coinbaseWallet" | "eip6963" | "w3mAuth" | "coinbaseWalletSDK") | null | undefined;
     subscribeProvider(): null;
-    getThemeMode(): import("@reown/appkit-core").ThemeMode;
-    getThemeVariables(): import("@reown/appkit-core").ThemeVariables;
+    getThemeMode(): import("@web3inno/appkit-core").ThemeMode;
+    getThemeVariables(): import("@web3inno/appkit-core").ThemeVariables;
     setThemeMode(themeMode: ThemeControllerState['themeMode']): void;
     setThemeVariables(themeVariables: ThemeControllerState['themeVariables']): void;
     subscribeTheme(callback: (newState: ThemeControllerState) => void): () => void;
@@ -44,7 +44,7 @@ export declare class AppKit {
     showSuccessMessage(message: string): void;
     getEvent(): {
         timestamp: number;
-        data: import("@reown/appkit-core").Event;
+        data: import("@web3inno/appkit-core").Event;
     };
     subscribeEvents(callback: (newEvent: EventsControllerState) => void): () => void;
     replace(route: RouterControllerState['view']): void;
@@ -58,9 +58,9 @@ export declare class AppKit {
     setAllAccounts: (typeof AccountController)['setAllAccounts'];
     addAddressLabel: (typeof AccountController)['addAddressLabel'];
     removeAddressLabel: (typeof AccountController)['removeAddressLabel'];
-    getCaipAddress: (chainNamespace?: ChainNamespace) => `eip155:${string}:${string}` | `eip155:${number}:${string}` | `solana:${string}:${string}` | `solana:${number}:${string}` | `polkadot:${string}:${string}` | `polkadot:${number}:${string}` | undefined;
+    getCaipAddress: (chainNamespace?: ChainNamespace) => `solana:${string}:${string}` | `solana:${number}:${string}` | `polkadot:${string}:${string}` | `polkadot:${number}:${string}` | `eip155:${string}:${string}` | `eip155:${number}:${string}` | undefined;
     getAddress: (chainNamespace?: ChainNamespace) => string | undefined;
-    getProvider: () => import("@walletconnect/universal-provider").default | import("@reown/appkit-core").Provider | import("@reown/appkit-core").CombinedProvider | undefined;
+    getProvider: () => import("@walletconnect/universal-provider").default | import("@web3inno/appkit-core").Provider | import("@web3inno/appkit-core").CombinedProvider | undefined;
     getPreferredAccountType: () => W3mFrameTypes.AccountType;
     setCaipAddress: (typeof AccountController)['setCaipAddress'];
     setProvider: (typeof AccountController)['setProvider'];

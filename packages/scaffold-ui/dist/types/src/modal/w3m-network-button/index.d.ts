@@ -1,4 +1,4 @@
-import type { WuiNetworkButton } from '@reown/appkit-ui';
+import type { WuiNetworkButton } from '@web3inno/appkit-ui';
 import { LitElement } from 'lit';
 export declare class W3mNetworkButton extends LitElement {
     static styles: import("lit").CSSResult;

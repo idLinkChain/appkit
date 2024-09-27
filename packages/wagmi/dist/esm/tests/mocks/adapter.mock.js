@@ -1,9 +1,9 @@
-import { WagmiAdapter } from '@reown/appkit-adapter-wagmi';
+import { WagmiAdapter } from '@web3inno/appkit-adapter-wagmi';
 import { mainnet as wagmiMainnet } from 'viem/chains';
 import { createConfig, http } from 'wagmi';
 import { mock } from 'wagmi/connectors';
 import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts';
-import { AppKit } from '@reown/appkit';
+import { AppKit } from '@web3inno/appkit';
 export const mainnet = {
     id: 'eip155:1',
     chainId: 1,

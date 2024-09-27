@@ -5,14 +5,14 @@ import {
   RouterController,
   SnackController,
   type Connector
-} from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 
 import { html, LitElement } from 'lit'
 import { state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
 import styles from './styles.js'
-import { ConstantsUtil } from '@reown/appkit-common'
+import { ConstantsUtil } from '@web3inno/appkit-common'
 
 @customElement('w3m-connecting-multi-chain-view')
 export class W3mConnectingMultiChainView extends LitElement {

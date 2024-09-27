@@ -1,13 +1,13 @@
-import { createAppKit } from '@reown/appkit/react'
+import { createAppKit } from '@web3inno/appkit/react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiProvider } from 'wagmi'
 import { AppKitButtons } from '../../components/AppKitButtons'
 import { WagmiTests } from '../../components/Wagmi/WagmiTests'
 import { ThemeStore } from '../../utils/StoreUtil'
 import { WagmiModalInfo } from '../../components/Wagmi/WagmiModalInfo'
-import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
+import { WagmiAdapter } from '@web3inno/appkit-adapter-wagmi'
 import { ConstantsUtil } from '../../utils/ConstantsUtil'
-import { mainnet } from '@reown/appkit/networks'
+import { mainnet } from '@web3inno/appkit/networks'
 
 const metadata = {
   name: 'AppKit',

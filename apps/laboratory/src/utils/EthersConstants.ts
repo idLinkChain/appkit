@@ -13,7 +13,7 @@ import {
   zora,
   sepolia,
   baseSepolia
-} from '@reown/appkit/networks'
+} from '@web3inno/appkit/networks'
 
 export const EthersConstants = {
   chains: [

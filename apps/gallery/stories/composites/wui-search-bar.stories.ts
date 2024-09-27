@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-search-bar'
-import type { WuiSearchBar } from '@reown/appkit-ui/src/composites/wui-search-bar'
+import '@web3inno/appkit-ui/src/composites/wui-search-bar'
+import type { WuiSearchBar } from '@web3inno/appkit-ui/src/composites/wui-search-bar'
 import { html } from 'lit'
 import '../../components/gallery-container'
 

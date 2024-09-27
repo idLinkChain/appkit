@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-otp'
-import type { WuiOtp } from '@reown/appkit-ui/src/composites/wui-otp'
+import '@web3inno/appkit-ui/src/composites/wui-otp'
+import type { WuiOtp } from '@web3inno/appkit-ui/src/composites/wui-otp'
 import { html } from 'lit'
 import '../../components/gallery-container'
 

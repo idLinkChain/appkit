@@ -1,6 +1,6 @@
-import { Ethers5Adapter } from '@reown/appkit-adapter-ethers5'
-import { mainnet, arbitrum } from '@reown/appkit/networks'
-import { createAppKit } from '@reown/appkit'
+import { Ethers5Adapter } from '@web3inno/appkit-adapter-ethers5'
+import { mainnet, arbitrum } from '@web3inno/appkit/networks'
+import { createAppKit } from '@web3inno/appkit'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

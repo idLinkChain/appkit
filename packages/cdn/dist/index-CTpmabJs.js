@@ -1,4 +1,4 @@
-import { q as u, t as h, bZ as R } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
+import { q as u, t as h, bZ as R } from "./W3MFrameProviderSingleton--2RuNpyE.js";
 const n = u({ history: ["ConnectWallet"], view: "ConnectWallet", data: void 0 }), x = { state: n, subscribe(e) {
   return h(n, () => e(n));
 }, push(e, t) {
@@ -230,7 +230,7 @@ class se {
   }
   async initUi() {
     if (typeof window < "u") {
-      await import("./index-BkJanAl5.js");
+      await import("./index-W_T61Z2O.js");
       const t = document.createElement("wcm-modal");
       document.body.insertAdjacentElement("beforeend", t), c.setIsUiLoaded(!0);
     }

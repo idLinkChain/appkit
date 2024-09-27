@@ -1,4 +1,4 @@
-import type { W3mFrameProvider } from '@reown/appkit-wallet'
+import type { W3mFrameProvider } from '@web3inno/appkit-wallet'
 import type { ProviderInterface } from '@coinbase/wallet-sdk'
 import type UniversalProvider from '@walletconnect/universal-provider'
 import type { SocialProvider } from '../TypeUtil.js'

@@ -1,5 +1,5 @@
 import { css, unsafeCSS } from 'lit';
-import { getW3mThemeVariables } from '@reown/appkit-common';
+import { getW3mThemeVariables } from '@web3inno/appkit-common';
 let themeTag = undefined;
 let darkModeTag = undefined;
 let lightModeTag = undefined;

@@ -1,4 +1,4 @@
-import type { ThemeVariables, ThemeType } from '@reown/appkit-common';
+import type { ThemeVariables, ThemeType } from '@web3inno/appkit-common';
 export declare function initializeTheming(themeVariables?: ThemeVariables, themeMode?: ThemeType): void;
 export declare function setColorTheme(themeMode?: string): void;
 export declare function setThemeVariables(themeVariables: ThemeVariables): void;

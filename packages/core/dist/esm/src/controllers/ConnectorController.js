@@ -1,6 +1,6 @@
 import { subscribeKey as subKey } from 'valtio/vanilla/utils';
 import { proxy, snapshot } from 'valtio/vanilla';
-import { getW3mThemeVariables } from '@reown/appkit-common';
+import { getW3mThemeVariables } from '@web3inno/appkit-common';
 import { OptionsController } from './OptionsController.js';
 import { ThemeController } from './ThemeController.js';
 import { ChainController } from './ChainController.js';

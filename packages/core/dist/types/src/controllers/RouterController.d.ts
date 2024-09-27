@@ -1,6 +1,6 @@
 import type { Connector, WcWallet } from '../utils/TypeUtil.js';
 import type { SwapInputTarget } from './SwapController.js';
-import type { CaipNetwork, ChainNamespace } from '@reown/appkit-common';
+import type { CaipNetwork, ChainNamespace } from '@web3inno/appkit-common';
 type TransactionAction = {
     /**
      * If true, the router will go back to the previous view after the transaction is complete..

@@ -3,11 +3,11 @@ import {
   ModalController,
   NetworkController,
   RouterController
-} from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
-import { ConstantsUtil } from '@reown/appkit-common'
+import { ConstantsUtil } from '@web3inno/appkit-common'
 import { property } from 'lit/decorators.js'
 
 @customElement('w3m-switch-active-chain-view')

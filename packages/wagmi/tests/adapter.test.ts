@@ -1,6 +1,6 @@
 import { describe, expect, test, vi } from 'vitest'
 import { connect, disconnect, getAccount as getAccount_wagmi } from '@wagmi/core'
-import { ConstantsUtil } from '@reown/appkit-utils'
+import { ConstantsUtil } from '@web3inno/appkit-utils'
 import { appKitMock, wagmiAdapterMock, mockAccount } from './mocks/adapter.mock'
 import { mainnet } from 'viem/chains'
 

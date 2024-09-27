@@ -1,9 +1,9 @@
 import { html, LitElement } from 'lit'
 import { property, state } from 'lit/decorators.js'
 import styles from './styles.js'
-import { UiHelperUtil, customElement } from '@reown/appkit-ui'
-import { NumberUtil } from '@reown/appkit-common'
-import { ConstantsUtil, ChainController, SwapController } from '@reown/appkit-core'
+import { UiHelperUtil, customElement } from '@web3inno/appkit-ui'
+import { NumberUtil } from '@web3inno/appkit-common'
+import { ConstantsUtil, ChainController, SwapController } from '@web3inno/appkit-core'
 
 // -- Constants ----------------------------------------- //
 const slippageRate = ConstantsUtil.CONVERT_SLIPPAGE_TOLERANCE

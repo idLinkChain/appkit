@@ -153,15 +153,15 @@ export const ApiController = {
 
   async fetchRecommendedWallets() {
     try {
-      const { includeWalletIds, excludeWalletIds, featuredWalletIds } = OptionsController.state
+      const { includeWalletIds, excludeWalletIds, featuredWalletIds, allEthWallets } = OptionsController.state
       const exclude = [...(excludeWalletIds ?? []), ...(featuredWalletIds ?? [])].filter(Boolean)
       const { data, count } = await api.get<ApiGetWalletsResponse>({
         path: '/getWallets',
         headers: ApiController._getApiHeaders(),
         params: {
           page: '1',
-          chains: ChainController.state.activeCaipNetwork?.id,
-          entries: recommendedEntries,
+          chains: ChainController.state.activeCaipNetwork?.id.includes("eip155") && allEthWallets ? "eip155:1" : ChainController.state.activeCaipNetwork?.id,
+        entries: recommendedEntries,
           include: includeWalletIds?.join(','),
           exclude: exclude?.join(',')
         }

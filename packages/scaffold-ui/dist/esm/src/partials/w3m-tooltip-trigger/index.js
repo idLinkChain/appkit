@@ -6,9 +6,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { html, LitElement } from 'lit';
 import { property, state } from 'lit/decorators.js';
-import { customElement } from '@reown/appkit-ui';
+import { customElement } from '@web3inno/appkit-ui';
 import styles from './styles.js';
-import { ModalController, RouterController, TooltipController } from '@reown/appkit-core';
+import { ModalController, RouterController, TooltipController } from '@web3inno/appkit-core';
 let WuiTooltipTrigger = class WuiTooltipTrigger extends LitElement {
     constructor() {
         super();

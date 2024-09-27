@@ -1,2 +1,2 @@
-import '@reown/appkit-polyfills'
-export * as AppKit from '@reown/appkit-ethers5'
+import '@web3inno/appkit-polyfills'
+export * as AppKit from '@web3inno/appkit-ethers5'

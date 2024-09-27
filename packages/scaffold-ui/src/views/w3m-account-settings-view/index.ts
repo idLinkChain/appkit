@@ -12,13 +12,13 @@ import {
   ConnectorController,
   SendController,
   ConstantsUtil
-} from '@reown/appkit-core'
-import { UiHelperUtil, customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { UiHelperUtil, customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
-import { ChainController } from '@reown/appkit-core'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
+import { ChainController } from '@web3inno/appkit-core'
 
 @customElement('w3m-account-settings-view')
 export class W3mAccountSettingsView extends LitElement {

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useAppKitAccount, useAppKitNetwork } from '@reown/appkit/react'
+import { useAppKitAccount, useAppKitNetwork } from '@web3inno/appkit/react'
 import {
   StackDivider,
   Card,

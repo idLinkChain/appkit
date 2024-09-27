@@ -1,11 +1,11 @@
-import type { Connector } from '@reown/appkit-core'
+import type { Connector } from '@web3inno/appkit-core'
 import {
   AssetUtil,
   ChainController,
   ConnectorController,
   RouterController
-} from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'

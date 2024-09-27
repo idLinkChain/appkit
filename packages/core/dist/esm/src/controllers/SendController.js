@@ -1,14 +1,14 @@
 import { subscribeKey as subKey } from 'valtio/vanilla/utils';
 import { proxy, ref, subscribe as sub } from 'valtio/vanilla';
-import {} from '@reown/appkit-common';
-import { ContractUtil } from '@reown/appkit-common';
+import {} from '@web3inno/appkit-common';
+import { ContractUtil } from '@web3inno/appkit-common';
 import { RouterController } from './RouterController.js';
 import { AccountController } from './AccountController.js';
 import { ConnectionController } from './ConnectionController.js';
 import { SnackController } from './SnackController.js';
 import { CoreHelperUtil } from '../utils/CoreHelperUtil.js';
 import { EventsController } from './EventsController.js';
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet';
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet';
 import { ChainController } from './ChainController.js';
 // -- State --------------------------------------------- //
 const state = proxy({

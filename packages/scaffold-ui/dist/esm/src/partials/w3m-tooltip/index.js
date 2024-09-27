@@ -5,8 +5,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { html, LitElement } from 'lit';
-import { TooltipController } from '@reown/appkit-core';
-import { customElement } from '@reown/appkit-ui';
+import { TooltipController } from '@web3inno/appkit-core';
+import { customElement } from '@web3inno/appkit-ui';
 import { state } from 'lit/decorators.js';
 import styles from './styles.js';
 let W3mTooltip = class W3mTooltip extends LitElement {

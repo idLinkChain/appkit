@@ -3,7 +3,7 @@ import { parseUnits } from 'viem';
 import { AccountController, BlockchainApiController, ChainController, ConnectionController, NetworkController, SwapController } from '../../exports/index.js';
 import { allowanceResponse, balanceResponse, gasPriceResponse, networkTokenPriceResponse, swapCalldataResponse, swapQuoteResponse, tokensResponse } from '../mocks/SwapController.js';
 import { SwapApiUtil } from '../../src/utils/SwapApiUtil.js';
-import { ConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 // - Mocks ---------------------------------------------------------------------
 const caipNetwork = {
     id: 'eip155:137',

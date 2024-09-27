@@ -1,6 +1,6 @@
-import type { CaipNetwork, ThemeVariables } from '@reown/appkit-common';
-import type { ChainAdapter, Metadata, NetworkControllerState, OptionsControllerState, ThemeMode } from '@reown/appkit-core';
-import type { AppKitSIWEClient } from '@reown/appkit-siwe';
+import type { CaipNetwork, ThemeVariables } from '@web3inno/appkit-common';
+import type { ChainAdapter, Metadata, NetworkControllerState, OptionsControllerState, ThemeMode } from '@web3inno/appkit-core';
+import type { AppKitSIWEClient } from '@web3inno/appkit-siwe';
 export type AppKitOptions = {
     /**
      * Adapter array to be used by the AppKit.

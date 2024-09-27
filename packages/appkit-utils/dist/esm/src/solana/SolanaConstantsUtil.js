@@ -1,5 +1,5 @@
 import { PublicKey } from '@solana/web3.js';
-import { ConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 export const SolConstantsUtil = {
     UNIVERSAL_PROVIDER_RELAY_URL: 'wss://relay.walletconnect.org',
     HASH_PREFIX: 'SPL Name Service',

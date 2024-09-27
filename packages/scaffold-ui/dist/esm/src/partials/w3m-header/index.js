@@ -4,8 +4,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { AccountController, AssetUtil, ChainController, ConnectionController, ConnectorController, EventsController, ModalController, NetworkController, OptionsController, RouterController } from '@reown/appkit-core';
-import { customElement } from '@reown/appkit-ui';
+import { AccountController, AssetUtil, ChainController, ConnectionController, ConnectorController, EventsController, ModalController, NetworkController, OptionsController, RouterController } from '@web3inno/appkit-core';
+import { customElement } from '@web3inno/appkit-ui';
 import { LitElement, html } from 'lit';
 import { state } from 'lit/decorators.js';
 import styles from './styles.js';
@@ -114,7 +114,7 @@ let W3mHeader = class W3mHeader extends LitElement {
     }
     async onClose() {
         if (this.isSiweEnabled) {
-            const { SIWEController } = await import('@reown/appkit-siwe');
+            const { SIWEController } = await import('@web3inno/appkit-siwe');
             const isApproveSignScreen = RouterController.state.view === 'ApproveTransaction';
             const isUnauthenticated = SIWEController.state.status !== 'success';
             if (isUnauthenticated && isApproveSignScreen) {

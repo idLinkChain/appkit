@@ -10,8 +10,8 @@ import {
 } from '@solana/web3.js'
 
 import { useChakraToast } from '../Toast'
-import { useAppKitAccount, useAppKitProvider } from '@reown/appkit/react'
-import { useAppKitConnection, type Provider } from '@reown/appkit-adapter-solana/react'
+import { useAppKitAccount, useAppKitProvider } from '@web3inno/appkit/react'
+import { useAppKitConnection, type Provider } from '@web3inno/appkit-adapter-solana/react'
 
 const PHANTOM_TESTNET_ADDRESS = '8vCyX7oB6Pc3pbWMGYYZF5pbSnAdQ7Gyr32JqxqCy8ZR'
 const recipientAddress = new PublicKey(PHANTOM_TESTNET_ADDRESS)

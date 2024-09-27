@@ -1,20 +1,20 @@
-import { ConstantsUtil } from '@reown/appkit-utils'
+import { ConstantsUtil } from '@web3inno/appkit-utils'
 import type {
   AnyTransaction,
   Connection,
   GetActiveChain,
   Provider
-} from '@reown/appkit-utils/solana'
+} from '@web3inno/appkit-utils/solana'
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js'
 import { PublicKey, Transaction, VersionedTransaction, type SendOptions } from '@solana/web3.js'
 import {
   W3mFrameProvider,
   type W3mFrameProviderMethods as ProviderAuthMethods
-} from '@reown/appkit-wallet'
+} from '@web3inno/appkit-wallet'
 import { withSolanaNamespace } from '../utils/withSolanaNamespace.js'
 import base58 from 'bs58'
 import { isVersionedTransaction } from '@solana/wallet-adapter-base'
-import type { CaipNetwork, ChainNamespace } from '@reown/appkit-common'
+import type { CaipNetwork, ChainNamespace } from '@web3inno/appkit-common'
 
 export type AuthProviderConfig = {
   getProvider: () => W3mFrameProvider

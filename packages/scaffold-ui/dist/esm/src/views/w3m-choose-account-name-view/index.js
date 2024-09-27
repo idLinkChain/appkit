@@ -4,13 +4,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { customElement } from '@reown/appkit-ui';
-import { AccountController, CoreHelperUtil, EventsController, RouterController } from '@reown/appkit-core';
+import { customElement } from '@web3inno/appkit-ui';
+import { AccountController, CoreHelperUtil, EventsController, RouterController } from '@web3inno/appkit-core';
 import { LitElement, html } from 'lit';
 import { state } from 'lit/decorators.js';
 import styles from './styles.js';
-import { NavigationUtil } from '@reown/appkit-common';
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet';
+import { NavigationUtil } from '@web3inno/appkit-common';
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet';
 let W3mChooseAccountNameView = class W3mChooseAccountNameView extends LitElement {
     constructor() {
         super(...arguments);

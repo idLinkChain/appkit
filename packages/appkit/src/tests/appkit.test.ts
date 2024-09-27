@@ -19,12 +19,12 @@ import {
   ConnectorController,
   ChainController,
   type Connector
-} from '@reown/appkit-core'
-import type { CaipNetwork } from '@reown/appkit-common'
+} from '@web3inno/appkit-core'
+import type { CaipNetwork } from '@web3inno/appkit-common'
 import { mockOptions } from './mocks/Options'
 
 // Mock all controllers and UniversalAdapterClient
-vi.mock('@reown/appkit-core')
+vi.mock('@web3inno/appkit-core')
 vi.mock('../universal-adapter/client')
 
 describe('Base', () => {

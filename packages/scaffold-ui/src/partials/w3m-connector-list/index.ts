@@ -1,4 +1,4 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 
 import styles from './styles.js'
@@ -8,8 +8,8 @@ import {
   ConnectorController,
   OptionsController,
   StorageUtil
-} from '@reown/appkit-core'
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common'
+} from '@web3inno/appkit-core'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common'
 import { state } from 'lit/decorators.js'
 import { WalletUtil } from '../../utils/WalletUtil.js'
 @customElement('w3m-connector-list')

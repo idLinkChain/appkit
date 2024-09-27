@@ -1,7 +1,7 @@
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 import { AccountController, ChainController, ConnectionController, ConnectorController, EnsController, NetworkController } from '../../exports/index.js';
-import { W3mFrameProvider } from '@reown/appkit-wallet';
-import { ConstantsUtil } from '@reown/appkit-common';
+import { W3mFrameProvider } from '@web3inno/appkit-wallet';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 // -- Setup --------------------------------------------------------------------
 const TEST_NAME = {
     name: 'test',

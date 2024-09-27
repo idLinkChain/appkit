@@ -1,4 +1,4 @@
-import type { CaipNetwork } from '@reown/appkit-common';
+import type { CaipNetwork } from '@web3inno/appkit-common';
 import type { Provider } from './EthersTypesUtil.js';
 export declare const EthersHelpersUtil: {
     getCaipDefaultChain(chain?: CaipNetwork): CaipNetwork | undefined;

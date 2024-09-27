@@ -1,8 +1,8 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
 import { property, state } from 'lit/decorators.js'
-import { ConnectionController, CoreHelperUtil, SendController } from '@reown/appkit-core'
+import { ConnectionController, CoreHelperUtil, SendController } from '@web3inno/appkit-core'
 import { createRef, ref } from 'lit/directives/ref.js'
 import type { Ref } from 'lit/directives/ref.js'
 

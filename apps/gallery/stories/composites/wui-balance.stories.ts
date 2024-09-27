@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-balance'
-import type { WuiBalance } from '@reown/appkit-ui/src/composites/wui-balance'
+import '@web3inno/appkit-ui/src/composites/wui-balance'
+import type { WuiBalance } from '@web3inno/appkit-ui/src/composites/wui-balance'
 import { html } from 'lit'
 
 type Component = Meta<WuiBalance>

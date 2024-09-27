@@ -1,10 +1,10 @@
 import { mock } from 'wagmi/connectors'
 import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts'
-import { AppKit } from '@reown/appkit'
+import { AppKit } from '@web3inno/appkit'
 import { WagmiAdapter } from '../../client'
-import { arbitrum, mainnet } from '@reown/appkit/networks'
-import type { CaipNetwork } from '@reown/appkit-common'
-import type { SdkVersion } from '@reown/appkit-core'
+import { arbitrum, mainnet } from '@web3inno/appkit/networks'
+import type { CaipNetwork } from '@web3inno/appkit-common'
+import type { SdkVersion } from '@web3inno/appkit-core'
 
 const privateKey = generatePrivateKey()
 export const mockAccount = privateKeyToAccount(privateKey)

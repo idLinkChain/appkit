@@ -1,10 +1,10 @@
-import type { ChainAdapter } from '@reown/appkit-core';
+import type { ChainAdapter } from '@web3inno/appkit-core';
 import type { Chain } from '@wagmi/core/chains';
 import type { Config, CreateConfigParameters } from '@wagmi/core';
-import type { ConnectionControllerClient, NetworkControllerClient, PublicStateControllerState } from '@reown/appkit-core';
-import type { AppKitOptions } from '@reown/appkit';
-import type { CaipNetwork, ChainNamespace, AdapterType } from '@reown/appkit-common';
-import type { AppKit } from '@reown/appkit';
+import type { ConnectionControllerClient, NetworkControllerClient, PublicStateControllerState } from '@web3inno/appkit-core';
+import type { AppKitOptions } from '@web3inno/appkit';
+import type { CaipNetwork, ChainNamespace, AdapterType } from '@web3inno/appkit-common';
+import type { AppKit } from '@web3inno/appkit';
 export interface AdapterOptions<C extends Config> extends Pick<AppKitOptions, 'siweConfig' | 'enableEIP6963'> {
     wagmiConfig: C;
     defaultNetwork?: Chain;
@@ -23,8 +23,8 @@ export declare class WagmiAdapter implements ChainAdapter {
     networkControllerClient?: NetworkControllerClient;
     connectionControllerClient?: ConnectionControllerClient;
     defaultCaipNetwork: CaipNetwork | undefined;
-    tokens: import("@reown/appkit-core").Tokens | undefined;
-    siweControllerClient: import("@reown/appkit-siwe").AppKitSIWEClient | undefined;
+    tokens: import("@web3inno/appkit-core").Tokens | undefined;
+    siweControllerClient: import("@web3inno/appkit-siwe").AppKitSIWEClient | undefined;
     adapterType: AdapterType;
     constructor(configParams: Partial<CreateConfigParameters> & {
         networks: CaipNetwork[];

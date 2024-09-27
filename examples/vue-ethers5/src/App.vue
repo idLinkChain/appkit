@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import { Ethers5Adapter } from '@reown/appkit-adapter-ethers5'
+import { Ethers5Adapter } from '@web3inno/appkit-adapter-ethers5'
 import {
   createAppKit,
   useAppKit,
   useAppKitEvents,
   useAppKitState,
   useAppKitTheme
-} from '@reown/appkit/vue'
-import { mainnet, arbitrum } from '@reown/appkit/networks'
+} from '@web3inno/appkit/vue'
+import { mainnet, arbitrum } from '@web3inno/appkit/networks'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

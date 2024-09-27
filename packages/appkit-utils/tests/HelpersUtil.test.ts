@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { HelpersUtil } from '../src/HelpersUtil.js'
 import { ConstantsUtil } from '../src/ConstantsUtil.js'
-import type { Tokens } from '@reown/appkit-core'
+import type { Tokens } from '@web3inno/appkit-core'
 
 describe('HelpersUtil', () => {
   describe('getCaipTokens', () => {

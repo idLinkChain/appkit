@@ -2,7 +2,7 @@ import { LitElement } from 'lit';
 export declare class W3mEmailVerifyDeviceView extends LitElement {
     static styles: import("lit").CSSResult;
     protected readonly email: string | undefined;
-    protected readonly authConnector: import("@reown/appkit-core").AuthConnector | undefined;
+    protected readonly authConnector: import("@web3inno/appkit-core").AuthConnector | undefined;
     constructor();
     private loading;
     render(): import("lit").TemplateResult<1>;

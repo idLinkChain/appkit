@@ -1,4 +1,4 @@
-import type { TransactionTransfer, Transaction, TransactionImage } from '@reown/appkit-common';
+import type { TransactionTransfer, Transaction, TransactionImage } from '@web3inno/appkit-common';
 export declare const TransactionUtil: {
     getMonthName(monthNumber: number): string;
     getTransactionGroupTitle(year: number, month: number): string;

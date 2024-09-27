@@ -1,11 +1,11 @@
-import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
+import { WagmiAdapter } from '@web3inno/appkit-adapter-wagmi'
 import { mainnet as wagmiMainnet } from 'viem/chains'
 import { createConfig, http } from 'wagmi'
 import { mock } from 'wagmi/connectors'
 
 import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts'
-import { AppKit, type SdkVersion } from '@reown/appkit'
-import type { CaipNetwork } from '@reown/appkit-common'
+import { AppKit, type SdkVersion } from '@web3inno/appkit'
+import type { CaipNetwork } from '@web3inno/appkit-common'
 
 export const mainnet: CaipNetwork = {
   id: 'eip155:1',

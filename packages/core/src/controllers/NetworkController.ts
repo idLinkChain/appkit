@@ -7,7 +7,7 @@ import {
   type CaipNetwork,
   type CaipNetworkId,
   type ChainNamespace
-} from '@reown/appkit-common'
+} from '@web3inno/appkit-common'
 import { ChainController } from './ChainController.js'
 import { ConstantsUtil } from '../utils/ConstantsUtil.js'
 

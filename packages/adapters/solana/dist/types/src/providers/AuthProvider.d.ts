@@ -1,8 +1,8 @@
-import type { AnyTransaction, Connection, GetActiveChain, Provider } from '@reown/appkit-utils/solana';
+import type { AnyTransaction, Connection, GetActiveChain, Provider } from '@web3inno/appkit-utils/solana';
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js';
 import { PublicKey, type SendOptions } from '@solana/web3.js';
-import { W3mFrameProvider, type W3mFrameProviderMethods as ProviderAuthMethods } from '@reown/appkit-wallet';
-import type { CaipNetwork, ChainNamespace } from '@reown/appkit-common';
+import { W3mFrameProvider, type W3mFrameProviderMethods as ProviderAuthMethods } from '@web3inno/appkit-wallet';
+import type { CaipNetwork, ChainNamespace } from '@web3inno/appkit-common';
 export type AuthProviderConfig = {
     getProvider: () => W3mFrameProvider;
     getActiveChain: GetActiveChain;

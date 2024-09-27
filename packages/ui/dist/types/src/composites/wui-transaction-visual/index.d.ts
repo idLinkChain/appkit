@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-import type { TransactionDirection, TransactionImage, TransactionStatus } from '@reown/appkit-common';
+import type { TransactionDirection, TransactionImage, TransactionStatus } from '@web3inno/appkit-common';
 import type { TransactionType } from '../../utils/TypeUtil.js';
 import '../../components/wui-image/index.js';
 import '../wui-icon-box/index.js';

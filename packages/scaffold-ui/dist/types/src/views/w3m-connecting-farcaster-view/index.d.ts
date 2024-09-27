@@ -7,7 +7,7 @@ export declare class W3mConnectingFarcasterView extends LitElement {
     protected uri: string | undefined;
     protected ready: boolean;
     protected loading: boolean;
-    authConnector: import("@reown/appkit-core").AuthConnector | undefined;
+    authConnector: import("@web3inno/appkit-core").AuthConnector | undefined;
     constructor();
     disconnectedCallback(): void;
     render(): import("lit").TemplateResult<1>;

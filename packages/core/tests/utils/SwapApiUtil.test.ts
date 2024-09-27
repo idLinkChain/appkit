@@ -6,7 +6,7 @@ import { OptionsController } from '../../src/controllers/OptionsController'
 import { ConnectionController } from '../../src/controllers/ConnectionController'
 import { AccountController } from '../../src/controllers/AccountController'
 import { NetworkController } from '../../src/controllers/NetworkController'
-import type { Balance } from '@reown/appkit-common'
+import type { Balance } from '@web3inno/appkit-common'
 
 // Mock the controllers
 vi.mock('../../src/controllers/ChainController')

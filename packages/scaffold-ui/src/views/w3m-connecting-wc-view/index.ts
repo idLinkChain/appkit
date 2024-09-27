@@ -1,4 +1,4 @@
-import type { BaseError, Platform } from '@reown/appkit-core'
+import type { BaseError, Platform } from '@web3inno/appkit-core'
 import {
   ConnectionController,
   ConstantsUtil,
@@ -9,8 +9,8 @@ import {
   RouterController,
   SnackController,
   StorageUtil
-} from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 

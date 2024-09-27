@@ -1,4 +1,4 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { html, LitElement } from 'lit'
 import { property } from 'lit/decorators.js'
 import styles from './styles'

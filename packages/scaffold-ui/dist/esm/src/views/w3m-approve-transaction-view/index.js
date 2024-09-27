@@ -4,12 +4,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { customElement } from '@reown/appkit-ui';
+import { customElement } from '@web3inno/appkit-ui';
 import { LitElement, html } from 'lit';
 import { state } from 'lit/decorators.js';
 import styles from './styles.js';
-import { ModalController, ConnectorController, ThemeController, RouterController } from '@reown/appkit-core';
-import { getW3mThemeVariables } from '@reown/appkit-common';
+import { ModalController, ConnectorController, ThemeController, RouterController } from '@web3inno/appkit-core';
+import { getW3mThemeVariables } from '@web3inno/appkit-common';
 const PAGE_HEIGHT = 400;
 const PAGE_WIDTH = 360;
 const HEADER_HEIGHT = 64;

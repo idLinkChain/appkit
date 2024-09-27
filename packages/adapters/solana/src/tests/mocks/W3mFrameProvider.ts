@@ -1,8 +1,8 @@
-import { type W3mFrameTypes } from '@reown/appkit-wallet'
+import { type W3mFrameTypes } from '@web3inno/appkit-wallet'
 import type { AuthProvider } from '../../providers/AuthProvider.js'
 import { vi } from 'vitest'
 import { TestConstants } from '../util/TestConstants.js'
-import { W3mFrameProviderSingleton } from '@reown/appkit/auth-provider'
+import { W3mFrameProviderSingleton } from '@web3inno/appkit/auth-provider'
 
 export function mockW3mFrameProvider() {
   const w3mFrame = W3mFrameProviderSingleton.getInstance('projectId')

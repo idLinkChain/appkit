@@ -9,15 +9,15 @@ import {
   type ConnectionControllerClient,
   type Connector,
   type NetworkControllerClient
-} from '@reown/appkit-core'
-import { ConstantsUtil, PresetsUtil } from '@reown/appkit-utils'
+} from '@web3inno/appkit-core'
+import { ConstantsUtil, PresetsUtil } from '@web3inno/appkit-utils'
 import UniversalProvider from '@walletconnect/universal-provider'
 import type { UniversalProviderOpts } from '@walletconnect/universal-provider'
 import { WcHelpersUtil } from '../utils/HelpersUtil.js'
 import type { AppKit } from '../client.js'
 import type { SessionTypes } from '@walletconnect/types'
-import type { CaipNetwork, CaipAddress, ChainNamespace, AdapterType } from '@reown/appkit-common'
-import { SafeLocalStorage, SafeLocalStorageKeys } from '@reown/appkit-common'
+import type { CaipNetwork, CaipAddress, ChainNamespace, AdapterType } from '@web3inno/appkit-common'
+import { SafeLocalStorage, SafeLocalStorageKeys } from '@web3inno/appkit-common'
 import { ProviderUtil } from '../store/index.js'
 import type { AppKitOptions } from '../utils/TypesUtil.js'
 
@@ -153,7 +153,7 @@ export class UniversalAdapterClient {
             ChainController.state.activeChain === 'eip155'
           ) {
             const { SIWEController, getDidChainId, getDidAddress } = await import(
-              '@reown/appkit-siwe'
+              '@web3inno/appkit-siwe'
             )
 
             const chains = this.caipNetworks
@@ -218,7 +218,7 @@ export class UniversalAdapterClient {
         SafeLocalStorage.removeItem(SafeLocalStorageKeys.WALLET_ID)
 
         if (siweConfig?.options?.signOutOnDisconnect) {
-          const { SIWEController } = await import('@reown/appkit-siwe')
+          const { SIWEController } = await import('@web3inno/appkit-siwe')
           await SIWEController.signOut()
         }
 

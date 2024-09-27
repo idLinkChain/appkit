@@ -1,4 +1,4 @@
-import { W3mFrameProvider } from '@reown/appkit-wallet';
+import { W3mFrameProvider } from '@web3inno/appkit-wallet';
 export class W3mFrameProviderSingleton {
     // eslint-disable-next-line @typescript-eslint/no-empty-function -- This is a singleton
     constructor() { }

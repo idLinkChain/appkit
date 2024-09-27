@@ -1,4 +1,4 @@
-import { UiHelperUtil, customElement } from '@reown/appkit-ui'
+import { UiHelperUtil, customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
 import {
@@ -6,7 +6,7 @@ import {
   ChainController,
   RouterController,
   SwapController
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 import { state } from 'lit/decorators.js'
 
 @customElement('w3m-swap-preview-view')

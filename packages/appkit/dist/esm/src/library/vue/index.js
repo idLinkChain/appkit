@@ -1,5 +1,5 @@
 import { onUnmounted, reactive, ref } from 'vue';
-import { AccountController, ChainController, CoreHelperUtil } from '@reown/appkit-core';
+import { AccountController, ChainController, CoreHelperUtil } from '@web3inno/appkit-core';
 import { ProviderUtil } from '../../store/ProviderUtil.js';
 let modal = undefined;
 export function getAppKit(appKit) {

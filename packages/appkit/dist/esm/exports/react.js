@@ -1,14 +1,14 @@
 import { AppKit } from '../src/client.js';
 import { getAppKit } from '../src/library/react/index.js';
 import packageJson from '../package.json' assert { type: 'json' };
-import { CoreHelperUtil } from '@reown/appkit-core';
+import { CoreHelperUtil } from '@web3inno/appkit-core';
 // -- Views ------------------------------------------------------------
-export * from '@reown/appkit-scaffold-ui';
+export * from '@web3inno/appkit-scaffold-ui';
 // -- Hooks ------------------------------------------------------------
 export * from '../src/library/react/index.js';
 // -- Utils & Other -----------------------------------------------------
 export * from '../src/utils/index.js';
-export { CoreHelperUtil, AccountController, NetworkController } from '@reown/appkit-core';
+export { CoreHelperUtil, AccountController, NetworkController } from '@web3inno/appkit-core';
 export let modal = undefined;
 export function createAppKit(options) {
     if (!modal) {
@@ -23,5 +23,5 @@ export function createAppKit(options) {
 export { AppKit };
 // -- Hooks ------------------------------------------------------------
 export * from '../src/library/react/index.js';
-export { useAppKitAccount, useAppKitNetwork } from '@reown/appkit-core/react';
+export { useAppKitAccount, useAppKitNetwork } from '@web3inno/appkit-core/react';
 //# sourceMappingURL=react.js.map

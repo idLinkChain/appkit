@@ -1,6 +1,6 @@
 {
-  "name": "@reown/appkit-adapter-polkadot",
-  "version": "1.0.4",
+  "name": "@web3inno/appkit-adapter-polkadot",
+  "version": "1.0.4-alpha.3",
   "scripts": {
     "build:clean": "rm -rf dist",
     "build": "tsc --build tsconfig.build.json",
@@ -10,9 +10,9 @@
     "test": "vitest run --dir tests --coverage.enabled=true --coverage.reporter=json --coverage.reporter=json-summary --coverage.reportOnFailure=true"
   },
   "dependencies": {
-    "@reown/appkit": "workspace:*",
-    "@reown/appkit-common": "workspace:*",
-    "@reown/appkit-core": "workspace:*"
+    "@web3inno/appkit": "workspace:*",
+    "@web3inno/appkit-common": "workspace:*",
+    "@web3inno/appkit-core": "workspace:*"
   },
   "devDependencies": {
     "vitest": "2.0.5",

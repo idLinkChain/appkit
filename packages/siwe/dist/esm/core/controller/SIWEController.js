@@ -1,6 +1,6 @@
 import { subscribeKey as subKey } from 'valtio/vanilla/utils';
 import { proxy, ref, subscribe as sub } from 'valtio/vanilla';
-import { ChainController, OptionsController } from '@reown/appkit-core';
+import { ChainController, OptionsController } from '@web3inno/appkit-core';
 const state = proxy({
     status: 'uninitialized'
 });

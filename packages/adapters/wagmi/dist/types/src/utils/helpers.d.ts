@@ -1,4 +1,4 @@
-import { type CaipNetwork } from '@reown/appkit-common';
+import { type CaipNetwork } from '@web3inno/appkit-common';
 import type { Chain } from '@wagmi/core/chains';
 import type { Connector } from '@wagmi/core';
 export declare function getWalletConnectCaipNetworks(connector?: Connector): Promise<{

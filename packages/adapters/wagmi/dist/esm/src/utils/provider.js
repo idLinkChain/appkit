@@ -1,6 +1,6 @@
 import { http } from '@wagmi/core';
-import { CoreHelperUtil } from '@reown/appkit-core';
-import { ConstantsUtil, PresetsUtil } from '@reown/appkit-utils';
+import { CoreHelperUtil } from '@web3inno/appkit-core';
+import { ConstantsUtil, PresetsUtil } from '@web3inno/appkit-utils';
 const RPC_URL = CoreHelperUtil.getBlockchainApiUrl();
 export function walletConnectProvider({ projectId }) {
     return function provider(chain) {

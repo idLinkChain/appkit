@@ -1,5 +1,5 @@
 import { PublicKey } from '@solana/web3.js';
-import { type CaipNetwork } from '@reown/appkit-common';
+import { type CaipNetwork } from '@web3inno/appkit-common';
 export declare const SolConstantsUtil: {
     readonly UNIVERSAL_PROVIDER_RELAY_URL: "wss://relay.walletconnect.org";
     readonly HASH_PREFIX: "SPL Name Service";

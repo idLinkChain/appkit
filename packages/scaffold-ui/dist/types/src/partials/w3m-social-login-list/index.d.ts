@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-import type { SocialProvider } from '@reown/appkit-utils';
+import type { SocialProvider } from '@web3inno/appkit-utils';
 export declare class W3mSocialLoginList extends LitElement {
     static styles: import("lit").CSSResult;
     private unsubscribe;

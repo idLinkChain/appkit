@@ -2,7 +2,7 @@ import { proxy, ref } from 'valtio/vanilla';
 import { EventsController } from './EventsController.js';
 import { ModalController } from './ModalController.js';
 import { CoreHelperUtil } from '../utils/CoreHelperUtil.js';
-import { NetworkUtil } from '@reown/appkit-common';
+import { NetworkUtil } from '@web3inno/appkit-common';
 import { ChainController } from './ChainController.js';
 import { ConstantsUtil } from '../utils/ConstantsUtil.js';
 // -- State --------------------------------------------- //

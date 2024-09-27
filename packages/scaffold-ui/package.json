@@ -1,6 +1,6 @@
 {
-  "name": "@reown/appkit-scaffold-ui",
-  "version": "1.0.4",
+  "name": "@web3inno/appkit-scaffold-ui",
+  "version": "1.0.4-alpha.3",
   "type": "module",
   "main": "./dist/esm/exports/index.js",
   "types": "./dist/types/exports/index.d.ts",
@@ -28,13 +28,13 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@reown/appkit-common": "workspace:*",
-    "@reown/appkit-utils": "workspace:*",
-    "@reown/appkit-core": "workspace:*",
-    "@reown/appkit-ui": "workspace:*",
+    "@web3inno/appkit-common": "workspace:*",
+    "@web3inno/appkit-utils": "workspace:*",
+    "@web3inno/appkit-core": "workspace:*",
+    "@web3inno/appkit-ui": "workspace:*",
     "lit": "3.1.0",
-    "@reown/appkit-siwe": "workspace:*",
-    "@reown/appkit-wallet": "workspace:*"
+    "@web3inno/appkit-siwe": "workspace:*",
+    "@web3inno/appkit-wallet": "workspace:*"
   },
   "author": "Reown <support@reown.com> (https://reown.com)",
   "license": "Apache-2.0",

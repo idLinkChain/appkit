@@ -1,6 +1,6 @@
 import { BrowserProvider, Contract, JsonRpcSigner, InfuraProvider, isHexString, hexlify, toUtf8Bytes, parseUnits, formatUnits } from 'ethers';
-import {} from '@reown/appkit-utils/ethers';
-import { isReownName } from '@reown/appkit-common';
+import {} from '@web3inno/appkit-utils/ethers';
+import { isReownName } from '@web3inno/appkit-common';
 export const EthersMethods = {
     signMessage: async (message, provider, address) => {
         if (!provider) {

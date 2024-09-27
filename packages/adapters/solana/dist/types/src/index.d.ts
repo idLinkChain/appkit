@@ -1,4 +1,4 @@
-import '@reown/appkit-polyfills';
+import '@web3inno/appkit-polyfills';
 export { SolanaAdapter } from './client.js';
 export type { AdapterOptions } from './client.js';
 export type * from '@solana/wallet-adapter-base';

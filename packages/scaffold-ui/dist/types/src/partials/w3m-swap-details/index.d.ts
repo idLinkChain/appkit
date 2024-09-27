@@ -4,8 +4,8 @@ export declare class WuiSwapDetails extends LitElement {
     private unsubscribe;
     networkName: string | undefined;
     detailsOpen: boolean;
-    sourceToken: import("@reown/appkit-core").SwapTokenWithBalance | undefined;
-    toToken: import("@reown/appkit-core").SwapTokenWithBalance | undefined;
+    sourceToken: import("@web3inno/appkit-core").SwapTokenWithBalance | undefined;
+    toToken: import("@web3inno/appkit-core").SwapTokenWithBalance | undefined;
     toTokenAmount: string;
     sourceTokenPriceInUSD: number;
     toTokenPriceInUSD: number;

@@ -1,5 +1,5 @@
 import { type Connection, Transaction } from '@solana/web3.js';
-import type { Provider } from '@reown/appkit-utils/solana';
+import type { Provider } from '@web3inno/appkit-utils/solana';
 type SendTransactionArgs = {
     provider: Provider;
     connection: Connection;

@@ -1,4 +1,4 @@
-import { type Connector } from '@reown/appkit-core';
+import { type Connector } from '@web3inno/appkit-core';
 import { LitElement } from 'lit';
 export declare class W3mConnectingMultiChainView extends LitElement {
     static styles: import("lit").CSSResult;

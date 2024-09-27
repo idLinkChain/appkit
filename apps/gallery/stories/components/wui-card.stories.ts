@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/components/wui-card'
-import type { WuiCard } from '@reown/appkit-ui/src/components/wui-card'
+import '@web3inno/appkit-ui/src/components/wui-card'
+import type { WuiCard } from '@web3inno/appkit-ui/src/components/wui-card'
 import { html } from 'lit'
 import '../../components/gallery-placeholder'
 

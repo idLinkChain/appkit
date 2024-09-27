@@ -1,4 +1,4 @@
-import { ConstantsUtil, type CaipNetwork } from '@reown/appkit-common'
+import { ConstantsUtil, type CaipNetwork } from '@web3inno/appkit-common'
 
 export const solana = {
   id: 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp',

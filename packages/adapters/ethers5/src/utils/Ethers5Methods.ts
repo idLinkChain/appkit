@@ -1,13 +1,13 @@
 /* eslint-disable max-params */
 import { ethers, Contract } from 'ethers5'
-import { type Provider } from '@reown/appkit-utils/ethers'
+import { type Provider } from '@web3inno/appkit-utils/ethers'
 import type {
   EstimateGasTransactionArgs,
   SendTransactionArgs,
   WriteContractArgs
-} from '@reown/appkit-core'
-import { isReownName } from '@reown/appkit-common'
-import type { AppKit } from '@reown/appkit'
+} from '@web3inno/appkit-core'
+import { isReownName } from '@web3inno/appkit-common'
+import type { AppKit } from '@web3inno/appkit'
 
 export const Ethers5Methods = {
   signMessage: async (message: string, provider: Provider, address: string) => {

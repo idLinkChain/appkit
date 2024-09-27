@@ -1,5 +1,5 @@
-import { n as I, ba as Rr, B, s as Ba, bb as Bi, bc as Di, bd as Qe, o as Da, b9 as Ha } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
-import { a as ce, b as Ir, r as Dt, j as Ua } from "./hooks.module-DI69_OTV.js";
+import { n as I, ba as Rr, B, s as Ba, bb as Bi, bc as Di, bd as Qe, o as Da, b9 as Ha } from "./W3MFrameProviderSingleton--2RuNpyE.js";
+import { a as ce, b as Ir, r as Dt, j as Ua } from "./hooks.module-CyH0IJQ5.js";
 var Hi = {}, Ft = {}, Ar = {};
 Object.defineProperty(Ar, "__esModule", { value: !0 });
 Ar.walletLogo = void 0;

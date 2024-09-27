@@ -1,6 +1,6 @@
 {
   "name": "@examples/next-ethers",
-  "version": "1.0.4",
+  "version": "1.0.4-alpha.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@reown/appkit-adapter-ethers": "workspace:*",
-    "@reown/appkit": "workspace:*",
+    "@web3inno/appkit-adapter-ethers": "workspace:*",
+    "@web3inno/appkit": "workspace:*",
     "ethers": "6.13.0",
     "next": "14.2.3",
     "react": "18.2.0",

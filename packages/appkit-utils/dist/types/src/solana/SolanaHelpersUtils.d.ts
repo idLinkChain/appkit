@@ -1,4 +1,4 @@
-import type { CaipNetwork } from '@reown/appkit-common';
+import type { CaipNetwork } from '@web3inno/appkit-common';
 import type { Provider } from './SolanaTypesUtil.js';
 export declare const SolHelpersUtil: {
     detectRpcUrl(chain: CaipNetwork, projectId: string): string;

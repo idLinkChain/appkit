@@ -1,15 +1,15 @@
 {
   "name": "@examples/vue-solana",
   "private": true,
-  "version": "1.0.4",
+  "version": "1.0.4-alpha.3",
   "scripts": {
     "dev": "vite --port 3013"
   },
   "dependencies": {
     "@solana/wallet-adapter-backpack": "0.1.14",
     "@solana/wallet-adapter-wallets": "0.19.32",
-    "@reown/appkit": "workspace:*",
-    "@reown/appkit-solana": "workspace:*",
+    "@web3inno/appkit": "workspace:*",
+    "@web3inno/appkit-solana": "workspace:*",
     "vue": "3.4.3"
   },
   "devDependencies": {

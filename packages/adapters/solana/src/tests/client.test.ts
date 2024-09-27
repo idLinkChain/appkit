@@ -4,20 +4,20 @@ import { mockOptions } from './mocks/Options'
 import mockAppKit from './mocks/AppKit'
 import { mockAuthConnector } from './mocks/AuthConnector'
 import { Connection } from '@solana/web3.js'
-import { SafeLocalStorage } from '@reown/appkit-common'
-import { ProviderUtil } from '@reown/appkit/store'
-import { SolHelpersUtil } from '@reown/appkit-utils/solana'
+import { SafeLocalStorage } from '@web3inno/appkit-common'
+import { ProviderUtil } from '@web3inno/appkit/store'
+import { SolHelpersUtil } from '@web3inno/appkit-utils/solana'
 import { SolStoreUtil } from '../utils/SolanaStoreUtil.js'
 import { WalletConnectProvider } from '../providers/WalletConnectProvider'
 import UniversalProvider from '@walletconnect/universal-provider'
-import { solana } from '@reown/appkit/networks'
+import { solana } from '@web3inno/appkit/networks'
 
 vi.mock('@solana/web3.js', () => ({
   Connection: vi.fn(),
   PublicKey: vi.fn()
 }))
 
-vi.mock('@reown/appkit-wallet', () => ({
+vi.mock('@web3inno/appkit-wallet', () => ({
   W3mFrameProvider: vi.fn().mockImplementation(() => mockAuthConnector),
   W3mFrameHelpers: {
     checkIfRequestExists: vi.fn(),
@@ -28,7 +28,7 @@ vi.mock('@reown/appkit-wallet', () => ({
   }
 }))
 
-vi.mock('@reown/appkit/store', () => ({
+vi.mock('@web3inno/appkit/store', () => ({
   ProviderUtil: {
     setProvider: vi.fn(),
     setProviderId: vi.fn(),
@@ -49,7 +49,7 @@ vi.mock('../utils/SolanaStoreUtil.js', () => ({
   }
 }))
 
-vi.mock('@reown/appkit-utils/solana', () => ({
+vi.mock('@web3inno/appkit-utils/solana', () => ({
   SolHelpersUtil: {
     getChainFromCaip: vi.fn(),
     detectRpcUrl: vi.fn()

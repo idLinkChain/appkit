@@ -1,6 +1,6 @@
-import { createAppKit } from '@reown/appkit/react'
-import { EthersAdapter } from '@reown/appkit-adapter-ethers'
-import { SolanaAdapter } from '@reown/appkit-adapter-solana'
+import { createAppKit } from '@web3inno/appkit/react'
+import { EthersAdapter } from '@web3inno/appkit-adapter-ethers'
+import { SolanaAdapter } from '@web3inno/appkit-adapter-solana'
 import { ThemeStore } from '../../utils/StoreUtil'
 import { ConstantsUtil } from '../../utils/ConstantsUtil'
 import { AppKitButtons } from '../../components/AppKitButtons'
@@ -8,7 +8,7 @@ import { HuobiWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapte
 import { MultiChainTestsEthersSolana } from '../../components/MultiChainTestsEthersSolana'
 import { siweConfig } from '../../utils/SiweUtils'
 import { SiweData } from '../../components/Siwe/SiweData'
-import { mainnet } from '@reown/appkit/networks'
+import { mainnet } from '@web3inno/appkit/networks'
 
 const networks = ConstantsUtil.AllNetworks
 

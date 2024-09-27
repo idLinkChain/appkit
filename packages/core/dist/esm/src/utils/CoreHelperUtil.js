@@ -1,4 +1,4 @@
-import { ConstantsUtil as CommonConstants } from '@reown/appkit-common';
+import { ConstantsUtil as CommonConstants } from '@web3inno/appkit-common';
 import { ConstantsUtil } from './ConstantsUtil.js';
 export const CoreHelperUtil = {
     isMobile() {

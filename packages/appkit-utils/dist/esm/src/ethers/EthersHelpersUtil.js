@@ -1,4 +1,4 @@
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common';
 import { ConstantsUtil } from '../ConstantsUtil.js';
 import { PresetsUtil } from '../PresetsUtil.js';
 export const EthersHelpersUtil = {

@@ -1,5 +1,5 @@
 import type { ThemeMode, ThemeVariables } from '../utils/TypeUtil.js';
-import type { W3mThemeVariables } from '@reown/appkit-common';
+import type { W3mThemeVariables } from '@web3inno/appkit-common';
 export interface ThemeControllerState {
     themeMode: ThemeMode;
     themeVariables: ThemeVariables;

@@ -4,7 +4,7 @@ import { EventsController } from './EventsController.js';
 import { SnackController } from './SnackController.js';
 import { BlockchainApiController } from './BlockchainApiController.js';
 import { AccountController } from './AccountController.js';
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet';
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet';
 import { ChainController } from './ChainController.js';
 // -- State --------------------------------------------- //
 const state = proxy({

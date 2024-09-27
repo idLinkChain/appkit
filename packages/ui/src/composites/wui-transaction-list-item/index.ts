@@ -6,7 +6,7 @@ import type {
   TransactionStatus,
   TransactionDirection,
   TransactionImage
-} from '@reown/appkit-common'
+} from '@web3inno/appkit-common'
 import { resetStyles } from '../../utils/ThemeUtil.js'
 import '../../components/wui-text/index.js'
 import '../wui-transaction-visual/index.js'

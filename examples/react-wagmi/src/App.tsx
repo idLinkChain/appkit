@@ -4,9 +4,9 @@ import {
   useAppKitEvents,
   useAppKitState,
   useAppKitTheme
-} from '@reown/appkit/react'
-import { mainnet, polygon } from '@reown/appkit/networks'
-import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
+} from '@web3inno/appkit/react'
+import { base } from '@web3inno/appkit/networks'
+import { WagmiAdapter } from '@web3inno/appkit-adapter-wagmi'
 import { WagmiProvider } from 'wagmi'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiHooks } from './WagmiHooks'
@@ -15,7 +15,7 @@ import { WagmiHooks } from './WagmiHooks'
 const queryClient = new QueryClient()
 
 // @ts-expect-error 1. Get projectId
-const projectId = import.meta.env.VITE_PROJECT_ID
+const projectId = "c566a0c9534407b1759e42243a832b7d"
 if (!projectId) {
   throw new Error('VITE_PROJECT_ID is not set')
 }
@@ -23,13 +23,17 @@ if (!projectId) {
 // 2. Setup wagmi adapter
 const wagmiAdapter = new WagmiAdapter({
   projectId,
-  networks: [mainnet, polygon]
+  networks: [base]
 })
 
 // 3. Create modal
 createAppKit({
   adapters: [wagmiAdapter],
-  networks: [mainnet, polygon],
+  networks: [base],
+  allEthWallets: true,
+  featuredWalletIds: [
+    "fd20dc426fb37566d803205b19bbc1d4096b248ac04548e3cfb6b3a38bd033aa",
+  ],
   metadata: {
     name: 'AppKit',
     description: 'AppKit React Wagmi Example',

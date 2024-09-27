@@ -1,6 +1,6 @@
 import type { Connector, EstimateGasTransactionArgs, SendTransactionArgs, WcWallet, WriteContractArgs } from '../utils/TypeUtil.js';
-import { type W3mFrameTypes } from '@reown/appkit-wallet';
-import type { ChainNamespace } from '@reown/appkit-common';
+import { type W3mFrameTypes } from '@web3inno/appkit-wallet';
+import type { ChainNamespace } from '@web3inno/appkit-common';
 export interface ConnectExternalOptions {
     id: Connector['id'];
     type: Connector['type'];

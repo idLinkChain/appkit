@@ -1,4 +1,4 @@
-import { bd as Ns, m as be, bf as yb, bg as tt, bh as Th, bi as xa, bj as Wr, bk as qr, bl as Wp, B as Os, bm as Xp, bn as Zp, bo as wb, bp as td, bq as Ef, br as vh, bs as ba, bt as bb, bu as _b, bv as Ab, bw as Eb, bx as dn, by as Ib, bz as tr, bA as _r, bb as gs, bB as Na, bC as Sb, bD as Pb, bE as Mb, bF as If, bG as Cb, bH as xb, bI as Nb, bJ as Rb, bK as an, bL as Fh, bM as ti, bN as Ob, bO as Dh, bP as qh, bQ as Ra, bR as kh, bS as ed, bT as Vi, bU as gi, bV as ro, bW as lo, bX as en, bY as Mi } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
+import { bd as Ns, m as be, bf as yb, bg as tt, bh as Th, bi as xa, bj as Wr, bk as qr, bl as Wp, B as Os, bm as Xp, bn as Zp, bo as wb, bp as td, bq as Ef, br as vh, bs as ba, bt as bb, bu as _b, bv as Ab, bw as Eb, bx as dn, by as Ib, bz as tr, bA as _r, bb as gs, bB as Na, bC as Sb, bD as Pb, bE as Mb, bF as If, bG as Cb, bH as xb, bI as Nb, bJ as Rb, bK as an, bL as Fh, bM as ti, bN as Ob, bO as Dh, bP as qh, bQ as Ra, bR as kh, bS as ed, bT as Vi, bU as gi, bV as ro, bW as lo, bX as en, bY as Mi } from "./W3MFrameProviderSingleton--2RuNpyE.js";
 const Tb = ":";
 function io(i) {
   const [t, e] = i.split(Tb);
@@ -11628,7 +11628,7 @@ class Zh {
     if (this.rpc = this.getRpcConfig(t), this.chainId = this.rpc.chains.length ? Ca(this.rpc.chains) : Ca(this.rpc.optionalChains), this.signer = await o4.init({ projectId: this.rpc.projectId, metadata: this.rpc.metadata, disableProviderPing: t.disableProviderPing, relayUrl: t.relayUrl, storageOptions: t.storageOptions, customStoragePrefix: t.customStoragePrefix, telemetryEnabled: t.telemetryEnabled }), this.registerEventListeners(), await this.loadPersistedSession(), this.rpc.showQrModal) {
       let e;
       try {
-        const { WalletConnectModal: s } = await import("./index-Du_luu6j.js").then((o) => o.i);
+        const { WalletConnectModal: s } = await import("./index-CTpmabJs.js").then((o) => o.i);
         e = s;
       } catch {
         throw new Error("To use QR modal, please install @walletconnect/modal package");

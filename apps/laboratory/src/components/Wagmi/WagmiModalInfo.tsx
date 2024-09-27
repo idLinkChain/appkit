@@ -3,7 +3,7 @@ import UniversalProvider from '@walletconnect/universal-provider'
 
 import { useAccount } from 'wagmi'
 import { AppKitInfo } from '../AppKitInfo'
-import { useAppKitAccount } from '@reown/appkit/react'
+import { useAppKitAccount } from '@web3inno/appkit/react'
 
 export function WagmiModalInfo() {
   const { caipAddress, address, isConnected } = useAppKitAccount()

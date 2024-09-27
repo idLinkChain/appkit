@@ -1,6 +1,6 @@
 import UniversalProvider from '@walletconnect/universal-provider'
-import { SolConstantsUtil } from '@reown/appkit-utils/solana'
-import type { AnyTransaction, Provider } from '@reown/appkit-utils/solana'
+import { SolConstantsUtil } from '@web3inno/appkit-utils/solana'
+import type { AnyTransaction, Provider } from '@web3inno/appkit-utils/solana'
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js'
 import type { SessionTypes } from '@walletconnect/types'
 import base58 from 'bs58'
@@ -12,9 +12,9 @@ import {
   type SendOptions
 } from '@solana/web3.js'
 import { isVersionedTransaction } from '@solana/wallet-adapter-base'
-import type { CaipNetwork, ChainId } from '@reown/appkit-common'
+import type { CaipNetwork, ChainId } from '@web3inno/appkit-common'
 import { withSolanaNamespace } from '../utils/withSolanaNamespace.js'
-import { WcHelpersUtil } from '@reown/appkit'
+import { WcHelpersUtil } from '@web3inno/appkit'
 import { WalletConnectMethodNotSupportedError } from './shared/Errors.js'
 
 export type WalletConnectProviderConfig = {

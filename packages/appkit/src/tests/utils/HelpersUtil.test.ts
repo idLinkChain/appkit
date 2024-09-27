@@ -1,6 +1,6 @@
 import { describe, test, expect } from 'vitest'
 import { WcHelpersUtil } from '../../utils/HelpersUtil'
-import type { CaipNetwork } from '@reown/appkit-common'
+import type { CaipNetwork } from '@web3inno/appkit-common'
 import type { SessionTypes } from '@walletconnect/types'
 
 const mockEthereumNetwork = {

@@ -1,5 +1,5 @@
 import { type CreateConfigParameters } from '@wagmi/core';
-import { W3mFrameProvider } from '@reown/appkit-wallet';
+import { W3mFrameProvider } from '@web3inno/appkit-wallet';
 interface W3mFrameProviderOptions {
     projectId: string;
 }

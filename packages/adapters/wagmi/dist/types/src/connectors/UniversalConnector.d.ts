@@ -1,6 +1,6 @@
 import { type Address, type ProviderConnectInfo } from 'viem';
-import type { AppKitOptions } from '@reown/appkit';
-import type { AppKit } from '@reown/appkit';
+import type { AppKitOptions } from '@web3inno/appkit';
+import type { AppKit } from '@web3inno/appkit';
 export type AppKitOptionsParams = AppKitOptions & {
     isNewChainsStale?: boolean;
 };

@@ -1,14 +1,14 @@
 import { AppKit } from '../src/client.js';
 import { getAppKit } from '../src/library/vue/index.js';
 import packageJson from '../package.json' assert { type: 'json' };
-import { CoreHelperUtil } from '@reown/appkit-core';
+import { CoreHelperUtil } from '@web3inno/appkit-core';
 // -- Views ------------------------------------------------------------
-export * from '@reown/appkit-scaffold-ui';
+export * from '@web3inno/appkit-scaffold-ui';
 // -- Hooks ------------------------------------------------------------
 export * from '../src/library/vue/index.js';
 // -- Utils & Other -----------------------------------------------------
 export * from '../src/utils/index.js';
-export { CoreHelperUtil, AccountController, NetworkController } from '@reown/appkit-core';
+export { CoreHelperUtil, AccountController, NetworkController } from '@web3inno/appkit-core';
 let modal = undefined;
 export function createAppKit(options) {
     if (!modal) {

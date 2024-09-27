@@ -1,4 +1,4 @@
-import { type Balance } from '@reown/appkit-common';
+import { type Balance } from '@web3inno/appkit-common';
 export interface TxParams {
     receiverAddress: string;
     sendTokenAmount: number;

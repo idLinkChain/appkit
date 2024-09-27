@@ -9,8 +9,8 @@ import {
   getFilteredCapabilitySupportedChainInfo,
   getProviderCachedCapabilities
 } from '../utils/EIP5792Utils'
-import { W3mFrameProvider } from '@reown/appkit-wallet'
-import { useAppKitAccount } from '@reown/appkit/react'
+import { W3mFrameProvider } from '@web3inno/appkit-wallet'
+import { useAppKitAccount } from '@web3inno/appkit/react'
 
 type UseWagmiAvailableCapabilitiesParams = {
   capability?: string

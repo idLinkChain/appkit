@@ -11,11 +11,11 @@ import type {
 } from '../utils/TypeUtil.js'
 import { TransactionsController } from './TransactionsController.js'
 import { ChainController } from './ChainController.js'
-import { type W3mFrameTypes } from '@reown/appkit-wallet'
+import { type W3mFrameTypes } from '@web3inno/appkit-wallet'
 import { ModalController } from './ModalController.js'
 import { ConnectorController } from './ConnectorController.js'
 import { EventsController } from './EventsController.js'
-import type { ChainNamespace } from '@reown/appkit-common'
+import type { ChainNamespace } from '@web3inno/appkit-common'
 
 // -- Types --------------------------------------------- //
 export interface ConnectExternalOptions {

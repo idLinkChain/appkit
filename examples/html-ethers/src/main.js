@@ -1,6 +1,6 @@
-import { arbitrum, mainnet, optimism, polygon, zkSync, sepolia } from '@reown/appkit/networks'
-import { createAppKit } from '@reown/appkit'
-import { EthersAdapter } from '@reown/appkit-adapter-ethers'
+import { arbitrum, mainnet, optimism, polygon, zkSync, sepolia } from '@web3inno/appkit/networks'
+import { createAppKit } from '@web3inno/appkit'
+import { EthersAdapter } from '@web3inno/appkit-adapter-ethers'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

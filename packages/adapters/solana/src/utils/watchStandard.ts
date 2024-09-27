@@ -3,8 +3,8 @@ import { WalletStandardProvider } from '../providers/WalletStandardProvider.js'
 import { isWalletAdapterCompatibleStandardWallet } from '@solana/wallet-adapter-base'
 import type { Wallet } from '@wallet-standard/base'
 
-import type { AppKit } from '@reown/appkit'
-import type { CaipNetwork } from '@reown/appkit-common'
+import type { AppKit } from '@web3inno/appkit'
+import type { CaipNetwork } from '@web3inno/appkit-common'
 
 const { get, on } = getWallets()
 let standardAdapters: WalletStandardProvider[] = wrapWalletsWithAdapters(get())

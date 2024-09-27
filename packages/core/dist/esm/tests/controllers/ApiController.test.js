@@ -1,7 +1,7 @@
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 import { ApiController, AssetController, ChainController, ConnectorController, NetworkController, OptionsController } from '../../exports/index.js';
 import { api } from '../../src/controllers/ApiController.js';
-import { ConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 // -- Constants ----------------------------------------------------------------
 const chain = ConstantsUtil.CHAIN.EVM;
 // -- Tests --------------------------------------------------------------------

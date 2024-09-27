@@ -8,12 +8,12 @@ import {
   BlockchainApiController,
   EventsController,
   ChainController
-} from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
-import type { CoinbasePaySDKChainNameValues } from '@reown/appkit-core'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
+import type { CoinbasePaySDKChainNameValues } from '@web3inno/appkit-core'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
 
 @customElement('w3m-onramp-providers-view')
 export class W3mOnRampProvidersView extends LitElement {

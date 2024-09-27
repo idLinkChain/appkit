@@ -7,9 +7,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 import { html, LitElement } from 'lit';
 import { property, state } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
-import { customElement } from '@reown/appkit-ui';
+import { customElement } from '@web3inno/appkit-ui';
 import styles from './styles.js';
-import { AssetController, ModalController, OnRampController } from '@reown/appkit-core';
+import { AssetController, ModalController, OnRampController } from '@web3inno/appkit-core';
 let W3mInputCurrency = class W3mInputCurrency extends LitElement {
     constructor() {
         super();

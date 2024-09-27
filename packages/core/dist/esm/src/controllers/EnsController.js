@@ -5,7 +5,7 @@ import { AccountController } from './AccountController.js';
 import { ConnectorController } from './ConnectorController.js';
 import { RouterController } from './RouterController.js';
 import { ConnectionController } from './ConnectionController.js';
-import { NetworkUtil } from '@reown/appkit-common';
+import { NetworkUtil } from '@web3inno/appkit-common';
 import { EnsUtil } from '../utils/EnsUtil.js';
 import { ChainController } from './ChainController.js';
 // -- State --------------------------------------------- //

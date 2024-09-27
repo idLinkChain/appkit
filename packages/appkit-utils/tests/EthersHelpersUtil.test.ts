@@ -2,8 +2,8 @@ import { describe, it, expect, vi } from 'vitest'
 import { EthersHelpersUtil } from '../src/ethers/EthersHelpersUtil.js'
 import { ConstantsUtil } from '../src/ConstantsUtil.js'
 import { PresetsUtil } from '../src/PresetsUtil.js'
-import type { CaipNetwork } from '@reown/appkit-common'
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common'
+import type { CaipNetwork } from '@web3inno/appkit-common'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common'
 import type { Provider } from '../src/ethers/EthersTypesUtil.js'
 
 describe('EthersHelpersUtil', () => {

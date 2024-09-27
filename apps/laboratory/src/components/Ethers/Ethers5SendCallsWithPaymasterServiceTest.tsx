@@ -5,7 +5,7 @@ import {
   useAppKitNetwork,
   useAppKitProvider,
   type Provider
-} from '@reown/appkit/react'
+} from '@web3inno/appkit/react'
 import { UniversalProvider } from '@walletconnect/universal-provider'
 import { useChakraToast } from '../Toast'
 import { parseGwei } from 'viem'
@@ -16,7 +16,7 @@ import {
   WALLET_CAPABILITIES,
   getCapabilitySupportedChainInfo
 } from '../../utils/EIP5792Utils'
-import { W3mFrameProvider } from '@reown/appkit-wallet'
+import { W3mFrameProvider } from '@web3inno/appkit-wallet'
 
 export function Ethers5SendCallsWithPaymasterServiceTest() {
   const [paymasterServiceUrl, setPaymasterServiceUrl] = useState<string>('')

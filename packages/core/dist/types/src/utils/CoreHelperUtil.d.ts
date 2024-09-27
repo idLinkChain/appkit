@@ -1,5 +1,5 @@
-import type { AppKitSdkVersion, Balance, ChainNamespace } from '@reown/appkit-common';
-import type { CaipAddress, CaipNetwork } from '@reown/appkit-common';
+import type { AppKitSdkVersion, Balance, ChainNamespace } from '@web3inno/appkit-common';
+import type { CaipAddress, CaipNetwork } from '@web3inno/appkit-common';
 import type { ChainAdapter, LinkingRecord } from './TypeUtil.js';
 type SDKFramework = 'html' | 'react' | 'vue';
 export declare const CoreHelperUtil: {

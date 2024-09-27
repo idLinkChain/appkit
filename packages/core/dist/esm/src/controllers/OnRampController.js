@@ -5,7 +5,7 @@ import { BlockchainApiController } from './BlockchainApiController.js';
 import { ApiController } from './ApiController.js';
 import { ChainController } from './ChainController.js';
 import { AccountController } from './AccountController.js';
-import { ConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 export const USDC_CURRENCY_DEFAULT = {
     id: '2b92315d-eab7-5bef-84fa-089a131333f5',
     name: 'USD Coin',

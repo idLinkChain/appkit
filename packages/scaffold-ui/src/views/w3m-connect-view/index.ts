@@ -1,7 +1,7 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
-import { ConnectorController, OptionsController, RouterController } from '@reown/appkit-core'
+import { ConnectorController, OptionsController, RouterController } from '@web3inno/appkit-core'
 import { state } from 'lit/decorators/state.js'
 
 @customElement('w3m-connect-view')

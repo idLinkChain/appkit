@@ -1,14 +1,14 @@
 {
   "name": "@examples/react-ethers5",
   "private": true,
-  "version": "1.0.4",
+  "version": "1.0.4-alpha.3",
   "scripts": {
     "dev": "vite --port 3012",
     "build": "vite build"
   },
   "dependencies": {
-    "@reown/appkit-adapter-ethers5": "workspace:*",
-    "@reown/appkit": "workspace:*",
+    "@web3inno/appkit-adapter-ethers5": "workspace:*",
+    "@web3inno/appkit": "workspace:*",
     "ethers": "5.7.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"

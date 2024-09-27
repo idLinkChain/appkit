@@ -1,9 +1,9 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-list-social'
+import '@web3inno/appkit-ui/src/composites/wui-list-social'
 import { html } from 'lit'
 import '../../components/gallery-container'
 
-import type { WuiListSocial } from '@reown/appkit-ui'
+import type { WuiListSocial } from '@web3inno/appkit-ui'
 
 type Component = Meta<WuiListSocial>
 

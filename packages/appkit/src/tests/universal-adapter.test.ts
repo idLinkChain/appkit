@@ -4,9 +4,9 @@ import { UniversalAdapterClient } from '../universal-adapter'
 import { mockOptions } from './mocks/Options'
 import mockProvider from './mocks/UniversalProvider'
 import type UniversalProvider from '@walletconnect/universal-provider'
-import { NetworkController } from '@reown/appkit-core'
+import { NetworkController } from '@web3inno/appkit-core'
 import { ProviderUtil } from '../store/index.js'
-import { ConstantsUtil, PresetsUtil } from '@reown/appkit-utils'
+import { ConstantsUtil, PresetsUtil } from '@web3inno/appkit-utils'
 import mockAppKit from './mocks/AppKit'
 
 describe('UniversalAdapter', () => {

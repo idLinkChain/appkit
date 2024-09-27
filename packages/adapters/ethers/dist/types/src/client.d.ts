@@ -1,9 +1,9 @@
-import type { AppKitOptions } from '@reown/appkit';
-import { type AdapterType, type CaipNetwork, type ChainNamespace } from '@reown/appkit-common';
-import { type Provider, type ProviderType } from '@reown/appkit-utils/ethers';
-import type { AppKit } from '@reown/appkit';
-import type { ConnectionControllerClient, NetworkControllerClient } from '@reown/appkit-core';
-import type { PublicStateControllerState } from '@reown/appkit-core';
+import type { AppKitOptions } from '@web3inno/appkit';
+import { type AdapterType, type CaipNetwork, type ChainNamespace } from '@web3inno/appkit-common';
+import { type Provider, type ProviderType } from '@web3inno/appkit-utils/ethers';
+import type { AppKit } from '@web3inno/appkit';
+import type { ConnectionControllerClient, NetworkControllerClient } from '@web3inno/appkit-core';
+import type { PublicStateControllerState } from '@web3inno/appkit-core';
 export interface AdapterOptions {
     ethersConfig: ProviderType;
     defaultCaipNetwork?: CaipNetwork;
@@ -33,8 +33,8 @@ export declare class EthersAdapter {
     chainNamespace: ChainNamespace;
     networkControllerClient?: NetworkControllerClient;
     connectionControllerClient?: ConnectionControllerClient;
-    siweControllerClient: import("@reown/appkit-siwe").AppKitSIWEClient | undefined;
-    tokens: import("@reown/appkit").Tokens | undefined;
+    siweControllerClient: import("@web3inno/appkit-siwe").AppKitSIWEClient | undefined;
+    tokens: import("@web3inno/appkit").Tokens | undefined;
     defaultCaipNetwork: CaipNetwork | undefined;
     adapterType: AdapterType;
     private createEthersConfig;

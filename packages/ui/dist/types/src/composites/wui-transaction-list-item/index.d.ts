@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import { type TransactionType } from '../../utils/TypeUtil.js';
-import type { TransactionStatus, TransactionDirection, TransactionImage } from '@reown/appkit-common';
+import type { TransactionStatus, TransactionDirection, TransactionImage } from '@web3inno/appkit-common';
 import '../../components/wui-text/index.js';
 import '../wui-transaction-visual/index.js';
 export declare class WuiTransactionListItem extends LitElement {

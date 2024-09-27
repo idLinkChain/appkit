@@ -1,4 +1,4 @@
-import type { AppKitOptions } from '@reown/appkit'
+import type { AppKitOptions } from '@web3inno/appkit'
 import {
   NetworkUtil,
   SafeLocalStorage,
@@ -8,40 +8,40 @@ import {
   type CaipNetwork,
   type CaipNetworkId,
   type ChainNamespace
-} from '@reown/appkit-common'
+} from '@web3inno/appkit-common'
 import {
   AccountController,
   ChainController,
   CoreHelperUtil,
   type CombinedProvider,
   type Connector
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 import {
   EthersHelpersUtil,
   type Provider,
   type ProviderType,
   type ProviderId,
   type Address
-} from '@reown/appkit-utils/ethers'
-import type { AppKit } from '@reown/appkit'
+} from '@web3inno/appkit-utils/ethers'
+import type { AppKit } from '@web3inno/appkit'
 import {
   W3mFrameHelpers,
   W3mFrameProvider,
   W3mFrameRpcConstants,
   type W3mFrameTypes
-} from '@reown/appkit-wallet'
-import { ConstantsUtil as CoreConstantsUtil } from '@reown/appkit-core'
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common'
-import { ConstantsUtil, HelpersUtil, PresetsUtil } from '@reown/appkit-utils'
+} from '@web3inno/appkit-wallet'
+import { ConstantsUtil as CoreConstantsUtil } from '@web3inno/appkit-core'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common'
+import { ConstantsUtil, HelpersUtil, PresetsUtil } from '@web3inno/appkit-utils'
 import UniversalProvider from '@walletconnect/universal-provider'
-import type { ConnectionControllerClient, NetworkControllerClient } from '@reown/appkit-core'
-import { WcConstantsUtil } from '@reown/appkit'
+import type { ConnectionControllerClient, NetworkControllerClient } from '@web3inno/appkit-core'
+import { WcConstantsUtil } from '@web3inno/appkit'
 import { Ethers5Methods } from './utils/Ethers5Methods.js'
 import { ethers } from 'ethers5'
-import type { PublicStateControllerState } from '@reown/appkit-core'
-import { ProviderUtil } from '@reown/appkit/store'
+import type { PublicStateControllerState } from '@web3inno/appkit-core'
+import { ProviderUtil } from '@web3inno/appkit/store'
 import { CoinbaseWalletSDK, type ProviderInterface } from '@coinbase/wallet-sdk'
-import { W3mFrameProviderSingleton } from '@reown/appkit/auth-provider'
+import { W3mFrameProviderSingleton } from '@web3inno/appkit/auth-provider'
 
 // -- Types ---------------------------------------------------------------------
 export interface AdapterOptions {
@@ -326,7 +326,7 @@ export class Ethers5Adapter {
 
         this.appKit?.setClientId(null)
         if (this.options?.siweConfig?.options?.signOutOnDisconnect) {
-          const { SIWEController } = await import('@reown/appkit-siwe')
+          const { SIWEController } = await import('@web3inno/appkit-siwe')
           await SIWEController.signOut()
         }
 

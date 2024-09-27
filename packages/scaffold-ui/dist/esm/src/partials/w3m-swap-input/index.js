@@ -6,9 +6,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
-import { EventsController, RouterController } from '@reown/appkit-core';
-import { InputUtil, NumberUtil } from '@reown/appkit-common';
-import { UiHelperUtil, customElement } from '@reown/appkit-ui';
+import { EventsController, RouterController } from '@web3inno/appkit-core';
+import { InputUtil, NumberUtil } from '@web3inno/appkit-common';
+import { UiHelperUtil, customElement } from '@web3inno/appkit-ui';
 import styles from './styles.js';
 const MINIMUM_USD_VALUE_TO_CONVERT = 0.00005;
 let W3mSwapInput = class W3mSwapInput extends LitElement {

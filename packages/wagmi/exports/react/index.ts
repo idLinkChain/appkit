@@ -1,7 +1,7 @@
-import { AppKit } from '@reown/appkit'
-import type { AppKitOptions } from '@reown/appkit'
-import { WagmiAdapter, type AdapterOptions } from '@reown/appkit-adapter-wagmi'
-import { getAppKit } from '@reown/appkit/library/react'
+import { AppKit } from '@web3inno/appkit'
+import type { AppKitOptions } from '@web3inno/appkit'
+import { WagmiAdapter, type AdapterOptions } from '@web3inno/appkit-adapter-wagmi'
+import { getAppKit } from '@web3inno/appkit/library/react'
 import { type Config, type CreateConfigParameters } from 'wagmi'
 import packageJson from '../../package.json' assert { type: 'json' }
 
@@ -37,4 +37,4 @@ export {
   useAppKitState,
   useAppKitEvents,
   useWalletInfo
-} from '@reown/appkit/library/react'
+} from '@web3inno/appkit/library/react'

@@ -1,7 +1,7 @@
 'use client';
-import { AppKit, AccountController, CoreHelperUtil } from '@reown/appkit';
-import { EthersAdapter } from '@reown/appkit-adapter-ethers';
-import { getAppKit } from '@reown/appkit/library/react';
+import { AppKit, AccountController, CoreHelperUtil } from '@web3inno/appkit';
+import { EthersAdapter } from '@web3inno/appkit-adapter-ethers';
+import { getAppKit } from '@web3inno/appkit/library/react';
 import { useSnapshot } from 'valtio';
 import packageJson from '../package.json' assert { type: 'json' };
 let appkit = undefined;
@@ -40,5 +40,5 @@ export function useAppkitAccount() {
         status
     };
 }
-export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents, useWalletInfo } from '@reown/appkit/library/react';
+export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents, useWalletInfo } from '@web3inno/appkit/library/react';
 //# sourceMappingURL=react.js.map

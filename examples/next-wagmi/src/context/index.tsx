@@ -2,7 +2,7 @@
 
 import { wagmiAdapter, projectId, networks } from '@/config'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { createAppKit } from '@reown/appkit/react'
+import { createAppKit } from '@web3inno/appkit/react'
 import React, { type ReactNode } from 'react'
 import { cookieToInitialState, WagmiProvider, type Config } from 'wagmi'
 

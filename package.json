@@ -1,6 +1,6 @@
 {
   "name": "@web3inno/app-kit",
-  "version": "1.0.4-alpha.2",
+  "version": "1.0.4-alpha.3",
   "private": false,
   "type": "module",
   "scripts": {

@@ -1,5 +1,5 @@
-import { n as m } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
-import { e as P, h as We, a as Ve } from "./wagmi-DIqhhgbV.js";
+import { n as m } from "./W3MFrameProviderSingleton--2RuNpyE.js";
+import { e as P, h as We, a as Ve } from "./wagmi-_sRQOVwL.js";
 const qe = () => "9.1.0", ke = (e) => e.toString(16).padStart(2, "0"), Fe = (e) => {
   const n = new Uint8Array(e / 2);
   return window.crypto.getRandomValues(n), Array.from(n, ke).join("");

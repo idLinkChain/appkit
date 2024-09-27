@@ -1,4 +1,4 @@
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common';
 import { SolConstantsUtil } from './SolanaConstantsUtil.js';
 const NetworkImageIds = {
     '5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp': 'a1b58899-f671-4276-6a5e-56ca5bd59700',

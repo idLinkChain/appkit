@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-list-wallet-transaction'
-import type { WuiListWalletTransaction } from '@reown/appkit-ui/src/composites/wui-list-wallet-transaction'
+import '@web3inno/appkit-ui/src/composites/wui-list-wallet-transaction'
+import type { WuiListWalletTransaction } from '@web3inno/appkit-ui/src/composites/wui-list-wallet-transaction'
 import { html } from 'lit'
 import '../../components/gallery-container'
 import { networkImageSrc } from '../../utils/PresetUtils'

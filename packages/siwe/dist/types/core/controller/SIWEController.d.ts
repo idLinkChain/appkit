@@ -1,5 +1,5 @@
 import type { SIWEClientMethods, SIWESession, SIWECreateMessageArgs, SIWEVerifyMessageArgs } from '../utils/TypeUtils.js';
-import type { SIWEStatus } from '@reown/appkit-common';
+import type { SIWEStatus } from '@web3inno/appkit-common';
 export interface SIWEControllerClient extends SIWEClientMethods {
     signIn: () => Promise<SIWESession>;
     options: {

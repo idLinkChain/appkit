@@ -1,5 +1,5 @@
-import { ConnectorController, StorageUtil } from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+import { ConnectorController, StorageUtil } from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 
 @customElement('w3m-account-view')

@@ -1,6 +1,6 @@
 {
-  "name": "@reown/appkit-wallet",
-  "version": "1.0.4",
+  "name": "@web3inno/appkit-wallet",
+  "version": "1.0.4-alpha.3",
   "type": "module",
   "main": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "@walletconnect/logger": "2.1.2",
-    "@reown/appkit-common": "workspace:*",
-    "@reown/appkit-polyfills": "workspace:*",
+    "@web3inno/appkit-common": "workspace:*",
+    "@web3inno/appkit-polyfills": "workspace:*",
     "zod": "3.22.4"
   },
   "author": "Reown <support@reown.com> (https://reown.com)",

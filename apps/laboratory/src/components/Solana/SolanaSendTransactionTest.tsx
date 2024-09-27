@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Stack, Spacer, Link } from '@chakra-ui/react'
-import { useAppKitAccount, useAppKitProvider } from '@reown/appkit/react'
+import { useAppKitAccount, useAppKitProvider } from '@web3inno/appkit/react'
 import {
   PublicKey,
   Transaction,
@@ -10,7 +10,7 @@ import {
 } from '@solana/web3.js'
 
 import { useChakraToast } from '../Toast'
-import { type Provider, useAppKitConnection } from '@reown/appkit-adapter-solana/react'
+import { type Provider, useAppKitConnection } from '@web3inno/appkit-adapter-solana/react'
 
 const PHANTOM_TESTNET_ADDRESS = '8vCyX7oB6Pc3pbWMGYYZF5pbSnAdQ7Gyr32JqxqCy8ZR'
 const recipientAddress = new PublicKey(PHANTOM_TESTNET_ADDRESS)

@@ -1,8 +1,8 @@
 import { ChainNotConfiguredError, ProviderNotFoundError, createConnector } from '@wagmi/core';
 import {} from '@walletconnect/universal-provider';
 import { SwitchChainError, UserRejectedRequestError, getAddress, numberToHex } from 'viem';
-import { WcHelpersUtil } from '@reown/appkit';
-import { StorageUtil } from '@reown/appkit-core';
+import { WcHelpersUtil } from '@web3inno/appkit';
+import { StorageUtil } from '@web3inno/appkit-core';
 import { convertToAppKitChains } from '../utils/helpers.js';
 walletConnect.type = 'walletConnect';
 export function walletConnect(parameters, appKit) {

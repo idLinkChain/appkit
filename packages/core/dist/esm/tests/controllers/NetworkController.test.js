@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { ChainController, NetworkController } from '../../exports/index.js';
-import { ConstantsUtil } from '@reown/appkit-common';
+import { ConstantsUtil } from '@web3inno/appkit-common';
 // -- Setup --------------------------------------------------------------------
 const caipNetwork = {
     id: 'eip155:1',

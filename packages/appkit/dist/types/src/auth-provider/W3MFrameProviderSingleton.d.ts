@@ -1,5 +1,5 @@
-import type { CaipNetworkId } from '@reown/appkit-common';
-import { W3mFrameProvider } from '@reown/appkit-wallet';
+import type { CaipNetworkId } from '@web3inno/appkit-common';
+import { W3mFrameProvider } from '@web3inno/appkit-wallet';
 export declare class W3mFrameProviderSingleton {
     private static instance;
     private constructor();

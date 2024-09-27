@@ -1,7 +1,7 @@
 'use client';
-import { AppKit } from '@reown/appkit';
-import { SolanaAdapter, useAppKitConnection } from '@reown/appkit-adapter-solana/react';
-import { getAppKit } from '@reown/appkit/library/react';
+import { AppKit } from '@web3inno/appkit';
+import { SolanaAdapter, useAppKitConnection } from '@web3inno/appkit-adapter-solana/react';
+import { getAppKit } from '@web3inno/appkit/library/react';
 import packageJson from '../package.json' assert { type: 'json' };
 let appkit = undefined;
 let solanaAdapter = undefined;
@@ -25,6 +25,6 @@ export function useDisconnect() {
         disconnect
     };
 }
-export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents } from '@reown/appkit/library/react';
+export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents } from '@web3inno/appkit/library/react';
 export { useAppKitConnection };
 //# sourceMappingURL=react.js.map

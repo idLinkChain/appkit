@@ -26,9 +26,9 @@ import {
   ChainController,
   ConstantsUtil as CoreConstantsUtil,
   StorageUtil
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 import type UniversalProvider from '@walletconnect/universal-provider'
-import type { ChainAdapter } from '@reown/appkit-core'
+import type { ChainAdapter } from '@web3inno/appkit-core'
 import { prepareTransactionRequest, sendTransaction as wagmiSendTransaction } from '@wagmi/core'
 import type { Chain } from '@wagmi/core/chains'
 import { mainnet } from 'viem/chains'
@@ -46,16 +46,16 @@ import type {
   PublicStateControllerState,
   SendTransactionArgs,
   WriteContractArgs
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 import { formatUnits, parseUnits } from 'viem'
 import type { Hex } from 'viem'
-import { ConstantsUtil, PresetsUtil, HelpersUtil } from '@reown/appkit-utils'
+import { ConstantsUtil, PresetsUtil, HelpersUtil } from '@web3inno/appkit-utils'
 import {
   CaipNetworksUtil,
   isReownName,
   SafeLocalStorage,
   SafeLocalStorageKeys
-} from '@reown/appkit-common'
+} from '@web3inno/appkit-common'
 import {
   convertToAppKitChains,
   getEmailCaipNetworks,
@@ -63,18 +63,18 @@ import {
   getWalletConnectCaipNetworks,
   requireCaipAddress
 } from './utils/helpers.js'
-import { W3mFrameHelpers, W3mFrameRpcConstants } from '@reown/appkit-wallet'
-import type { W3mFrameProvider, W3mFrameTypes } from '@reown/appkit-wallet'
-import { NetworkUtil } from '@reown/appkit-common'
+import { W3mFrameHelpers, W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
+import type { W3mFrameProvider, W3mFrameTypes } from '@web3inno/appkit-wallet'
+import { NetworkUtil } from '@web3inno/appkit-common'
 import { normalize } from 'viem/ens'
-import type { AppKitOptions } from '@reown/appkit'
-import type { CaipAddress, CaipNetwork, ChainNamespace, AdapterType } from '@reown/appkit-common'
-import { ConstantsUtil as CommonConstantsUtil } from '@reown/appkit-common'
-import type { AppKit } from '@reown/appkit'
+import type { AppKitOptions } from '@web3inno/appkit'
+import type { CaipAddress, CaipNetwork, ChainNamespace, AdapterType } from '@web3inno/appkit-common'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3inno/appkit-common'
+import type { AppKit } from '@web3inno/appkit'
 import { walletConnect } from './connectors/UniversalConnector.js'
 import { coinbaseWallet } from '@wagmi/connectors'
 import { authConnector } from './connectors/AuthConnector.js'
-import { ProviderUtil } from '@reown/appkit/store'
+import { ProviderUtil } from '@web3inno/appkit/store'
 
 // -- Types ---------------------------------------------------------------------
 export interface AdapterOptions<C extends Config>
@@ -294,7 +294,7 @@ export class WagmiAdapter implements ChainAdapter {
           await connector.setRequestedChainsIds(siweParams.chains)
 
           const { SIWEController, getDidChainId, getDidAddress } = await import(
-            '@reown/appkit-siwe'
+            '@web3inno/appkit-siwe'
           )
 
           const chains = this.caipNetworks
@@ -390,7 +390,7 @@ export class WagmiAdapter implements ChainAdapter {
       disconnect: async () => {
         await disconnect(this.wagmiConfig)
         if (this.options?.siweConfig?.options?.signOutOnDisconnect) {
-          const { SIWEController } = await import('@reown/appkit-siwe')
+          const { SIWEController } = await import('@web3inno/appkit-siwe')
           await SIWEController.signOut()
         }
         SafeLocalStorage.removeItem(SafeLocalStorageKeys.WALLET_ID)

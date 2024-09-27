@@ -1,6 +1,6 @@
-import { AppKit } from '@reown/appkit';
-import { WagmiAdapter } from '@reown/appkit-adapter-wagmi';
-import { getAppKit } from '@reown/appkit/library/react';
+import { AppKit } from '@web3inno/appkit';
+import { WagmiAdapter } from '@web3inno/appkit-adapter-wagmi';
+import { getAppKit } from '@web3inno/appkit/library/react';
 import {} from 'wagmi';
 import packageJson from '../../package.json' assert { type: 'json' };
 let appkit = undefined;
@@ -18,5 +18,5 @@ export function createAppKit(options) {
     getAppKit(appkit);
     return appkit;
 }
-export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents, useWalletInfo } from '@reown/appkit/library/react';
+export { useAppKitTheme, useAppKit, useAppKitState, useAppKitEvents, useWalletInfo } from '@web3inno/appkit/library/react';
 //# sourceMappingURL=index.js.map

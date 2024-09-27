@@ -1,6 +1,6 @@
 import { cookieStorage, createStorage } from '@wagmi/core'
-import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
-import { mainnet, arbitrum, avalanche, base, optimism, polygon } from '@reown/appkit/networks'
+import { WagmiAdapter } from '@web3inno/appkit-adapter-wagmi'
+import { mainnet, arbitrum, avalanche, base, optimism, polygon } from '@web3inno/appkit/networks'
 
 export const projectId = process.env['NEXT_PUBLIC_PROJECT_ID']
 

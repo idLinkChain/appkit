@@ -1,6 +1,6 @@
 // -- Types --------------------------------------------- //
 
-import { NumberUtil } from '@reown/appkit-common'
+import { NumberUtil } from '@web3inno/appkit-common'
 import type { SwapTokenWithBalance } from './TypeUtil.js'
 
 // -- Util ---------------------------------------- //

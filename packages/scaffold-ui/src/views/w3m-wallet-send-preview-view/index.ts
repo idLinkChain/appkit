@@ -1,8 +1,8 @@
-import { UiHelperUtil, customElement } from '@reown/appkit-ui'
+import { UiHelperUtil, customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
 import { state } from 'lit/decorators.js'
-import { ChainController, RouterController, SendController } from '@reown/appkit-core'
+import { ChainController, RouterController, SendController } from '@web3inno/appkit-core'
 
 @customElement('w3m-wallet-send-preview-view')
 export class W3mWalletSendPreviewView extends LitElement {

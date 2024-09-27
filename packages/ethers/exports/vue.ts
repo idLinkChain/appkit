@@ -1,11 +1,11 @@
-import { AppKit } from '@reown/appkit'
-import type { AppKitOptions } from '@reown/appkit'
-import { EthersAdapter, type AdapterOptions } from '@reown/appkit-adapter-ethers'
-import { getAppKit } from '@reown/appkit/library/vue'
+import { AppKit } from '@web3inno/appkit'
+import type { AppKitOptions } from '@web3inno/appkit'
+import { EthersAdapter, type AdapterOptions } from '@web3inno/appkit-adapter-ethers'
+import { getAppKit } from '@web3inno/appkit/library/vue'
 import packageJson from '../package.json' assert { type: 'json' }
 
 // -- Types -------------------------------------------------------------
-export type { AdapterOptions } from '@reown/appkit-adapter-ethers'
+export type { AdapterOptions } from '@web3inno/appkit-adapter-ethers'
 
 // -- Setup -------------------------------------------------------------------
 let appkit: AppKit | undefined = undefined
@@ -55,4 +55,4 @@ export {
   useAppKitState,
   useAppKitEvents,
   useWalletInfo
-} from '@reown/appkit/library/vue'
+} from '@web3inno/appkit/library/vue'

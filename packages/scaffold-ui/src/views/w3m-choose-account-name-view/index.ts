@@ -1,15 +1,15 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import {
   AccountController,
   CoreHelperUtil,
   EventsController,
   RouterController
-} from '@reown/appkit-core'
+} from '@web3inno/appkit-core'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import styles from './styles.js'
-import { NavigationUtil } from '@reown/appkit-common'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
+import { NavigationUtil } from '@web3inno/appkit-common'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
 
 @customElement('w3m-choose-account-name-view')
 export class W3mChooseAccountNameView extends LitElement {

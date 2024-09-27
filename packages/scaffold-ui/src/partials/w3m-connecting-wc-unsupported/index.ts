@@ -1,5 +1,5 @@
-import { AssetUtil, EventsController, RouterController } from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+import { AssetUtil, EventsController, RouterController } from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { ifDefined } from 'lit/directives/if-defined.js'
 

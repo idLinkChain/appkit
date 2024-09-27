@@ -1,4 +1,4 @@
-import { m as e } from "./W3MFrameProviderSingleton-C9zzHw2W.js";
+import { m as e } from "./W3MFrameProviderSingleton--2RuNpyE.js";
 function t() {
   if (typeof WebSocket < "u")
     return WebSocket;

@@ -1,4 +1,4 @@
-import type { WuiAccountButton } from '@reown/appkit-ui';
+import type { WuiAccountButton } from '@web3inno/appkit-ui';
 import { LitElement } from 'lit';
 export declare class W3mAccountButton extends LitElement {
     private unsubscribe;

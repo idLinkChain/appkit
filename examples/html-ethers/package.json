@@ -1,14 +1,14 @@
 {
   "name": "@examples/html-ethers",
   "private": true,
-  "version": "1.0.4",
+  "version": "1.0.4-alpha.3",
   "scripts": {
     "dev": "vite --port 3011",
     "build": "vite build"
   },
   "dependencies": {
-    "@reown/appkit-adapter-ethers": "workspace:*",
-    "@reown/appkit": "workspace:*",
+    "@web3inno/appkit-adapter-ethers": "workspace:*",
+    "@web3inno/appkit": "workspace:*",
     "ethers": "6.13.2"
   },
   "devDependencies": {

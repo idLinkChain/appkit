@@ -12,13 +12,13 @@ import {
   OptionsController,
   ChainController,
   type AccountType
-} from '@reown/appkit-core'
-import { customElement, UiHelperUtil } from '@reown/appkit-ui'
+} from '@web3inno/appkit-core'
+import { customElement, UiHelperUtil } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
-import { ConstantsUtil } from '@reown/appkit-common'
-import { W3mFrameRpcConstants } from '@reown/appkit-wallet'
+import { ConstantsUtil } from '@web3inno/appkit-common'
+import { W3mFrameRpcConstants } from '@web3inno/appkit-wallet'
 
 import styles from './styles.js'
 

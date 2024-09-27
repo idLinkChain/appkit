@@ -1,4 +1,4 @@
-import type { ChainNamespace } from '@reown/appkit-common';
+import type { ChainNamespace } from '@web3inno/appkit-common';
 export declare const ConstantsUtil: {
     WALLET_CONNECT_CONNECTOR_ID: string;
     INJECTED_CONNECTOR_ID: string;

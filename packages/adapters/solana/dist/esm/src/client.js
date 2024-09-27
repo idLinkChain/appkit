@@ -1,19 +1,19 @@
 import { Connection } from '@solana/web3.js';
-import { AccountController, ApiController, ChainController, CoreHelperUtil, EventsController } from '@reown/appkit-core';
-import { ConstantsUtil as CommonConstantsUtil, SafeLocalStorage, SafeLocalStorageKeys } from '@reown/appkit-common';
-import { SolConstantsUtil, SolHelpersUtil } from '@reown/appkit-utils/solana';
+import { AccountController, ApiController, ChainController, CoreHelperUtil, EventsController } from '@web3inno/appkit-core';
+import { ConstantsUtil as CommonConstantsUtil, SafeLocalStorage, SafeLocalStorageKeys } from '@web3inno/appkit-common';
+import { SolConstantsUtil, SolHelpersUtil } from '@web3inno/appkit-utils/solana';
 import { SolStoreUtil } from './utils/SolanaStoreUtil.js';
 import { PublicKey } from '@solana/web3.js';
 import UniversalProvider, {} from '@walletconnect/universal-provider';
 import { watchStandard } from './utils/watchStandard.js';
 import { WalletConnectProvider } from './providers/WalletConnectProvider.js';
 import { AuthProvider } from './providers/AuthProvider.js';
-import { W3mFrameHelpers, W3mFrameProvider, W3mFrameRpcConstants } from '@reown/appkit-wallet';
-import { ConstantsUtil as CoreConstantsUtil } from '@reown/appkit-core';
+import { W3mFrameHelpers, W3mFrameProvider, W3mFrameRpcConstants } from '@web3inno/appkit-wallet';
+import { ConstantsUtil as CoreConstantsUtil } from '@web3inno/appkit-core';
 import { withSolanaNamespace } from './utils/withSolanaNamespace.js';
-import { ProviderUtil } from '@reown/appkit/store';
-import { W3mFrameProviderSingleton } from '@reown/appkit/auth-provider';
-import { ConstantsUtil } from '@reown/appkit-utils';
+import { ProviderUtil } from '@web3inno/appkit/store';
+import { W3mFrameProviderSingleton } from '@web3inno/appkit/auth-provider';
+import { ConstantsUtil } from '@web3inno/appkit-utils';
 import { createSendTransaction } from './utils/createSendTransaction.js';
 import { CoinbaseWalletProvider } from './providers/CoinbaseWalletProvider.js';
 export class SolanaAdapter {

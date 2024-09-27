@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@reown/appkit-ui/src/composites/wui-select'
-import type { WuiSelect } from '@reown/appkit-ui/src/composites/wui-select'
+import '@web3inno/appkit-ui/src/composites/wui-select'
+import type { WuiSelect } from '@web3inno/appkit-ui/src/composites/wui-select'
 import { html } from 'lit'
 import { networkImageSrc } from '../../utils/PresetUtils'
 

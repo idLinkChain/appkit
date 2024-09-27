@@ -1,6 +1,6 @@
 {
-  "name": "@reown/appkit-cdn",
-  "version": "1.0.4",
+  "name": "@web3inno/appkit-cdn",
+  "version": "1.0.4-alpha.3",
   "main": "dist/wagmi.js",
   "type": "module",
   "files": [
@@ -25,10 +25,10 @@
     }
   },
   "dependencies": {
-    "@reown/appkit-wagmi": "workspace:*",
-    "@reown/appkit-ethers": "workspace:*",
-    "@reown/appkit-ethers5": "workspace:*",
-    "@reown/appkit-polyfills": "workspace:*",
+    "@web3inno/appkit-wagmi": "workspace:*",
+    "@web3inno/appkit-ethers": "workspace:*",
+    "@web3inno/appkit-ethers5": "workspace:*",
+    "@web3inno/appkit-polyfills": "workspace:*",
     "@wagmi/connectors": "5.1.9",
     "@wagmi/core": "2.13.4",
     "viem": "2.21.4",

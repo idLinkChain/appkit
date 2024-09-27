@@ -1,4 +1,4 @@
-import { useAppKitNetwork } from '@reown/appkit/react'
+import { useAppKitNetwork } from '@web3inno/appkit/react'
 
 import { StackDivider, Card, CardHeader, Heading, CardBody, Box, Stack } from '@chakra-ui/react'
 import { UpaEvmSignMessageTest } from './UpaEvmSignMessageTest'

@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 import { ChainController, ConnectorController, OptionsController } from '../../exports/index.js';
-import { ConstantsUtil, getW3mThemeVariables } from '@reown/appkit-common';
+import { ConstantsUtil, getW3mThemeVariables } from '@web3inno/appkit-common';
 // -- Setup --------------------------------------------------------------------
 const authProvider = {
     syncDappData: (_args) => Promise.resolve(),

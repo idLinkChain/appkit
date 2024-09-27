@@ -1,6 +1,6 @@
-import { arbitrum, mainnet } from '@reown/appkit/networks'
-import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
-import { createAppKit } from '@reown/appkit'
+import { arbitrum, mainnet } from '@web3inno/appkit/networks'
+import { WagmiAdapter } from '@web3inno/appkit-adapter-wagmi'
+import { createAppKit } from '@web3inno/appkit'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

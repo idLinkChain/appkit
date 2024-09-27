@@ -1,8 +1,8 @@
-import { type Event } from '@reown/appkit-core';
-import type { W3mAccountButton, W3mButton, W3mConnectButton, W3mNetworkButton, W3mOnrampWidget } from '@reown/appkit-scaffold-ui';
+import { type Event } from '@web3inno/appkit-core';
+import type { W3mAccountButton, W3mButton, W3mConnectButton, W3mNetworkButton, W3mOnrampWidget } from '@web3inno/appkit-scaffold-ui';
 import type { AppKit } from '../../../src/client.js';
 import type { AppKitOptions } from '../../utils/TypesUtil.js';
-import type { ChainNamespace } from '@reown/appkit-common';
+import type { ChainNamespace } from '@web3inno/appkit-common';
 type OpenOptions = {
     view: 'Account' | 'Connect' | 'Networks' | 'ApproveTransaction' | 'OnRampProviders';
 };
@@ -19,7 +19,7 @@ declare module '@vue/runtime-core' {
 }
 export declare function getAppKit(appKit: AppKit): void;
 export declare function useAppKitAccount(): {
-    caipAddress: `eip155:${string}:${string}` | `eip155:${number}:${string}` | `solana:${string}:${string}` | `solana:${number}:${string}` | `polkadot:${string}:${string}` | `polkadot:${number}:${string}` | undefined;
+    caipAddress: `solana:${string}:${string}` | `solana:${number}:${string}` | `polkadot:${string}:${string}` | `polkadot:${number}:${string}` | `eip155:${string}:${string}` | `eip155:${number}:${string}` | undefined;
     address: string | undefined;
     isConnected: boolean;
     status: "reconnecting" | "connected" | "disconnected" | "connecting" | undefined;
@@ -31,7 +31,7 @@ export declare function useAppKitProvider<T>(chainNamespace: ChainNamespace): {
 export declare function useAppKitTheme(): {
     setThemeMode: (themeMode: ThemeModeOptions) => void;
     setThemeVariables: (themeVariables: ThemeVariablesOptions) => void;
-    themeMode: import("vue").Ref<import("@reown/appkit-core").ThemeMode>;
+    themeMode: import("vue").Ref<import("@web3inno/appkit-core").ThemeMode>;
     themeVariables: import("vue").Ref<{
         '--w3m-font-family'?: string | undefined;
         '--w3m-accent'?: string | undefined;
@@ -55,7 +55,7 @@ export declare function useWalletInfo(): {
 };
 export declare function useAppKitState(): {
     open: boolean;
-    selectedNetworkId: `eip155:${string}` | `eip155:${number}` | `solana:${string}` | `solana:${number}` | `polkadot:${string}` | `polkadot:${number}` | undefined;
+    selectedNetworkId: `solana:${string}` | `solana:${number}` | `polkadot:${string}` | `polkadot:${number}` | `eip155:${string}` | `eip155:${number}` | undefined;
 };
 export interface AppKitEvent {
     timestamp: number;

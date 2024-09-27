@@ -1,12 +1,12 @@
 'use client'
 
-import { AppKit } from '@reown/appkit'
+import { AppKit } from '@web3inno/appkit'
 import {
   SolanaAdapter,
   type Provider,
   useAppKitConnection
-} from '@reown/appkit-adapter-solana/react'
-import { getAppKit } from '@reown/appkit/library/react'
+} from '@web3inno/appkit-adapter-solana/react'
+import { getAppKit } from '@web3inno/appkit/library/react'
 import type { SolanaAppKitOptions } from './options.js'
 import packageJson from '../package.json' assert { type: 'json' }
 
@@ -47,5 +47,5 @@ export {
   useAppKit,
   useAppKitState,
   useAppKitEvents
-} from '@reown/appkit/library/react'
+} from '@web3inno/appkit/library/react'
 export { useAppKitConnection }

@@ -1,7 +1,7 @@
-import { customElement } from '@reown/appkit-ui'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
-import { AccountController, OptionsController } from '@reown/appkit-core'
+import { AccountController, OptionsController } from '@web3inno/appkit-core'
 
 @customElement('w3m-connecting-siwe')
 export class W3mConnectingSiwe extends LitElement {

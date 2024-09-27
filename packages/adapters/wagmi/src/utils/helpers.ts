@@ -1,12 +1,12 @@
-import { type CaipNetwork, type CaipNetworkId } from '@reown/appkit-common'
-import { ConstantsUtil, PresetsUtil } from '@reown/appkit-utils'
+import { type CaipNetwork, type CaipNetworkId } from '@web3inno/appkit-common'
+import { ConstantsUtil, PresetsUtil } from '@web3inno/appkit-utils'
 import { UniversalProvider } from '@walletconnect/universal-provider'
 import { fallback, http, type Hex } from 'viem'
 
 import type { Chain } from '@wagmi/core/chains'
 import type { Connector } from '@wagmi/core'
-import { CoreHelperUtil } from '@reown/appkit-core'
-import { WcHelpersUtil } from '@reown/appkit'
+import { CoreHelperUtil } from '@web3inno/appkit-core'
+import { WcHelpersUtil } from '@web3inno/appkit'
 
 export async function getWalletConnectCaipNetworks(connector?: Connector) {
   if (!connector) {

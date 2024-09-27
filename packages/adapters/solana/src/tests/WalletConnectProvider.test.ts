@@ -3,7 +3,7 @@ import { mockUniversalProvider, mockUniversalProviderSession } from './mocks/Uni
 import { WalletConnectProvider } from '../providers/WalletConnectProvider.js'
 import { TestConstants } from './util/TestConstants.js'
 import { mockLegacyTransaction, mockVersionedTransaction } from './mocks/Transaction.js'
-import type { CaipNetwork } from '@reown/appkit-common'
+import type { CaipNetwork } from '@web3inno/appkit-common'
 import { WalletConnectMethodNotSupportedError } from '../providers/shared/Errors.js'
 
 describe('WalletConnectProvider specific tests', () => {

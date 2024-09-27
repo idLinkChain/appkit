@@ -1,5 +1,5 @@
-import type { Connection } from '@reown/appkit-utils/solana';
-export * from '@reown/appkit-utils/solana';
+import type { Connection } from '@web3inno/appkit-utils/solana';
+export * from '@web3inno/appkit-utils/solana';
 export * from '../src/index.js';
 export declare function useAppKitConnection(): {
     connection: Connection | undefined;

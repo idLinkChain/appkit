@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useAppKitState } from '@reown/appkit/react'
+import { useAppKitState } from '@web3inno/appkit/react'
 
 import { SolanaTests } from './Solana/SolanaTests'
 import { WagmiTests } from './Wagmi/WagmiTests'

@@ -1,11 +1,11 @@
 import { AppKit } from '../src/client.js';
 import packageJson from '../package.json' assert { type: 'json' };
-import { CoreHelperUtil } from '@reown/appkit-core';
+import { CoreHelperUtil } from '@web3inno/appkit-core';
 // -- Views ------------------------------------------------------------
-export * from '@reown/appkit-scaffold-ui';
+export * from '@web3inno/appkit-scaffold-ui';
 // -- Utils & Other -----------------------------------------------------
 export * from '../src/utils/index.js';
-export { CoreHelperUtil, AccountController, NetworkController } from '@reown/appkit-core';
+export { CoreHelperUtil, AccountController, NetworkController } from '@web3inno/appkit-core';
 export function createAppKit(options) {
     return new AppKit({
         ...options,

@@ -1,6 +1,6 @@
-import type { Platform } from '@reown/appkit-core'
-import { ConnectionController } from '@reown/appkit-core'
-import { customElement } from '@reown/appkit-ui'
+import type { Platform } from '@web3inno/appkit-core'
+import { ConnectionController } from '@web3inno/appkit-core'
+import { customElement } from '@web3inno/appkit-ui'
 import { LitElement, html } from 'lit'
 import { property, state } from 'lit/decorators.js'
 

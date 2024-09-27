@@ -13,7 +13,7 @@ import { elementStyles, resetStyles } from '../../utils/ThemeUtil.js';
 import { customElement } from '../../utils/WebComponentsUtil.js';
 import styles from './styles.js';
 import { UiHelperUtil } from '../../utils/UiHelperUtil.js';
-import { NumberUtil } from '@reown/appkit-common';
+import { NumberUtil } from '@web3inno/appkit-common';
 let WuiTokenListItem = class WuiTokenListItem extends LitElement {
     constructor() {
         super();

@@ -1,4 +1,4 @@
-import { useAppKit } from '@reown/appkit/react'
+import { useAppKit } from '@web3inno/appkit/react'
 import {
   Stack,
   Card,

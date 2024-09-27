@@ -3,7 +3,7 @@ import { proxy, ref, subscribe as sub } from 'valtio/vanilla';
 import { NetworkController } from './NetworkController.js';
 import { AccountController } from './AccountController.js';
 import { PublicStateController } from './PublicStateController.js';
-import { SafeLocalStorage, SafeLocalStorageKeys } from '@reown/appkit-common';
+import { SafeLocalStorage, SafeLocalStorageKeys } from '@web3inno/appkit-common';
 import { StorageUtil } from '../utils/StorageUtil.js';
 // -- Constants ----------------------------------------- //
 const accountState = {

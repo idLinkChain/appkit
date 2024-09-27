@@ -1,4 +1,4 @@
-import { createAppKit } from '@reown/appkit/react'
+import { createAppKit } from '@web3inno/appkit/react'
 import { ThemeStore } from '../../utils/StoreUtil'
 import { ConstantsUtil } from '../../utils/ConstantsUtil'
 import { EthersTests } from '../../components/Ethers/EthersTests'
@@ -6,8 +6,8 @@ import { AppKitButtons } from '../../components/AppKitButtons'
 import { siweConfig } from '../../utils/SiweUtils'
 import { SiweData } from '../../components/Siwe/SiweData'
 import { EthersModalInfo } from '../../components/Ethers/EthersModalInfo'
-import { EthersAdapter } from '@reown/appkit-adapter-ethers'
-import { mainnet } from '@reown/appkit/networks'
+import { EthersAdapter } from '@web3inno/appkit-adapter-ethers'
+import { mainnet } from '@web3inno/appkit/networks'
 
 const networks = ConstantsUtil.EvmNetworks
 

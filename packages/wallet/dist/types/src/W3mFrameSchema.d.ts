@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { AdapterType, AppKitSdkVersion, SdkFramework } from '@reown/appkit-common';
+import type { AdapterType, AppKitSdkVersion, SdkFramework } from '@web3inno/appkit-common';
 type SdkType = 'w3m' | 'appkit';
 type SdkVersion = `${SdkFramework}-${AdapterType}-${string}` | AppKitSdkVersion | undefined;
 export declare const GetTransactionByHashResponse: z.ZodObject<{

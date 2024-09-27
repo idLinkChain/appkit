@@ -1,8 +1,8 @@
-import { getAppKit } from '@reown/appkit/library/vue'
-import { AppKit } from '@reown/appkit'
-import { SolanaAdapter, useAppKitConnection } from '@reown/appkit-adapter-solana/vue'
-import type { Provider } from '@reown/appkit-adapter-solana/vue'
-import type { CaipNetwork } from '@reown/appkit-common'
+import { getAppKit } from '@web3inno/appkit/library/vue'
+import { AppKit } from '@web3inno/appkit'
+import { SolanaAdapter, useAppKitConnection } from '@web3inno/appkit-adapter-solana/vue'
+import type { Provider } from '@web3inno/appkit-adapter-solana/vue'
+import type { CaipNetwork } from '@web3inno/appkit-common'
 import type { SolanaAppKitOptions } from './options'
 import packageJson from '../package.json' assert { type: 'json' }
 
@@ -59,5 +59,5 @@ export {
   useAppKit,
   useAppKitState,
   useAppKitEvents
-} from '@reown/appkit/library/vue'
+} from '@web3inno/appkit/library/vue'
 export { useAppKitConnection }
