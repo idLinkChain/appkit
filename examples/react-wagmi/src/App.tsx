@@ -15,7 +15,7 @@ import { WagmiHooks } from './WagmiHooks'
 const queryClient = new QueryClient()
 
 // @ts-expect-error 1. Get projectId
-const projectId = "c566a0c9534407b1759e42243a832b7d"
+const projectId = import.meta.env.VITE_PROJECT_ID
 if (!projectId) {
   throw new Error('VITE_PROJECT_ID is not set')
 }
