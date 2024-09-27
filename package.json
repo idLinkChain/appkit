@@ -1,7 +1,7 @@
 {
-  "name": "shadow-test-apkt",
-  "version": "0.0.4",
-  "private": true,
+  "name": "@kp/app-kit",
+  "version": "1.0.4-alpha.1",
+  "private": false,
   "type": "module",
   "scripts": {
     "build:clean": "turbo run build:clean --filter={./packages/*}",
